@@ -307,21 +307,21 @@ User Story: Anwendungsfall für 1 Benutzer
 
 
 == SYP 18.11.21
+=== Security
+entweder für keycloak oder Quarkus intern elytron security jdbc(bei kleinen sachen)
 
-entweder für keycloak oder quarkus intern elytron security jdbc(bei kleinen sachen)
-
+=== Realm
 Realm ein eigener Bereich
 
-SQL Sachen in Quarkus:
+=== SQL Sachen in Quarkus
 * in den application.properties, Namen ändern und Profil dazutun
-* wenn im Resource Orderner in import.sql ist, wird das automatisch aufgerufen
+* wenn im Resource Ordner in import.sql ist, wird das automatisch aufgerufen
 
 Quarkus.io -> All Configurations Options -> Import
 Hibernate ORM
 
 curl .... des is de request
-HTTP..
-is wos da response is
+HTTP.. is wos da response is
 
 admin% is der body vom response
 JAX-RS: Restful Services
@@ -516,3 +516,44 @@ Bei jedem starten wird ein neues Terminal geöffnet
 Server-Zentriert:
 Client-Zentriert:
 Rendern: Für Ausgabe vorbereiten
+
+== NVS 28.01.2022
+
+=== Was ist REST?
+* Internet für Maschinen
+
+=== gRPC
+* Schneller als REST, weil es binär ist
+* High Performance
+** kleinere Messages, weil es binär ist
+
+=== HTTP/2
+* Daten vorher schicken, wo geglaubt wird, wo der User hingeht
+* Verschwenderisch, weil Sachen geladen werden welche vll nie benutzt werden
+
+=== Was bringt sich ein Code Generator
+* Man muss sich nicht händisch alles machen
+
+=== REST Standard
+* JAXRS
+
+=== Formaler Parameter vs Tatsächlicher Parameter
+==== Formal
+method(Class var)
+
+==== Tatsächlicher
+method(var)
+
+=== QuTe (Quarkus Template Engine)
+* In der Resource Klasse sind die Templates
+* @CheckedTemplate ist für die Deklaration von Files
+* Initialisierung ist eine Erstzuweisung
+** TemplateInstance als Rückgabewert
+* resources Ordner -> templates
+
+==== Typisierte Art
+* im Ordner BookingResource werden die HTML files nach den Methoden vom File BookingResource benannt
+
+==== Untypisierte Art
+
+==== "im Template sagen was die Klasse ist"
