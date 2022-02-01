@@ -183,8 +183,11 @@ image::restclientmicroprofile.png[]
 * Proxy: Stellvertreter für den Endpoint
 
 === Meinung zu Reactive von Jesus Stützus Christus
-[quote, Stütz, ko ma bitte erklären wos er do sogt]
-nicht alles mus reactive sein, Datenbankzugriffe und wenn es viele requests gibt  ja mit Kubernetes geht es auch anders
+[quote, Stütz, ???]
+nicht alles muss reactive sein, Datenbankzugriffe und wenn es viele requests gibt  ja mit Kubernetes geht es auch anders
+
+[quote,Janseph Stalin, Übersetzung]
+Nicht alles muss reactive sein, Datenbankzugriffe und so schon aber mit Kubernetes gehts auch
 
 === Englisch Unterricht
 * mock: täuschen, simuliert das Verhalten von echten Objekten
@@ -253,8 +256,9 @@ oidc -> open id connect
 
 == SYP 11.11.21
 
-staging server: betreistellungsserver, wenns da alles funktioniert kommt das auf den productionserver
-git branches bei github actions:
+=== GitHub branches & usw
+* Staging Server: Bereitstellungsserver, wenn da alles funktioniert kommt das auf den Produktionserver
+* Git Branches bei GitHub Actions:
 
 main ---------------------------------->  production
                  \                 /
@@ -263,55 +267,64 @@ stage --------------------------------->
                     \           /
 feature              -----------
 
-feature: eigenschaft oder neue fähigkeit
-cherry picking: man committed nicht den feature sondern nur eine kleine änderung um etwas zu fixen zb
-für jedes problem ein issue machen
-angular mocken: es gibt kleine json server oder man macht angular mocking
+* feature: Eigenschaft oder neue Fähigkeit
+* cherry picking: man committed nicht den feature, sondern nur eine kleine Änderung um etwas zu fixen zB
+* für jedes problem ein issue machen
+* angular mocken: "es gibt kleine JSON Server oder man macht angular mocking"
 
-Hugo: static webpage generator, alternative zu jekyll
+=== Was ist Hugo?
+* Hugo: static webpage generator, alternative zu jekyll
 
 
 == NVS 12.11.2021
 
-DevService: Dienste in Testcontainer von Quarkus gestartet werden keycloak, kafka usw
-Authentification: wer bin ich
-Authorsition: wer darf was (Rollen)
-Keycloak wird in application properties konfiguriert
-Docker daemon muss laufen damit Dev Services gehen wenn die nicht in den Application Properties sind.
-im keycloak kann man einen realm machen was sowas wie ein eigener bereich ist, im realm sind mehrere rollen
-alternative zu quarkus services: zb keycloak in Docker
+=== DevService
+* Dienste in Testcontainer von Quarkus gestartet werden keycloak, kafka usw
+
+=== Authentication vs Authorization
+* Authentication: wer bin ich
+* Authorization: wer darf was (Rollen)
+
+=== Keycloak
+* Keycloak wird in application properties konfiguriert
+* Docker daemon muss laufen damit Dev Services gehen wenn die nicht in den Application Properties sind.
+* Im keycloak kann man einen realm machen was sowas wie ein eigener bereich ist, im realm sind mehrere rollen
+* Alternative zu Quarkus Services
+** zb keycloak in Docker
 
 dev -> test -> staging -> prod
 
-ALT
-programmierer: machen das programm
-operator: kümmern sich ums deployn und instandhalten
+=== Was sind DevOps?
+* ALT
+** Programmierer: machen das Programm
+** Operator: kümmern sich um das Deploy und Instandhalten
 
-NEU
-devops: kümmern sich um das produkt bis zum ende
+* NEU
+** DevOps: kümmern sich um das Produkt bis zum Ende
 
-MATURA FRAGE:
-Wie kann ich Java/Quarkus Projekt erstellen?
-IDE, Commandline, Assistent auf der Webseite
+=== MATURA FRAGE
+* Wie kann ich Java/Quarkus Projekt erstellen?
+** Antwort: IDE, Commandline, Assistent auf der Webseite
 
-Beim neuen Versionen wird das ins mvn Verzeichnis geladen, manchmal sollte man den m2 folder löschen dammit die alten Versionen und so gelöscht werden
+=== Maven ode so
+Bei neuen Versionen wird das ins mvn Verzeichnis geladen, manchmal sollte man den m2 folder löschen dammit die alten Versionen und so gelöscht werden
 
-RBAC: Role Based Access Controll
+RBAC: Role Based Access Control
 
 CORS: Cross Origin Resource Sharing
-Zwei verschiedene IPs wollen auf einander zugreifen
+Zwei verschiedene IPs wollen aufeinander zugreifen
 
 == SYP 16.11.2021
 
-User Story: Anwendungsfall für 1 Benutzer
+* User Story: Anwendungsfall für 1 Benutzer
 
 
 == SYP 18.11.21
 === Security
-entweder für keycloak oder Quarkus intern elytron security jdbc(bei kleinen sachen)
+* Entweder für keycloak oder Quarkus intern elytron security jdbc(bei kleinen sachen)
 
 === Realm
-Realm ein eigener Bereich
+* Realm ein eigener Bereich
 
 === SQL Sachen in Quarkus
 * in den application.properties, Namen ändern und Profil dazutun
@@ -320,14 +333,16 @@ Realm ein eigener Bereich
 Quarkus.io -> All Configurations Options -> Import
 Hibernate ORM
 
-curl .... des is de request
-HTTP.. is wos da response is
+=== Was sind curl und HTTP??
+* curl ... des is de request
+* HTTP... is wos da response is
 
-admin% is der body vom response
-JAX-RS: Restful Services
-JAX-WS: Web Sockets
-JAX-RS/WS basiert auf Servlets
-Servlet in der einfachsten Form: HTTP Requests und Responses auf Java Seiten im Internet
+=== Websockets oder so
+* admin% is der body vom response
+* JAX-RS: Restful Services
+* JAX-WS: Web Sockets
+* JAX-RS/WS basiert auf Servlets
+* Servlet in der einfachsten Form: HTTP Requests und Responses auf Java Seiten im Internet
 
 JsonB(Json Bidning): automatische marshalling von Java Objekten in Json Objekte
 MessagBodyWriter: Is responsible for converting Java types to a stream
@@ -335,31 +350,32 @@ MessagBodyWriter: Is responsible for converting Java types to a stream
 XML: Extensible Markup Language (es ist in Baumform)
 Parsen: Syntaxanalysator
 
-SAX vs DOM vs JsonP:
-Wir haben ein XML Dokument und wollen das in den Computer speichern.
+=== SAX vs DOM vs JsonP:
+.Wir haben ein XML Dokument und wollen das in den Computer speichern.
 
-DOM, Document Object Model: Speichert alles in den Hauptspeicher in Baumform
-SAX, Simple API for XML: Parsed durch den XML Code und es wird mit einer Callback Methode gefiltert
-JsonP, Json Processer:
+* DOM, Document Object Model: Speichert alles in den Hauptspeicher in Baumform
+* SAX, Simple API for XML: Parsed durch den XML Code und es wird mit einer Callbackmethode gefiltert
+* JsonP, Json Processer:
 
-Jax und Json sind verschiedene Implimentierungen.
-Json: Standart
+=== Jax und Json sind verschiedene Implementierungen
+Json: Standard
 Jax: Weiter verbreitet
 
-Nachteil von REST-Services:
+=== Nachteil von REST-Services:
 * REST-Services sind veraltet
 * GitHub Dokumente sind sehr lang (mit GraphQL ist es kürzer)
 
-Unterschied GraphQL und REST Client:
+=== Unterschied GraphQL und REST Client:
 * REST hat vordefinierte Antworten
-* Bei GraphQL kann sich der Client raussuchen was genau gebraucht wird (ungefähr wie eine SQL Query)
+* Bei GraphQL kann sich der Client heraussuchen was genau gebraucht wird (ungefähr wie eine SQL Query)
 
-gRPC "Wie REST aber ein modernes REST":
+=== gRPC "Wie REST aber ein modernes REST":
 * Binärformat wie REST, nur schneller
 * Quasi der Nachfolger von REST
 * basiert auf HTTP2 und Buffers
 
-UMI wird benutzt wenn man etwas Async machen will (in C# wäre das ein Task)
+=== UMI
+UMI wird benutzt, wenn man etwas Async machen will (in C# wäre das ein Task)
 
 Non-Blocking I/O (Event Loop) kennen wir von NodeJS
 GraphQL: wir sind der server
@@ -557,3 +573,18 @@ method(var)
 ==== Untypisierte Art
 
 ==== "im Template sagen was die Klasse ist"
+
+== NVS 31.01.2022
+
+=== How to Verbesserung
+1. Fehlermeldung
+2. Fehlercode
+3. Erklärung vom Fehler
+4. Verbesserter Code
+5. Erklärung von dem richtigen Code
+
+IMPORTANT: Man sollte mit AsciiDoc umgehen können!!!
+
+=== Kann man bei einer Templateinstacne auf die Parameter zur Laufzeit zugreifen?
+* Nein, weil das ja im Browser ohne Java Objekte ist
+* Wenn ich eine Liste anzeigen will oder so muss ich alles vor der Laufzeit machen
