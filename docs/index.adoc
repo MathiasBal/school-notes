@@ -159,8 +159,8 @@ z.B Wenn bei Netflix etwas abschmiert, muss trotzdem der Service noch Funktionie
 
 === Microprofile REST Client
 
-.es gibt ka Büd vo dem
 image::restclientmicroprofile.png[]
+
 
 === Extension hinzufügen
 * Bei application.properties den Port angeben
@@ -588,3 +588,19 @@ IMPORTANT: Man sollte mit AsciiDoc umgehen können!!!
 === Kann man bei einer Templateinstacne auf die Parameter zur Laufzeit zugreifen?
 * Nein, weil das ja im Browser ohne Java Objekte ist
 * Wenn ich eine Liste anzeigen will oder so muss ich alles vor der Laufzeit machen
+
+
+== SYP 01.02.2022
+
+=== Besprechung Vini & Felix
+*  Gute Doku: wenn eine Commitmessage gut geschrieben ist reicht das schon aus
+*  Projekt planen auf YouTrack
+*  Gespräche gehören auch protokolliert, wenn man das macht, kann ich immer nachschauen was wer mal gesagt hat
+*  SYP benotet, ob man erwachsen genug ist
+* Gesamtüberblick über das Projekt
+* Quellen immer irgendwo aufschreiben, um bei Fehler nachzuschauen
+
+=== Wichtig bei Git
+* Regressiontesting
+
+image::git-branches.png[]
