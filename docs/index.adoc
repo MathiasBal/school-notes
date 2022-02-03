@@ -599,8 +599,20 @@ IMPORTANT: Man sollte mit AsciiDoc umgehen können!!!
 *  SYP benotet, ob man erwachsen genug ist
 * Gesamtüberblick über das Projekt
 * Quellen immer irgendwo aufschreiben, um bei Fehler nachzuschauen
+* Immer SoftWrap bei Fehler
+* Neuste Versionen von Libraries verwenden
 
 === Wichtig bei Git
 * Regressiontesting
 
 image::git-branches.png[]
+
+
+== SYP 03.02.2022
+
+=== QuTe again
+* in Entity eine Methode angeben
+* im HTML in {} z.B {person.calcIrgendwas(person_index)}
+* bei Fragen auf w3schools gehen
+* DTO file nehmen für Schönheit
+*
