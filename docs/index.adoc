@@ -16,6 +16,11 @@ Java Enterprise Archive
 ===== JWT
 JSON Web Token
 
+===== JSONB
+JSON Binding: das Umwandeln von Java Objekten in JSON
+
+===== AAA
+Arrange Act Assert
 == Definitionen
 ===== Nativ Kompiliert
 Jar File wird so kompiliert, damit das File direkt auf dem BS ausgeführt wird
@@ -37,6 +42,9 @@ Asynchrones Programmieren
 
 * Statisch: bevor der Laufzeit, Entwurfszeit
 ** "vorher reincoden was die Addresses von Clients sind"
+
+===== symlink
+wird benutzt damit ich meinen Path nicht immer ändern muss, wenn ich eine neue Version von irgendwas habe
 
 == JakartaEE vs Microprofile
 Microprofile Produkte: Quarkus, Micronaut, Helidon
@@ -68,8 +76,7 @@ Microservices are small autonomous services that work together
 Wenn eine Komponente abschmiert, läuft das ganze Projekt trotzdem weiter.
 
 === Microprofile
-Enterprised java für eine Microservice-Architektur implementiert Microservices Design Pattern
-
+JavaEE angepasst für eine Microservice Architektur und Microservice Design Pattern
 
 == Kubernetes
 großer Behälter mit zB. Restserver, Webserver, Datenbankserver, server als Pod
@@ -100,20 +107,11 @@ Der Grund wieso WSL2 nicht gut mit IntelliJ funktioniert, sind die Filesystempro
 * Tomcat ist ein Servlet Container
 * Bootstrapping: mit kleiner Software eine große Software zum Laufen bringen
 ** Kommt von Cowboyschuhe
-
-== NVS 27.09.2021
-
-=== symlink
-* symlink wird benutzt damit ich meinen Path nicht immer ändern muss, wenn ich eine neue Version von irgendwas habe
-
-== NVS 08.10.2021
-
-=== Bro keine Ahnung
 * Instant: ganz genauer Moment
 * LocalDateTime: keine Zeitzone
 * Request und Response haben beide einen Header und einen JSON body
 * Im Quarkusterminal steht der Loggingausdruck, dort wird das toString angegeben
-* JSONB -> JSON Binding: das Umwandeln von Java Objekten in JSON
+
 * Transient: flüchtig, beim Umwandeln in ein json object ist das nicht dabei
 * Persistent: Gegenteil von transient
 * Quarkus konfigurieren: in applications.properties
@@ -123,7 +121,6 @@ Der Grund wieso WSL2 nicht gut mit IntelliJ funktioniert, sind die Filesystempro
 == NVS 11.10.2021
 
 === Bimpfi
-* AAA: arrange act assert
 * public ist ein no-go bei variablen (sonst kommt Stütz zu dir nach Hause)
 * URLENCODED: FormParam ist ein HTML Formular
 * httpie forms:http --form POST :8080/api/books title='Quarkus' author='Susi' year='2021' genre='IT'
