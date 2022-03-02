@@ -1,44 +1,36 @@
 = Mitschrift
 1.0.0, 2022-01-22
+:toc:
 ifndef::imagesdir[:imagesdir: images]
 
-== SYP 16.09.2021
-=== JakartaEE vs Microprofile
-Microprofile Produkte: Quarkus, Micronaut, Helidon
+== Abkürzungen
+===== Jar
+Java Archie
 
-image::jakartaeevsmicroprofile.png[]
+===== War
+Web Archive
 
-jar: java archive +
-war: web archive
+===== Ear
+Java Enterprise Archive
 
-Application Server: Apps, Java Libraries, DS (Datasource) verweist auf die Datenbank, ...
-Man hat die Infrastruktur und gibt das einfach weiter (langsam)
+===== JWT
+JSON Web Token
 
-=== Kubernetes
-großer Behälter mit zB. Restserver, Webserver, Datenbankserver, server als Pod
+== Definitionen
+===== Nativ Kompiliert
+Jar File wird so kompiliert, damit das File direkt auf dem BS ausgeführt wird
 
-=== Other
-GraalVM erstellt natives File +
-nativ kompiliert: jar file wird so kompiliert damit das File direkt auf dem Betriebssystem ausgeführt wird
-
-== NVS 17.09.2021
-
-=== Versionierung
+===== Versionierung
 2.3.4
 
 * Major Level: Neue Funktionen aber nicht mehr kompatibel 2
 * Minor Level: Neue Funktionen aber immer noch kompatibel mit alten Versionen 4
 * Patch Leve: Keine neuen Funktionen aber Bugfixes 5
 
-=== Other
+===== Reactive
+Asynchrones Programmieren
 
-* Maven ist bei jeder IDE gleich
-* Ktor Backend für Kotlin Produkte
-* Groovy Ruby auf JVM
-* Grails
-* Reactive ist asynchrones Programmieren
-
-=== Dynamisch vs Statisch
+===== Dynamisch vs Statisch
 
 * Dynamisch: Zur Laufzeit
 ** der Server kennt seine Clients noch nicht, die melden sich zur Laufzeit an
@@ -46,18 +38,15 @@ nativ kompiliert: jar file wird so kompiliert damit das File direkt auf dem Betr
 * Statisch: bevor der Laufzeit, Entwurfszeit
 ** "vorher reincoden was die Addresses von Clients sind"
 
-== SYP 23.09.2021
+== JakartaEE vs Microprofile
+Microprofile Produkte: Quarkus, Micronaut, Helidon
 
-=== Präsentation Basics
-* am Anfang sollte man visuelle Sachen (Bilder, Grafiken, usw.) herzeigen um das Publikum zu fesseln
-* eine Präsentation muss spezielle angepasst werden
+image::jakartaeevsmicroprofile.png[]
 
-===  WSL2 Kaka
-Der Grund wieso WSL2 nicht gut mit IntelliJ funktioniert, sind die Filesystemprobleme zwischen Linux (ntfs) und Windows (ext4)
+Application Server: Apps, Java Libraries, DS (Datasource) verweist auf die Datenbank, ... +
+Man hat die Infrastruktur und gibt das einfach weiter (langsam)
 
-== NVS 24.09.2021
-
-=== Monolith vs Microservices
+== Monolith vs Microservices
 
 * Monolith:
 ** wenn alles in einem großen Projekt ist
@@ -66,27 +55,46 @@ Der Grund wieso WSL2 nicht gut mit IntelliJ funktioniert, sind die Filesystempro
 
 image::monolithvsmicroservices.png[]
 
-[quote, Jesus, Bibel]
+[quote]
 Microservices are small autonomous services that work together
 
 === What are Micorservices
 * set of practices
 * increase of speed
 * scale
-* technology-agnostic (technology ist egal)
+* technology-agnostic (Technologie ist egal)
 
 === Fault Tolerance
 Wenn eine Komponente abschmiert, läuft das ganze Projekt trotzdem weiter.
 
 === Microprofile
-enterprised java for a microservice architecture implements microservices design pattern
+Enterprised java für eine Microservice-Architektur implementiert Microservices Design Pattern
 
-=== HTML & REST
+
+== Kubernetes
+großer Behälter mit zB. Restserver, Webserver, Datenbankserver, server als Pod
+
+== Other
+* GraalVM erstellt natives File +
+* Maven ist bei jeder IDE gleich
+* Ktor Backend für Kotlin Produkte
+* Groovy Ruby auf JVM
+* Grails
+
+
+== General
+=== How to Präsentation
+* Am Anfang sollte man visuelle Sachen (Bilder, Grafiken, usw.) herzeigen um das Publikum zu fesseln
+* Eine Präsentation muss spezielle angepasst werden
+
+===  Wieso passen IntelliJ und WSL2 nicht zusammen
+Der Grund wieso WSL2 nicht gut mit IntelliJ funktioniert, sind die Filesystemprobleme zwischen Linux (ntfs) und Windows (ext4)
+
+== HTML & REST
 * HTML ist Internet für Menschen
 * REST ist Internet für Maschinen (und Schüler)
 
 === Other
-* JWT: JSON Web Token
 * JAX-RS: für REST service
 * Java ins Internet mit Servlet
 * Tomcat ist ein Servlet Container
