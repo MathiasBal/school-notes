@@ -620,4 +620,31 @@ image::git-branches.png[]
 * im HTML in {} z.B {person.calcIrgendwas(person_index)}
 * bei Fragen auf w3schools gehen
 * DTO file nehmen für Schönheit
-*
+
+== SYP 03.03.2022
+
+=== Wieso GH Slides und nicht PowerPoint?
+* Versionierbar
+* In der selben Sprache dokumentieren (Doc As Code)
+
+== NVS 04.03.2022
+
+=== altes Quarkus Backend ändern
+
+==== nicht zu alt
+* pom.xlm ändern Versionsnummer ändern
+
+==== antik
+* quarkus.io neues Projekt
+* .mvn löschen
+* neues .mvn reinkopieren
+* mvnw & mvnw.cmd ersetzen
+* neue pom.xml reinkopieren
+
+IMPORTANT: man kann den Sourceordner einfach ins neue Projekt
+
+=== .mvn
+* da ist der MavenWrapper drinnen damit ich mit nicht maven auf der Maschine installieren muss
+
+==== MavenWrapper
+* hat eine Lokale Maveninstallation
