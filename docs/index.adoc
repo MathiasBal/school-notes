@@ -29,8 +29,8 @@ Jar File wird so kompiliert, damit das File direkt auf dem BS ausgeführt wird
 2.3.4
 
 * Major Level: Neue Funktionen aber nicht mehr kompatibel 2
-* Minor Level: Neue Funktionen aber immer noch kompatibel mit alten Versionen 4
-* Patch Leve: Keine neuen Funktionen aber Bugfixes 5
+* Minor Level: Neue Funktionen aber immer noch kompatibel mit alten Versionen 3
+* Patch Leve: Keine neuen Funktionen aber Bugfixes 4
 
 ===== Reactive
 Asynchrones Programmieren
@@ -648,3 +648,9 @@ IMPORTANT: man kann den Sourceordner einfach ins neue Projekt
 
 ==== MavenWrapper
 * hat eine Lokale Maveninstallation
+
+=== Lecture Notes
+https://2122-5ahitm-sew.github.io/2122-5ahitm-sew-lecture-notes/#_html_http[Zusammenfassung für Matura]
+
+=== Target Ordner
+* Ergebnis vom Kompilieren
