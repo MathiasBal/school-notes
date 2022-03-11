@@ -1,0 +1,91 @@
+= Project Award Termine
+
+== 15.03 (11:50 - 14:30)
+
+[cols="a,a,a",options="header"]
+|===
+|Projekt Name |Lehrer |Uhrzeit
+| LeoCode
+| -
+| 11:50
+
+|Beeyond
+| -
+|12:05
+
+|Franklyn
+| -
+| 12:20
+
+|Device Manager
+| -
+| 12:35
+
+| Vespucci Drone
+| Gruber-Leitner
+| 12:50
+
+| Rocketman
+| -
+| 13:20
+
+| EazyMenu
+| Eisserer
+| 13:45
+
+| Leo-IoT
+| -
+| 14:00
+
+| Dynatrace Memory
+| Steiner
+| 14:15
+|===
+
+== 22.03 (11:50 - 14:30)
+
+[cols="a,a,a",options="header"]
+|===
+|Projekt Name |Lehrer |Uhrzeit
+| Digital Signage
+| -
+| 11:50
+
+| DocumentPatternAnalyzer
+| Ehrenmüller-Jensen
+|12:05
+
+| Software-API
+| Schröder
+| 12:20
+
+| ASUQZ
+| Braun
+| 12:35
+
+| Medikations App
+| Schröder
+| 12:50
+
+| LeoTunier
+| Gruber-Leitner
+| 13:05
+
+| Maintenance Tool
+| Karpovicz
+| 13:20
+
+| Workout4You
+| Ehrenmüller-Jensen
+| 13:45
+
+| LeoSurvey
+| -
+| 14:00
+
+| ML-Comparison
+| Karpovicz
+| 14:15
+|===
+
+IMPORTANT: Belmin ist 1.73!!!!
