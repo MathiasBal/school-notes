@@ -1,7 +1,7 @@
 = Mitschrift
 1.0.0, 2022-01-22
 :toc:
-ifndef::imagesdir[:imagesdir: images]
+ifndef::imagesdir[:imagesdir: ../images]
 
 == Abkürzungen
 ===== Jar
