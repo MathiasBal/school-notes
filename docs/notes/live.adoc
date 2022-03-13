@@ -3,39 +3,43 @@
 :toc:
 ifndef::imagesdir[:imagesdir: ../images]
 
-== Abkürzungen
-===== Jar
-Java Archie
+== SYP 16.09.2021
+=== JakartaEE vs Microprofile
+Microprofile Produkte: Quarkus, Micronaut, Helidon
 
-===== War
-Web Archive
+image::jakartaeevsmicroprofile.png[]
 
-===== Ear
-Java Enterprise Archive
+jar: java archive +
+war: web archive
 
-===== JWT
-JSON Web Token
+Application Server: Apps, Java Libraries, DS (Datasource) verweist auf die Datenbank, ...
+Man hat die Infrastruktur und gibt das einfach weiter (langsam)
 
-===== JSONB
-JSON Binding: das Umwandeln von Java Objekten in JSON
+=== Kubernetes
+großer Behälter mit zB. Restserver, Webserver, Datenbankserver, server als Pod
 
-===== AAA
-Arrange Act Assert
-== Definitionen
-===== Nativ Kompiliert
-Jar File wird so kompiliert, damit das File direkt auf dem BS ausgeführt wird
+=== Other
+GraalVM erstellt natives File +
+nativ kompiliert: jar file wird so kompiliert damit das File direkt auf dem Betriebssystem ausgeführt wird
 
-===== Versionierung
+== NVS 17.09.2021
+
+=== Versionierung
 2.3.4
 
 * Major Level: Neue Funktionen aber nicht mehr kompatibel 2
-* Minor Level: Neue Funktionen aber immer noch kompatibel mit alten Versionen 3
-* Patch Leve: Keine neuen Funktionen aber Bugfixes 4
+* Minor Level: Neue Funktionen aber immer noch kompatibel mit alten Versionen 4
+* Patch Leve: Keine neuen Funktionen aber Bugfixes 5
 
-===== Reactive
-Asynchrones Programmieren
+=== Other
 
-===== Dynamisch vs Statisch
+* Maven ist bei jeder IDE gleich
+* Ktor Backend für Kotlin Produkte
+* Groovy Ruby auf JVM
+* Grails
+* Reactive ist asynchrones Programmieren
+
+=== Dynamisch vs Statisch
 
 * Dynamisch: Zur Laufzeit
 ** der Server kennt seine Clients noch nicht, die melden sich zur Laufzeit an
@@ -43,18 +47,18 @@ Asynchrones Programmieren
 * Statisch: bevor der Laufzeit, Entwurfszeit
 ** "vorher reincoden was die Addresses von Clients sind"
 
-===== symlink
-wird benutzt damit ich meinen Path nicht immer ändern muss, wenn ich eine neue Version von irgendwas habe
+== SYP 23.09.2021
 
-== JakartaEE vs Microprofile
-Microprofile Produkte: Quarkus, Micronaut, Helidon
+=== Präsentation Basics
+* am Anfang sollte man visuelle Sachen (Bilder, Grafiken, usw.) herzeigen um das Publikum zu fesseln
+* eine Präsentation muss spezielle angepasst werden
 
-image::jakartaeevsmicroprofile.png[]
+===  WSL2 Kaka
+Der Grund wieso WSL2 nicht gut mit IntelliJ funktioniert, sind die Filesystemprobleme zwischen Linux (ntfs) und Windows (ext4)
 
-Application Server: Apps, Java Libraries, DS (Datasource) verweist auf die Datenbank, ... +
-Man hat die Infrastruktur und gibt das einfach weiter (langsam)
+== NVS 24.09.2021
 
-== Monolith vs Microservices
+=== Monolith vs Microservices
 
 * Monolith:
 ** wenn alles in einem großen Projekt ist
@@ -63,55 +67,46 @@ Man hat die Infrastruktur und gibt das einfach weiter (langsam)
 
 image::monolithvsmicroservices.png[]
 
-[quote]
+[quote, Jesus, Bibel]
 Microservices are small autonomous services that work together
 
 === What are Micorservices
 * set of practices
 * increase of speed
 * scale
-* technology-agnostic (Technologie ist egal)
+* technology-agnostic (technology ist egal)
 
 === Fault Tolerance
 Wenn eine Komponente abschmiert, läuft das ganze Projekt trotzdem weiter.
 
 === Microprofile
-JavaEE angepasst für eine Microservice Architektur und Microservice Design Pattern
+enterprised java for a microservice architecture implements microservices design pattern
 
-== Kubernetes
-großer Behälter mit zB. Restserver, Webserver, Datenbankserver, server als Pod
-
-== Other
-* GraalVM erstellt natives File +
-* Maven ist bei jeder IDE gleich
-* Ktor Backend für Kotlin Produkte
-* Groovy Ruby auf JVM
-* Grails
-
-
-== General
-=== How to Präsentation
-* Am Anfang sollte man visuelle Sachen (Bilder, Grafiken, usw.) herzeigen um das Publikum zu fesseln
-* Eine Präsentation muss spezielle angepasst werden
-
-===  Wieso passen IntelliJ und WSL2 nicht zusammen
-Der Grund wieso WSL2 nicht gut mit IntelliJ funktioniert, sind die Filesystemprobleme zwischen Linux (ntfs) und Windows (ext4)
-
-== HTML & REST
+=== HTML & REST
 * HTML ist Internet für Menschen
 * REST ist Internet für Maschinen (und Schüler)
 
 === Other
+* JWT: JSON Web Token
 * JAX-RS: für REST service
 * Java ins Internet mit Servlet
 * Tomcat ist ein Servlet Container
 * Bootstrapping: mit kleiner Software eine große Software zum Laufen bringen
 ** Kommt von Cowboyschuhe
+
+== NVS 27.09.2021
+
+=== symlink
+* symlink wird benutzt damit ich meinen Path nicht immer ändern muss, wenn ich eine neue Version von irgendwas habe
+
+== NVS 08.10.2021
+
+=== Bro keine Ahnung
 * Instant: ganz genauer Moment
 * LocalDateTime: keine Zeitzone
 * Request und Response haben beide einen Header und einen JSON body
 * Im Quarkusterminal steht der Loggingausdruck, dort wird das toString angegeben
-
+* JSONB -> JSON Binding: das Umwandeln von Java Objekten in JSON
 * Transient: flüchtig, beim Umwandeln in ein json object ist das nicht dabei
 * Persistent: Gegenteil von transient
 * Quarkus konfigurieren: in applications.properties
