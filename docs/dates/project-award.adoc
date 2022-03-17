@@ -59,7 +59,7 @@
 
 | Softaware-API
 | Schröder
-|
+| Eine Webanwendung, um die internen Projekte der Softaware verwalten zu können
 | 12:20
 
 | ASUQZ
@@ -69,12 +69,12 @@
 
 | Medikations App
 | Schröder
-|
+| Eine Mobile App zur Unterstützung einer regelmäßigen Medikamenteneinnahme und einer Protokollierung der Einnahmen
 | 12:50
 
 | LeoTunier
 | Gruber-Leitner
-|
+| Eine Webapp für die Verwaltung von Turnieren an der HTL Leonding
 | 13:05
 
 | Maintenance Tool
@@ -84,7 +84,7 @@
 
 | Workout4You
 | Ehrenmüller-Jensen
-|
+| Nutzern die Möglichkeit geben, personalisierte Trainingspläne erstellen
 | 13:45
 
 | LeoSurvey
