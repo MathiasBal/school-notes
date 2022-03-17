@@ -79,7 +79,7 @@
 
 | Maintenance Tool
 | Karpovicz
-|
+| Mithilfe Sensordaten ermitteln, ob bei Fronius die Maschinen kaputt sind oder ob in Zukunft ein Problem auftauchen könnte
 | 13:20
 
 | Workout4You
