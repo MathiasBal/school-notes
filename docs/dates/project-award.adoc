@@ -44,48 +44,56 @@
 
 == 22.03 (11:50 - 14:30)
 
-[cols="a,a,a",options="header"]
+[cols="a,a,a,a",options="header"]
 |===
-|Projekt Name |Lehrer |Uhrzeit
+|Projekt Name |Lehrer |Kurzbeschreibung |Uhrzeit
 | Digital Signage
 | -
+|
 | 11:50
 
 | DocumentPatternAnalyzer
 | Ehrenmüller-Jensen
+|
 |12:05
 
 | Software-API
 | Schröder
+|
 | 12:20
 
 | ASUQZ
 | Braun
+|
 | 12:35
 
 | Medikations App
 | Schröder
+|
 | 12:50
 
 | LeoTunier
 | Gruber-Leitner
+|
 | 13:05
 
 | Maintenance Tool
 | Karpovicz
+|
 | 13:20
 
 | Workout4You
 | Ehrenmüller-Jensen
+|
 | 13:45
 
 | LeoSurvey
 | -
+|
 | 14:00
 
 | ML-Comparison
 | Karpovicz
+|
 | 14:15
 |===
-
-IMPORTANT: Belmin ist 1.73!!!!
