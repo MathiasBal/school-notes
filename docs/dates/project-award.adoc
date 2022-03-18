@@ -49,12 +49,12 @@
 |Projekt Name |Lehrer |Kurzbeschreibung |Uhrzeit
 | Digital Signage
 | -
-|
+| Eine Webapp fürs Handy welche den AVs und Direktor ermöglicht ihren Handyscreen an die großen Monitore zu streamen
 | 11:50
 
 | DocumentPatternAnalyzer
 | Ehrenmüller-Jensen
-|
+| Eine ASP.NET Core Anwendung welche als Windows Service im Hintergrund eingehende Dokumente innerhalb eines Firmentools mit Vorlagen vergleicht und die passende Vorlage findet
 |12:05
 
 | Softaware-API
@@ -64,7 +64,7 @@
 
 | ASUQZ
 | Braun
-|
+| Ein Tool für die ÖBB Linz, um die Fehlererkennung- und Auswertung ihres Antriebsprüfstandes zu verbessern
 | 12:35
 
 | Medikations App
@@ -89,7 +89,7 @@
 
 | LeoSurvey
 | -
-|
+| Ein Umfragetoool für die Schule, um spezifische Umfragen durchführen zu können und den Datenschutz der Schüler zu gewährleisten
 | 14:00
 
 | ML-Comparison
