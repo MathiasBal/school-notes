@@ -649,3 +649,21 @@ https://2122-5ahitm-sew.github.io/2122-5ahitm-sew-lecture-notes/#_html_http[Zusa
 
 === Target Ordner
 * Ergebnis vom Kompilieren
+
+== NVS 18.03.2022
+
+=== Uber jar
+* application.properties
+* pom.xml
+* command line als maven parameter
+
+https://htl-leonding-college.github.io/quarkus-docker-gh-actions-demo[Uberjar Tutorial]
+
+=== ENV variablen
+* PATH is die bekannteste
+* für Docker sehr wichtig
+
+=== Mandrel
+Kleine Linux distro spezialisiert auf GraalVM und Quarkus
+
+IMPORTANT: Überblick über REST-Services kann man mit Swagger machen after production, dafür muss man das mit in die application.properties eintragen
