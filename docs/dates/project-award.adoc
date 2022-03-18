@@ -46,54 +46,59 @@
 
 [cols="a,a,a,a",options="header"]
 |===
-|Projekt Name |Lehrer |Kurzbeschreibung |Uhrzeit
+|Projekt Name |Schüler |Kurzbeschreibung |Uhrzeit
 | Digital Signage
-| -
+| Andricic Daniel, Ecker Benjamin
 | Eine Webapp fürs Handy welche den AVs und Direktor ermöglicht ihren Handyscreen an die großen Monitore zu streamen
-| 11:50
+| 11:50 - 12:05
 
 | DocumentPatternAnalyzer
-| Ehrenmüller-Jensen
+| Hosic Tarik, Gahrleitner Lorenz
 | Eine ASP.NET Core Anwendung welche als Windows Service im Hintergrund eingehende Dokumente innerhalb eines Firmentools mit Vorlagen vergleicht und die passende Vorlage findet
-|12:05
+|12:05 - 12:20
 
 | Softaware-API
-| Schröder
+| Birkelbauer Jonas, Bojer Nico
 | Eine Webanwendung, um die internen Projekte der Softaware verwalten zu können
-| 12:20
+| 12:20 - 12:35
 
 | ASUQZ
-| Braun
+| Tischler Fabian, Trinkl Philip
 | Ein Tool für die ÖBB Linz, um die Fehlererkennung- und Auswertung ihres Antriebsprüfstandes zu verbessern
-| 12:35
+| 12:35 - 12:50
 
 | Medikations App
-| Schröder
+| Andricic Daniel, Kaufmann Jan
 | Eine Mobile App zur Unterstützung einer regelmäßigen Medikamenteneinnahme und einer Protokollierung der Einnahmen
-| 12:50
+| 12:50 - 13:05
 
 | LeoTunier
-| Gruber-Leitner
+| Ecker Benjamin, Hain Lukas
 | Eine Webapp für die Verwaltung von Turnieren an der HTL Leonding
-| 13:05
+| 13:05 - 13:20
 
 | Maintenance Tool
-| Karpovicz
+| Kronreif Vincent, Rieser Felix
 | Mithilfe Sensordaten ermitteln, ob bei Fronius die Maschinen kaputt sind oder ob in Zukunft ein Problem auftauchen könnte
-| 13:20
+| 13:20 - 13:35
+
+| Pause
+| -
+| -
+| 13:35 - 13:45
 
 | Workout4You
-| Ehrenmüller-Jensen
+| Özdogan Muhammed, Spizak Patrick
 | Nutzern die Möglichkeit geben, personalisierte Trainingspläne erstellen
-| 13:45
+| 13:45 - 14:00
 
 | LeoSurvey
-| -
+| Tischler Fabian, Trinkl Philip
 | Ein Umfragetoool für die Schule, um spezifische Umfragen durchführen zu können und den Datenschutz der Schüler zu gewährleisten
-| 14:00
+| 14:00 - 14:15
 
 | ML-Comparison
-| Karpovicz
+| Polleichner Moritz, Sljivic Emina
 |
 | 14:15
 |===
