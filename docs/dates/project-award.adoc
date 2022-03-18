@@ -99,6 +99,6 @@
 
 | ML-Comparison
 | Polleichner Moritz, Sljivic Emina
-|
+| Kunden in der Zukunft weiter Möglichkeiten bereitzustellen, wurden verschiedene ML Technologien von Microsoft verglichen
 | 14:15
 |===
