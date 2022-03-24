@@ -103,9 +103,34 @@ Enterprised Java für eine Microservice-Architektur implementiert Microservices-
 ** Kommt von Cowboyschuhe
 
 == NVS 27.09.2021
-
 === Was ist symlink
 * symlink wird benutzt damit ich meinen Path nicht immer ändern muss, wenn ich eine neue Version von irgendwas habe
+
+== SYP 30.09.2021
+=== YouTrack
+* YouTrack ist ein IssueTracker
+* Ein UseCase kann mehrere UserStories haben
+** Eine UserStory ist feiner (detailiert fürs Programm)
+* Sprintnummern ist sehr wichtig
+** Ein Sprint ist eine zeitliche Komponente von UserStory und Task
+* Bug: Fehlerbehebung
+* Epic: mehrere UserStories zB Lagerverwaltung
+* Theme: Projektthema zB Warenwirtschaftssystem
+
+==== Unterschied zwischen SprintBacklog und ProductBacklog
+* SprintBacklog: Open, In Progress, To Verify, Done
+* ProductBacklog: "Alles was keinen Sprint hat, ist hier"
+
+==== YouTrack & Github
+Auf Card: VCS Change
+[shell]
+----
+git commit -m "commit message #issue_id command (zB Done)"
+----
+
+== NVS 01.10.2021
+
+== SYP 07.10.2021
 
 == NVS 08.10.2021
 === Instant & LocalDateTime
@@ -419,7 +444,7 @@ Scrum sollte von Sicht der User gemacht werden
 * Was das Geschäft ausmacht (Verkauf, Rabatt, usw.)
 * Im Service ist die Business Logic drinnen
 
-== NVS 14.01l2022
+== NVS 14.01.2022
 === Websocket:
 * Netzwerkprotokoll
 * auf TCP basierend
@@ -524,6 +549,8 @@ Logging und Security ziehen sich durch die ganze Architektur (Aspekte)
 
 === Exkurs
 Rendern: Für Ausgabe vorbereiten
+
+== NVS 23.01.2022
 
 == NVS 28.01.2022
 === Was ist REST?
