@@ -1,5 +1,5 @@
 = Mitschrift
-1.0.0, 2022-01-22
+2022-03-24
 :toc:
 ifndef::imagesdir[:imagesdir: ../images]
 
@@ -9,21 +9,30 @@ Microprofile Produkte: Quarkus, Micronaut, Helidon
 
 image::jakartaeevsmicroprofile.png[]
 
-jar: java archive +
-war: web archive
+==== Was bedeutet .jar & .war
+* jar: java archive
+* war: web archive
 
-Application Server: Apps, Java Libraries, DS (Datasource) verweist auf die Datenbank, ...
-Man hat die Infrastruktur und gibt das einfach weiter (langsam)
+==== Application Server
+* Application Server
+** Apps
+** Java Libraries
+** DS (Datasource) verweist auf die Datenbank
+** ...
 
-=== Kubernetes
-großer Behälter mit zB. Restserver, Webserver, Datenbankserver, server als Pod
+[quote]
+Man hat die Infrastruktur und gibt das einfach weiter wos langsom is
 
-=== Other
-GraalVM erstellt natives File +
-nativ kompiliert: jar file wird so kompiliert damit das File direkt auf dem Betriebssystem ausgeführt wird
+=== Exkurs Kubernetes
+* Man kann einen großen Behälter mit zB. REST Server als Pod nehmen
+
+=== GraalVm & Natives kompilieren
+* GraalVM erstellt natives File
+
+==== Nativ kompiliert
+* Das jar file wird so kompiliert, damit das File direkt auf dem Betriebssystem ausgeführt werden kann
 
 == NVS 17.09.2021
-
 === Versionierung
 2.3.4
 
@@ -31,64 +40,63 @@ nativ kompiliert: jar file wird so kompiliert damit das File direkt auf dem Betr
 * Minor Level: Neue Funktionen aber immer noch kompatibel mit alten Versionen 4
 * Patch Leve: Keine neuen Funktionen aber Bugfixes 5
 
-=== Other
-
-* Maven ist bei jeder IDE gleich
+=== Andere Meldungen
+* Maven ist bei JEDER IDE gleich
 * Ktor Backend für Kotlin Produkte
 * Groovy Ruby auf JVM
 * Grails
 * Reactive ist asynchrones Programmieren
 
+[.columns]
 === Dynamisch vs Statisch
 
-* Dynamisch: Zur Laufzeit
-** der Server kennt seine Clients noch nicht, die melden sich zur Laufzeit an
+[.column]
+* Dynamisch (Zur Laufzeit)
+** Der Server kennt seine Clients noch nicht, die Clients melden sich zur Laufzeit an
 
-* Statisch: bevor der Laufzeit, Entwurfszeit
-** "vorher reincoden was die Addresses von Clients sind"
+[.column]
+* Statisch (bevor der Laufzeit / Entwurfszeit)
+** "Vorher reincoden was die Addresses von Clients sind"
 
 == SYP 23.09.2021
+=== Presentation Basics
+* Am Anfang sollte man visuelle Sachen (Bilder, Grafiken, usw.) herzeigen um das Publikum zu fesseln
+* Eine Präsentation muss speziell angepasst werden für das Publikum
 
-=== Präsentation Basics
-* am Anfang sollte man visuelle Sachen (Bilder, Grafiken, usw.) herzeigen um das Publikum zu fesseln
-* eine Präsentation muss spezielle angepasst werden
-
-===  WSL2 Kaka
-Der Grund wieso WSL2 nicht gut mit IntelliJ funktioniert, sind die Filesystemprobleme zwischen Linux (ntfs) und Windows (ext4)
+===  WSL2 & IntelliJ
+* Der Grund wieso WSL2 nicht gut mit IntelliJ funktioniert, sind die Filesystemprobleme zwischen Linux (ntfs) und Windows (ext4)
 
 == NVS 24.09.2021
-
 === Monolith vs Microservices
-
 * Monolith:
-** wenn alles in einem großen Projekt ist
+** Wenn alles in einem großen Projekt ist
 * Microservice:
-**  unterteilt Customer, Products & Invoices damit kann man auch Customer und Products auch in anderen Sprachen machen
+** Unterteilt Customer, Products und Invoices, damit kann man auch Customer und Products in anderen Sprachen machen
 
 image::monolithvsmicroservices.png[]
 
-[quote, Jesus, Bibel]
+[quote]
 Microservices are small autonomous services that work together
 
-=== What are Micorservices
-* set of practices
-* increase of speed
-* scale
-* technology-agnostic (technology ist egal)
+=== Was sind Micorservices
+* eine Reihe von Verfahren
+* Erhöhung der Geschwindigkeit
+* Skalierung
+* Technologie-agnostisch (Technologie ist egal)
 
 === Fault Tolerance
-Wenn eine Komponente abschmiert, läuft das ganze Projekt trotzdem weiter.
+Auch enn eine Komponente abschmiert, läuft das ganze Projekt trotzdem weiter
 
 === Microprofile
-enterprised java for a microservice architecture implements microservices design pattern
+Enterprised Java für eine Microservice-Architektur implementiert Microservices-Designmuster
 
 === HTML & REST
 * HTML ist Internet für Menschen
-* REST ist Internet für Maschinen (und Schüler)
+* REST ist Internet für Maschinen
 
-=== Other
+=== Exkurs
 * JWT: JSON Web Token
-* JAX-RS: für REST service
+* JAX-RS: REST Services
 * Java ins Internet mit Servlet
 * Tomcat ist ein Servlet Container
 * Bootstrapping: mit kleiner Software eine große Software zum Laufen bringen
@@ -96,22 +104,25 @@ enterprised java for a microservice architecture implements microservices design
 
 == NVS 27.09.2021
 
-=== symlink
+=== Was ist symlink
 * symlink wird benutzt damit ich meinen Path nicht immer ändern muss, wenn ich eine neue Version von irgendwas habe
 
 == NVS 08.10.2021
+=== Instant & LocalDateTime
+* Instant ist ein ganz genauer Moment
+* LocalDateTime hat keine Zeitzone
 
-=== Bro keine Ahnung
-* Instant: ganz genauer Moment
-* LocalDateTime: keine Zeitzone
+== Stoffwiederholung
+=== JSON
 * Request und Response haben beide einen Header und einen JSON body
-* Im Quarkusterminal steht der Loggingausdruck, dort wird das toString angegeben
-* JSONB -> JSON Binding: das Umwandeln von Java Objekten in JSON
-* Transient: flüchtig, beim Umwandeln in ein json object ist das nicht dabei
-* Persistent: Gegenteil von transient
+* JSON B(inding): Aus Java Objekte JSON Objekte machen
+* Transient: flüchtig, wenn ein Java Objekt in ein JSON Objekt umgewandelt wird, werden die Attribute mit @Transient
+* Persistent: Gegenteil von Transient
+
+=== Coding Practices
 * Quarkus konfigurieren: in applications.properties
 * convention over configuration (es gibt default configurations)
-* entity-klasse: eine fachbereichs Klasse welche in die Datenbank gespeichert wird
+* Entity-Klasse: eine fachbereichs Klasse welche in die Datenbank gespeichert wird
 
 == NVS 11.10.2021
 
@@ -667,3 +678,35 @@ https://htl-leonding-college.github.io/quarkus-docker-gh-actions-demo[Uberjar Tu
 Kleine Linux distro spezialisiert auf GraalVM und Quarkus
 
 IMPORTANT: Überblick über REST-Services kann man mit Swagger machen after production, dafür muss man das mit in die application.properties eintragen
+
+== NVS 21.03.2022
+
+=== Strategien für Id
+* Table
+** Datenbank-Objekt
+* Sequence
+** Datenbank-Objekt
+** Flexibel
+** Start Wert
+** Holt ich einen Batch
+* Auto
+** Datentyp der einfach nach oben zählt
+** Referenzen auf andere Tabellen
+
+=== Natürlicher Schlüssel
+* Meherere Fleder zusammensetzen
+* GEO Id
+
+=== Surogate Schlüssel
+* Künstlicher SChlüssel
+
+=== Zusammengesetzter Schlüssel
+Natürlich + Surogate Schlüssel
+
+== SYP 24.03.2022
+
+=== Design
+
+[quote,Gesetz der Nähe]
+Dinge die gleich sand, gehören zom
+
