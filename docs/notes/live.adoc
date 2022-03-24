@@ -121,108 +121,102 @@ Enterprised Java für eine Microservice-Architektur implementiert Microservices-
 
 === Coding Practices
 * Quarkus konfigurieren: in applications.properties
-* convention over configuration (es gibt default configurations)
-* Entity-Klasse: eine fachbereichs Klasse welche in die Datenbank gespeichert wird
+* Convention over Configuration (es gibt default configurations)
+* Entity-Klasse: eine fachbereiche Klasse, welche in die Datenbank gespeichert wird
 
 == NVS 11.10.2021
-
-=== Bimpfi
-* public ist ein no-go bei variablen (sonst kommt Stütz zu dir nach Hause)
+=== Stoff
+* public ist ein no-go bei Variablen (außer wenn man PanacheEntity Klassen verwendet)
 * URLENCODED: FormParam ist ein HTML Formular
-* httpie forms:http --form POST :8080/api/books title='Quarkus' author='Susi' year='2021' genre='IT'
-* im Internet benutzt man snake_case
-* @Tag(name = ""): gibts im swagger aus
-* @Schema: man sieht die Schemas auf swagger
+* httpie forms:
+[source]
+----
+http --form POST :8080/api/books title='Quarkus' author='Susi' year='2021' genre='IT'
+----
+* im Internet verwendet man snake_case
 
 == SYP 12.10.2021
 === Was ist ein Model
 Ein Model ist ein Abbild der Reality mit Rücksicht auf eine besondere Sichtweise
 
 == NVS 15.10.2021
-=== Deploy und so KA
-* deploy: bereitstellen (genau so wie Ronald Regan Afroamerikaner Crack Cocaine bereitgestellt hat)
+=== Deploy & Compile
+* deploy: etwas bereitstellen
 * kompilieren: Javacode wird in Java Bytecode umgewandelt
-* Compile bedeutet übersetzten
-** der gesamte Code wird vor der Ausführung übersetzt und dann wird der Javacode abgearbeitet in der JVM
-** das Ergebnis ist zb der java bytecode
+** Compile bedeutet übersetzten
+** Der gesamte Code wird vor der Ausführung übersetzt und dann wird der Javacode abgearbeitet in der JVM
 * Interpreter: Quellcode wird schrittweise für jedes Statement abgearbeitet
-* pro Klasse wird ein class file erstellt
+* Pro Klasse wird ein .class file erstellt
 ** .class ist bytecode
 
 === Wie entsteht ein .jar/.war file
 .java -> compile -> .class -> package -> .jar/.war file
-Wie hobn des scho moi gmocht...
+Quasi das mit der Pipeline von der 4ten.
 
 === Maven Lifecycle
 * validate: Project Setup überprüfen (z.B. maven folder structure)
-** java muss in src/main/java sein
+** Javacode muss in src/main/java sein
 * compile: source code in bytecode
-* test: beim Entwickeln schon geschriebene UnitTests welche auf Klassen gehen werden ausgetestet
-* packaging: in jar packagen
-* verity: Integrationtest d.h Zusammenhang der Klassen testen
-* install: install (hehe)
-* deploy: auf mavencentral z.B. bereitstellen
+* test: beim Entwickeln schon geschriebene UnitTests, welche auf Klassen gehen werden ausgetestet
+* packaging: in jar files packagen
+* verify: Integrationtest d.h Zusammenhang der Klassen testen
+* install: install
+* deploy: auf zB mavencentral ereitstellen
 
 === RESTClient
-Widerstandsfähig +
-z.B Wenn bei Netflix etwas abschmiert, muss trotzdem der Service noch Funktionieren
+Wenn bei Netflix etwas abschmiert, muss trotzdem der Service noch Funktionieren
 
-
-=== Microprofile REST Client
-
+==== Microprofile REST Client
 image::restclientmicroprofile.png[]
 
-
-=== Extension hinzufügen
+=== Extensions hinzufügen
 * Bei application.properties den Port angeben
-* quarkus.io
-* REST Client nehmen
+* von quarkus.io die Extention holen
 
-=== Wie geht des mit requests.http?
+=== "Wie geht des mit requests.http?"
 * requests.http
-** exapmles -> post request -> kopieren -> boom
+** examples -> post request -> kopieren -> boom
 
 === Testen
-* "Bei mvn test benutzt man bei z.B. git actions host" ok Stütz
+* "Bei mvn test verwendet man bei zB git actions host" ??
 * Normal: Wenn man das Programm local offen host
 
 === Interface
 * Beim Interface darf nur der Methodenkopf aufgeschrieben werden
-** (aka muss eine Methode deklariert werden)
+** (aka es muss eine Methode deklariert werden)
 
 === "Wos is a Stellvertreter... I man wos is a Proxy"
 * Proxy: Stellvertreter für den Endpoint
 
-=== Meinung zu Reactive von Jesus Stützus Christus
-[quote, Stütz, ???]
-nicht alles muss reactive sein, Datenbankzugriffe und wenn es viele requests gibt  ja mit Kubernetes geht es auch anders
+=== "Herr Professor wos sogn Sie zu Reactive"
+[quote]
+Nicht alles muss reactive sein, Datenbankzugriffe und wenn es viele requests gibt. Ja mit Kubernetes geht es auch anders.
 
-[quote,Janseph Stalin, Übersetzung]
+==== Übersetzung von Jan Kaufmann
 Nicht alles muss reactive sein, Datenbankzugriffe und so schon aber mit Kubernetes gehts auch
 
 === Englisch Unterricht
 * mock: täuschen, simuliert das Verhalten von echten Objekten
 
-=== Next time on Dragonball Z
+=== Plan für nächste Stunde
 circut breaker: ? +
 bulkhear: ? +
 fall back: ? +
 retry: ?
 
 == NVS 18.10.2021
-
 === 2 Arten von REST
-* RestServer: JaxRs
+* RestServer: JaxRS
 * RestClient: im pom-File eine Extension hinzufügen
 ** Ein RestClient ist eine Highlevel API
 
-=== ?
+=== Exkurs
 * Annotation ist ein Endpoint(?), wir haben den Endpoint in den Properties gespeichert, weil man im Code nichts ändern sollte
 * Properties können mit ConfigProperties als Variable im Code gespeichert werden
 * 2 Werte mit Nutzwertanalyse vergleichen
 
 === noSQL
-* noSQL hat eine bessere Performance (BSP voest mit vielen Daten beim Temperaturmessen)
+* noSQL hat eine bessere Performance (Bsp voest mit vielen Daten bei der Temperaturmessung)
 
 === Circuit Breaker
 Stromkreisunterbrecher preventive wieder vorkommende Fehler. +
@@ -234,23 +228,21 @@ Wenn ein Service öfters nicht funktioniert verhindert der Circuit Breaker das A
 ** Half Open: Eine bestimmte Anzahl von versuchen auf den Service erlaubt, sobald einer von den versuchen fehlschlagt, wird der CircuitBreaker wieder auf offen gestellt
 
 === Bulkhead
-Trennwand, wenn was kaputt ist, bleibt das Problem nur in dem Teil
+Trennwand, wenn was kaputt ist, bleibt das Problem nur in dem Teil vom Projekt
 
 === Fall Back
-Wenn eine Methode nicht funktioniert, kann man auf eine FallBack Methode zurückfallen (funny joke)
+Wenn eine Methode nicht funktioniert, kann man auf eine FallBack Methode zurückfallen
 
 === Retry
 Versucht x mal die Methode und wartet
 
 == NVS 22.10.2021
-
 Bulkhead & CircuitBreaker wiederholt
 
 == NVS 04.11.2021
-* graalVM: polyglotte vm, du kannst da "alles" laufen lassen
-* symlink: basically alias d.h wenn die version sich ändert musst du nur den symlink updaten
-
-um etwas zu setzten muss man source /opt/graalvm-home.sh schreiben
+* graalVM: polyglotte VM, du kannst da "alles" laufen lassen
+** um etwas zu setzten muss man source /opt/graalvm-home.sh schreiben
+* symlink: refer back to NVS 27.09.2021
 
 == NVS 08.11.2021
 
@@ -269,37 +261,37 @@ oidc -> open id connect
 
 === GitHub branches & usw
 * Staging Server: Bereitstellungsserver, wenn da alles funktioniert kommt das auf den Produktionserver
-* Git Branches bei GitHub Actions:
+* Git Branches bei GitHub Actions (ich hab leider kein KeyNote):
 
+[source]
+----
 main ---------------------------------->  production
                  \                 /
 stage --------------------------------->
                    \             /
                     \           /
 feature              -----------
-
+----
 * feature: Eigenschaft oder neue Fähigkeit
-* cherry picking: man committed nicht den feature, sondern nur eine kleine Änderung um etwas zu fixen zB
-* für jedes problem ein issue machen
-* angular mocken: "es gibt kleine JSON Server oder man macht angular mocking"
+* cherry picking: man committed nicht den Feature, sondern nur eine kleine Änderung um etwas zu fixen
+* für jedes Problem ein Issue machen
+* Angular mocken: "es gibt kleine JSON Server oder man macht angular mocking"
 
 === Was ist Hugo?
-* Hugo: static webpage generator, alternative zu jekyll
-
+* Hugo: static webpage generator, alternative zu Jekyll
 
 == NVS 12.11.2021
-
 === DevService
-* Dienste in Testcontainer von Quarkus gestartet werden keycloak, kafka usw
+* Dienste in Testcontainer von Quarkus gestartet werden (keycloak, kafka, usw.)
 
 === Authentication vs Authorization
 * Authentication: wer bin ich
 * Authorization: wer darf was (Rollen)
 
 === Keycloak
-* Keycloak wird in application properties konfiguriert
-* Docker daemon muss laufen damit Dev Services gehen wenn die nicht in den Application Properties sind.
-* Im keycloak kann man einen realm machen was sowas wie ein eigener bereich ist, im realm sind mehrere rollen
+* Keycloak wird in application.properties konfiguriert
+* Docker daemon muss laufen damit Dev Services gehen, wenn die nicht in application.properties sind.
+* Im Keycloak kann man einen Realm machen was sowas wie ein eigener Bereich ist, im Realm beinhaltet mehrere Rollen
 * Alternative zu Quarkus Services
 ** zb keycloak in Docker
 
@@ -313,74 +305,73 @@ dev -> test -> staging -> prod
 * NEU
 ** DevOps: kümmern sich um das Produkt bis zum Ende
 
-=== MATURA FRAGE
+IMPORTANT: MATURA FRAGE
+
 * Wie kann ich Java/Quarkus Projekt erstellen?
 ** Antwort: IDE, Commandline, Assistent auf der Webseite
 
-=== Maven ode so
-Bei neuen Versionen wird das ins mvn Verzeichnis geladen, manchmal sollte man den m2 folder löschen dammit die alten Versionen und so gelöscht werden
+=== Maven
+Bei neuen Versionen wird das ins mvn Verzeichnis geladen, manchmal sollte man den m2 folder löschen, dammit die alten Versionen und so gelöscht werden
 
-RBAC: Role Based Access Control
-
-CORS: Cross Origin Resource Sharing
-Zwei verschiedene IPs wollen aufeinander zugreifen
+=== RBAC & CORS
+* RBAC: Role Based Access Control
+* CORS: Cross Origin Resource Sharing
+** Zwei verschiedene IPs wollen aufeinander zugreifen
 
 == SYP 16.11.2021
-
 * User Story: Anwendungsfall für 1 Benutzer
-
 
 == SYP 18.11.21
 === Security
-* Entweder für keycloak oder Quarkus intern elytron security jdbc(bei kleinen sachen)
+* Entweder für keycloak oder Quarkus intern elytron security jdbc(bei kleinen Anwendungen)
 
 === Realm
 * Realm ein eigener Bereich
 
 === SQL Sachen in Quarkus
 * in den application.properties, Namen ändern und Profil dazutun
-* wenn im Resource Ordner in import.sql ist, wird das automatisch aufgerufen
+* Wenn im Resource Ordner import.sql ist, wird das automatisch aufgerufen
 
 Quarkus.io -> All Configurations Options -> Import
 Hibernate ORM
 
-=== Was sind curl und HTTP??
-* curl ... des is de request
-* HTTP... is wos da response is
+=== Was ist curl und HTTP??
+* curl: Request
+* HTTP: Response
 
-=== Websockets oder so
-* admin% is der body vom response
+=== JAX & Webservices
+* admin% is der Body vom Response
 * JAX-RS: Restful Services
 * JAX-WS: Web Sockets
 * JAX-RS/WS basiert auf Servlets
 * Servlet in der einfachsten Form: HTTP Requests und Responses auf Java Seiten im Internet
 
-JsonB(Json Bidning): automatische marshalling von Java Objekten in Json Objekte
-MessagBodyWriter: Is responsible for converting Java types to a stream
+=== Exkurs Video
+* JsonB(Json Bidning): automatische marshalling von Java Objekten in Json Objekte
+* MessagBodyWriter: Is responsible for converting Java types to a stream
 
-XML: Extensible Markup Language (es ist in Baumform)
-Parsen: Syntaxanalysator
+* XML: Extensible Markup Language (es ist in Baumform)
+* Parsen: Syntaxanalysator
 
-=== SAX vs DOM vs JsonP:
-.Wir haben ein XML Dokument und wollen das in den Computer speichern.
-
+=== SAX vs DOM:
+.Wir haben ein XML Dokument und wollen das in den Computer speichern
 * DOM, Document Object Model: Speichert alles in den Hauptspeicher in Baumform
 * SAX, Simple API for XML: Parsed durch den XML Code und es wird mit einer Callbackmethode gefiltert
-* JsonP, Json Processer:
 
 === Jax und Json sind verschiedene Implementierungen
 Json: Standard
 Jax: Weiter verbreitet
 
-=== Nachteil von REST-Services:
+=== REST
+==== Nachteil von REST-Services:
 * REST-Services sind veraltet
 * GitHub Dokumente sind sehr lang (mit GraphQL ist es kürzer)
 
-=== Unterschied GraphQL und REST Client:
+==== Unterschied GraphQL und REST Client:
 * REST hat vordefinierte Antworten
 * Bei GraphQL kann sich der Client heraussuchen was genau gebraucht wird (ungefähr wie eine SQL Query)
 
-=== gRPC "Wie REST aber ein modernes REST":
+==== gRPC "Wie REST aber ein modernes REST":
 * Binärformat wie REST, nur schneller
 * Quasi der Nachfolger von REST
 * basiert auf HTTP2 und Buffers
@@ -388,29 +379,27 @@ Jax: Weiter verbreitet
 === UMI
 UMI wird benutzt, wenn man etwas Async machen will (in C# wäre das ein Task)
 
-Non-Blocking I/O (Event Loop) kennen wir von NodeJS
-GraphQL: wir sind der server
-GraphQL Client: wir greifen auf einen server zu
-Flyway: versioniert von Datenbanken
-
+==== Extra
+* Non-Blocking I/O (Event Loop) kennen wir von NodeJS
+* GraphQL: wir sind der Server
+* GraphQL Client: wir greifen auf einen Server zu
+* Flyway: Versionieren von Datenbanken
 
 == NVS 22.11.2021
-
 === WebSockets
-Bidirektionale Verbindung zwischen Client und Server, schickt Binärdaten
+* Bidirektionale Verbindung zwischen Client und Server, schickt Binärdaten
 
 === SSE
-schickt kurze Nachrichten
+* schickt kurze Nachrichten
 
 === Kafka
-MessageBroker, zentral auf Server schicken und an gewisse Topics anmelden -> kriagt ma Nachrichten
+MessageBroker: zentral auf Server schicken und an gewisse Topics anmelden -> kriagt ma Nachrichten
 
 == SYP 30.11.2021
 === SCRUM
-Scrum sollte von Sicht der User gemacht werden.
+Scrum sollte von Sicht der User gemacht werden
 
 == NVS 10.12.21
-
 === AAA:
 * Arrange
 * Act
@@ -430,9 +419,7 @@ Scrum sollte von Sicht der User gemacht werden.
 * Was das Geschäft ausmacht (Verkauf, Rabatt, usw.)
 * Im Service ist die Business Logic drinnen
 
-
 == NVS 14.01l2022
-
 === Websocket:
 * Netzwerkprotokoll
 * auf TCP basierend
@@ -451,32 +438,33 @@ Scrum sollte von Sicht der User gemacht werden.
 
 === Synchron und Asynchron
 * synchron: blockierend
-** Ein Befehl wartet auf den anderen, um fertig zu werden
+** Ein Befehl wartet auf den Anderen um fertig zu werden
 * asynchron: nicht blockierend
-** ich fange einen Befehl an und bevor der Befehl fertig ist, fangt der nächste Befehl an
+** Ich fange einen Befehl an und bevor der Befehl fertig ist, fängt der nächste Befehl an
 
 === 3 Prinzipien der HTL Leonding
 * Sequence
 * Verzweigung
 * Schleife (setzt sich aus Sequence und Verzweiflung zusammen)
 
-=== Handshake: Ein Client fragt an welche Protokolle (gegenseitiges vorstellen)
+=== Handshake
+Ein Client fragt an welche Protokolle (gegenseitiges Vorstellen)
 
 === JavaSE vs JakartaEE
 * Java SE: für Desktop
 * JakartaEE: für verteilte Systeme
-** Enterprise Edition: Firma Version (für Firmen duh)
+** Enterprise Edition: Firma Version
 * Quarkus: schneller weil es keinen Application Server gibt sondern nur ein application.properties file
 
 === Canon
-alles ist zusammen oder so
+alles ist zusammen
 
 === 3- tier Architecture:
 * Presentation
 * Business Logic
 * Persistence Layer
 
-==== AYO
+==== Wichtig
 Logging und Security ziehen sich durch die ganze Architektur (Aspekte)
 
 === Kafka:
@@ -488,7 +476,7 @@ Logging und Security ziehen sich durch die ganze Architektur (Aspekte)
 ** Gelöscht sobald gelesen
 ** Einzelner Consumer auf Queue
 
-==== Englisch Unterricht Part ?
+==== Englisch Unterricht Part 2
 * Broker: Vermittler
 * ZooKeeper: Zoowerter pflegt Tiere (pflegt Geräte in der Firma)
 
@@ -498,23 +486,21 @@ Logging und Security ziehen sich durch die ganze Architektur (Aspekte)
 * AnazonSQS (verwendet RabbitMQ)
 
 ==== Kafka vs. RabbitMQ
-Kafka:
+===== Kafka
 * Event Streaming Platform
 * Payload eher klein (max. 1MB)
 * 1. Milionen Nachrichten pro Sekunden
 * Dumb Broker / Smart Consumer
-** Server bekommt nachrichten aber macht nicht un der Consumer macht die arbeit
+** Server bekommt Nachrichten aber macht nicht un der Consumer macht die Arbeit
 
-==== RabbitMQ:
+===== RabbitMQ:
 * Message Queueing Platform
 * Payload groß
 * 4k-10k Nachrichten pro Sekunde
 * Smart Broker / Smart Consumer
 
-
 == SYP 18.01.2022
-
-=== V-Modell 43te Wiederholung
+=== V-Modell Wiederholung (sehr sehr grob)
 * Was?
 ** SysSpec
 ** Grobentwurf (Schnittstellen, damit man die testen kann)
@@ -522,30 +508,24 @@ Kafka:
 ** Feinentwurf
 * Implementierung
 
-Test: Vergleich mit einem richtigen Wert
-
 
 == NVS 21.01.2022
 
-* ./mvnw: man braucht auf einer anderen Maschine Maven nicht installieren
+* ./mvnw: braucht man wenn auf einer anderen Maschine Maven nicht installieren will
 (sonst wird der PATH immer länger)
 
-* ./m2: die Libraries werden zentrall im m2 Ordner gespeichert damit man sich sie nicht immer wieder neu runterladen muss
+* ./m2: die Libraries werden zentrall im m2 Ordner gespeichert, damit man sie nicht immer wieder neu runterladen werden
 
 === Shebang / HashBang
-
 [source, bash]
 ----
 #!/usr/bin/env -S java --class-path lib/jlayer-1.0.1.jar --source 11
 ----
-Bei jedem starten wird ein neues Terminal geöffnet
 
-Server-Zentriert:
-Client-Zentriert:
+=== Exkurs
 Rendern: Für Ausgabe vorbereiten
 
 == NVS 28.01.2022
-
 === Was ist REST?
 * Internet für Maschinen
 
@@ -581,13 +561,8 @@ method(var)
 ==== Typisierte Art
 * im Ordner BookingResource werden die HTML files nach den Methoden vom File BookingResource benannt
 
-==== Untypisierte Art
-
-==== "im Template sagen was die Klasse ist"
-
 == NVS 31.01.2022
-
-=== How to Verbesserung
+=== "Wie sollte man eine Testverbeserung machen?"
 1. Fehlermeldung
 2. Fehlercode
 3. Erklärung vom Fehler
@@ -600,15 +575,13 @@ IMPORTANT: Man sollte mit AsciiDoc umgehen können!!!
 * Nein, weil das ja im Browser ohne Java Objekte ist
 * Wenn ich eine Liste anzeigen will oder so muss ich alles vor der Laufzeit machen
 
-
 == SYP 01.02.2022
-
 === Besprechung Vini & Felix
-*  Gute Doku: wenn eine Commitmessage gut geschrieben ist reicht das schon aus
-*  Projekt planen auf YouTrack
-*  Gespräche gehören auch protokolliert, wenn man das macht, kann ich immer nachschauen was wer mal gesagt hat
-*  SYP benotet, ob man erwachsen genug ist
-* Gesamtüberblick über das Projekt
+* Gute Doku: wenn eine Commitmessage gut geschrieben ist reicht das schon aus
+* Projekt planen auf YouTrack
+* Gespräche gehören auch protokolliert
+** wenn man das macht, kann ich immer nachschauen was wer mal gesagt hat
+* SYP benotet, ob man erwachsen genug ist
 * Quellen immer irgendwo aufschreiben, um bei Fehler nachzuschauen
 * Immer SoftWrap bei Fehler
 * Neuste Versionen von Libraries verwenden
@@ -616,29 +589,28 @@ IMPORTANT: Man sollte mit AsciiDoc umgehen können!!!
 === Wichtig bei Git
 * Regressiontesting
 
+==== Git Flow
 image::git-branches.png[]
 
+==== GitHub Flow
+image::githubflow.png[]
 
 == SYP 03.02.2022
-
 === QuTe again
 * in Entity eine Methode angeben
-* im HTML in {} z.B {person.calcIrgendwas(person_index)}
+* im HTML in {} zB {person.calcIrgendwas(person_index)}
 * bei Fragen auf w3schools gehen
 * DTO file nehmen für Schönheit
 
 == SYP 03.03.2022
-
-=== Wieso GH Slides und nicht PowerPoint?
+=== "Wieso GH Slides und nicht PowerPoint?"
 * Versionierbar
 * In der selben Sprache dokumentieren (Doc As Code)
 
 == NVS 04.03.2022
-
 === altes Quarkus Backend ändern
-
 ==== nicht zu alt
-* pom.xlm ändern Versionsnummer ändern
+* pom.xml Versionsnummer ändern
 
 ==== antik
 * quarkus.io neues Projekt
@@ -662,7 +634,6 @@ https://2122-5ahitm-sew.github.io/2122-5ahitm-sew-lecture-notes/#_html_http[Zusa
 * Ergebnis vom Kompilieren
 
 == NVS 18.03.2022
-
 === Uber jar
 * application.properties
 * pom.xml
@@ -680,7 +651,6 @@ Kleine Linux distro spezialisiert auf GraalVM und Quarkus
 IMPORTANT: Überblick über REST-Services kann man mit Swagger machen after production, dafür muss man das mit in die application.properties eintragen
 
 == NVS 21.03.2022
-
 === Strategien für Id
 * Table
 ** Datenbank-Objekt
@@ -704,9 +674,7 @@ IMPORTANT: Überblick über REST-Services kann man mit Swagger machen after prod
 Natürlich + Surogate Schlüssel
 
 == SYP 24.03.2022
-
 === Design
-
 [quote,Gesetz der Nähe]
 Dinge die gleich sand, gehören zom
 
