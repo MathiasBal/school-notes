@@ -145,21 +145,50 @@ git commit -m "commit message #issue_id command (zB Done)"
 
 == SYP 07.10.2021
 === Verschiedene Systemtests
+image::systemtests.png[]
+Datenbanken, Backend und Frontend alleine testen
 
+=== Deployment
+* (Software) bereitstellen
+* Besteht aus mehreren Stufen
+** (clean, validate, compile, test, ..., site, deploy)
+
+* GitHub Actions: Automatisierung von Prozessen
+
+=== Build Tools
+==== Maven
+* Lifecycle
+* streng verglichen zu Gradle
+* in XML
+
+==== Gradle
+* mit Groovy (Ruby) programmiert
+* moderner
+* flexibler
+* selber Downloadmechanismus wie Maven
+
+==== Ant
+* keine Reglung
+* alt
+* kein Standard
+* kein automatischer Download von Dependencies
+
+=== SSH
+* Private to Public key
 
 == NVS 08.10.2021
 === Instant & LocalDateTime
 * Instant ist ein ganz genauer Moment
 * LocalDateTime hat keine Zeitzone
 
-== Stoffwiederholung
-=== JSON
+=== Stoffwiederholung
+==== JSON
 * Request und Response haben beide einen Header und einen JSON body
 * JSON B(inding): Aus Java Objekte JSON Objekte machen
 * Transient: flüchtig, wenn ein Java Objekt in ein JSON Objekt umgewandelt wird, werden die Attribute mit @Transient
 * Persistent: Gegenteil von Transient
 
-=== Coding Practices
+==== Coding Practices
 * Quarkus konfigurieren: in applications.properties
 * Convention over Configuration (es gibt default configurations)
 * Entity-Klasse: eine fachbereiche Klasse, welche in die Datenbank gespeichert wird
@@ -245,6 +274,8 @@ Nicht alles muss reactive sein, Datenbankzugriffe und so schon aber mit Kubernet
 * Retry
 
 == NVS 18.10.2021
+image::microservicerest.png[]
+
 === 2 Arten von REST
 * RestServer: JaxRS
 * RestClient: im pom-File eine Extension hinzufügen
@@ -450,7 +481,7 @@ Scrum sollte von Sicht der User gemacht werden
 * AssertJDB: Testen der Objekte in der Datenbank
 
 == NVS 20.12.21
-=== NVS is DBI???
+=== Datenbanken
 * Constraint: Einschränkung
 ** Primary Key Constraint: not null, nicht doppelt
 * Cascade: Weitergabe
@@ -566,6 +597,42 @@ Logging und Security ziehen sich durch die ganze Architektur (Aspekte)
 Rendern: Für Ausgabe vorbereiten
 
 == NVS 23.01.2022
+=== Fachwörter für Unwissende, Unterrichtstouristen & Buzzword Bingo Spieler
+* Inject = Instanz erstellen
+* Hot Reload: man muss damit nicht immer das Projekt neu kompilieren bei einer kleinen Codeänderung
+* LookupTable: Dropdowntabelle
+
+==== Qute (ganz ganz kurz)
+* Template Instance: Website (HTML)
+** Templates sind untyped
+
+[source, java]
+----
+@CheckedTemplate
+public static class Templates {
+    public static native TemplateInstance item(Item item);
+}
+----
+
+==== Schleifen
+[source, qute]
+----
+{#for item in items}
+  {item.name}
+{/for}
+----
+
+=== Parameter
+* Formaler Parameter:
+[source, java]
+----
+public void method(Item item);
+----
+* Aktueller Parameter:
+[source, java]
+----
+service.findItem(id);
+----
 
 == NVS 28.01.2022
 === Was ist REST?
