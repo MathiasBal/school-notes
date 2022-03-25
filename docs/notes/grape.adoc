@@ -1,5 +1,4 @@
 = 🍇 Notes
-
 :toc:
 ifndef::imagesdir[:imagesdir: ../images]
 
