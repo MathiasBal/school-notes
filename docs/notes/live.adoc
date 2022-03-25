@@ -1,5 +1,5 @@
-= Mitschrift
-2022-03-24
+= 🍇 Notes
+
 :toc:
 ifndef::imagesdir[:imagesdir: ../images]
 
