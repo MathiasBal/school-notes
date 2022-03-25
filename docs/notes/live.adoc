@@ -777,7 +777,7 @@ IMPORTANT: Überblick über REST-Services kann man mit Swagger machen after prod
 * GEO Id
 
 === Surogate Schlüssel
-* Künstlicher SChlüssel
+* Künstlicher Schlüssel
 
 === Zusammengesetzter Schlüssel
 Natürlich + Surogate Schlüssel
