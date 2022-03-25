@@ -129,8 +129,23 @@ git commit -m "commit message #issue_id command (zB Done)"
 ----
 
 == NVS 01.10.2021
+=== Wiederholung Microservice
+* Microservice: Kleines autonomes Progamm, Gegenstück zum Monolith
+** Unabhängige Komponenten in einem Projekt
+
+=== Styles
+* kebab-case
+* camelCase
+* snake_case
+* PascalCase
+
+=== JSONB & Quarkus
+* Zentrale Configdatei bei Quarkus: application.properties
+* JSONB: Java Objekt wird mit JSON Objekt automatisch gebunden
 
 == SYP 07.10.2021
+=== Verschiedene Systemtests
+
 
 == NVS 08.10.2021
 === Instant & LocalDateTime
@@ -224,10 +239,10 @@ Nicht alles muss reactive sein, Datenbankzugriffe und so schon aber mit Kubernet
 * mock: täuschen, simuliert das Verhalten von echten Objekten
 
 === Plan für nächste Stunde
-circut breaker: ? +
-bulkhear: ? +
-fall back: ? +
-retry: ?
+* Circut Breaker
+* Bulkhead
+* Fall Back
+* Retry
 
 == NVS 18.10.2021
 === 2 Arten von REST
