@@ -786,3 +786,12 @@ Natürlich + Surogate Schlüssel
 [quote,Gesetz der Nähe]
 Dinge die gleich sand, gehören zom
 
+== SYP 31.03.2022
+=== Cargo Cult
+* Leute machen irgendwas ohne zu wissen wieso die das so machen
+
+=== SLF4J
+* Simple Logging for Java
+
+=== Runtime Exceptions sind gut weil...
+* man kein throws braucht (unchecked)
