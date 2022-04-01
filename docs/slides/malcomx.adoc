@@ -5,6 +5,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 == Wer ist Malcolm X?
 
+[.columns]
 === Frühe Kindheit
 [.column]
 * geb. Malcolm Little in Nebraska
@@ -15,10 +16,15 @@ und an ein Bahngleis gebunden
 [.column]
 image::derboy.jpg[width=50%]
 
+[.columns]
 === Späten Jugendjahren
+[.column]
 * mit 13 Schule abgebrochen
 * ins Gefängnis gewandert für 10 Jahre
 ** im Gefängnis lernte er über die "Nation Of Islam", da diese Afroamerikaner annahm und ein Zufluchtsort vor Weißen war
+
+[.column]
+image::tot.jpg[]
 
 === Nation of Islam
 Die NOI strebt an das soziale und wirtschaftliche Umfeld der Afroamerikaner zu stärken
