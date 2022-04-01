@@ -8,8 +8,11 @@ ifndef::imagesdir[:imagesdir: ../images]
 [.columns]
 === Frühe Kindheit
 [.column]
+[.font-smaller]
 * geb. Malcolm Little in Nebraska
+[.font-smaller]
 * Sohn eines Bürgerrechtsaktivist (& Priester)
+[.font-smaller]
 * Vater von der KKK gekidnapped als Malcolm's Mutter noch mit ihm schwanger war
 und an ein Bahngleis gebunden
 
