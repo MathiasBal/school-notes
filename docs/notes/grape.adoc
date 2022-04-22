@@ -795,3 +795,80 @@ Dinge die gleich sand, gehören zom
 
 === Runtime Exceptions sind gut weil...
 * man kein throws braucht (unchecked)
+
+
+== SYP 21.04.2022
+
+=== KLassische Vorgehensmethoden
+* Wasserfall
+*** Anforderungsentwicklung
+**** Grobentwurf
+***** Fienentwurf
+****** Implementierung
+******* Betriebw
+
+==== Kennzeichen von Klass. VM
+* das gesamte Funktionsvorbet vorher festgelegt
+* Änderungen an der Funktionalität in späteren Phasen zB. Implementierung füren zu hohen Kosten
+* Testen nicht besonders gut integriert
+
+===== V-Model
+
+
+* Validieren: Mach ich die Dinge richtig?
+
+
+
+* Verifizieren: Mach ich die richtigen Dinge?
+
+=== Agile Mathode
+* XP (eXtreme Programming)
+** Anforderungsdefinition
+** Entwickulng
+** Implimentierung
+** Test
+
+In jedem kleinen Schritt
+
+* Scrum
+* Kanban
+
+=== Gen
+* Lauffähig
+
+
+
+=== Allgemeine Softwareentwicklung
+* Testen QA,Quality Assurance / QS,Qualitätsicherung
+* Measurement / Performance
+* Health: nicht ausfallen
+** Resilience: falls was ausfallt, etwas was benutzt werden kann
+** Bakc-Preassure:
+
+IMPORTANT: Reactive Manifesto
+
+
+=== Instrumentierung
+* Code dazugeben, der nicht gebaucht wird
+
+=== Dashboard
+* Rückmeldungen
+* Anzeigen von Daten
+* Aufbereitet
+
+=== Wie sollen Tests gemacht sein
+* Unabhängig
+* Logisch für Auftraggeber
+
+=== Berichtswesen
+* Doc-As-Code
+
+=== Scaleable
+* ohne große Änderung, Änderung von Resourcen (wenn z.B mehr User auf Seite)
+
+=== Merkmale von Objekte
+* Identity
+* Polymorphie
+* Vererbung
+* Geheimnissprinzip
+
