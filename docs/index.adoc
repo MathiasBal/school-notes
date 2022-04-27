@@ -12,7 +12,8 @@ ifndef::imagesdir[:imagesdir: images]
 == Daves Index
 https://ignjatovic.at[David ist sehr cool]
 
-== Lern-Hase
-für die Motivation
+== LAA
 
-image::belmin.png[]
+image::IMG_20220427_134027.jpg[]
+
+image::IMG_20220427_134015.jpg[]
