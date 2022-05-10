@@ -3,15 +3,11 @@ ifndef::imagesdir[:imagesdir: images]
 
 == School Notes
 * https://mathiasbal.github.io/school-notes/notes/grape.html[Live Mitschrift]
+* https://mathiasbal.github.io/school-notes/notes/syp-matura.html[SYP Matura]
+
 
 == Termine
 * https://mathiasbal.github.io/school-notes/dates/project-award.html[Project Award]
 
 == Daves Index
 https://ignjatovic.at[David ist sehr cool]
-
-== LAA
-
-image::IMG_20220427_134027.jpg[]
-
-image::IMG_20220427_134015.jpg[]
