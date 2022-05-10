@@ -3,8 +3,6 @@ ifndef::imagesdir[:imagesdir: images]
 
 == School Notes
 * https://mathiasbal.github.io/school-notes/notes/grape.html[Live Mitschrift]
-* https://mathiasbal.github.io/school-notes/notes/syp.html[SYP (WIP)]
-* https://mathiasbal.github.io/school-notes/notes/nvs.html[NVS (WIP)]
 
 == Termine
 * https://mathiasbal.github.io/school-notes/dates/project-award.html[Project Award]
