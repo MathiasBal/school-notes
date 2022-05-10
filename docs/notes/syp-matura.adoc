@@ -228,3 +228,13 @@ https://livebook.manning.com/book/pipeline-as-code/chapter-1/31
 ** Job in Steps unterteilen
 * Ergebnis von CI Test: Package
 
+=== Was ist ein DevOp
+
+=== Ansible & Terraform
+
+=== Docker & Kubernetes
+* Kubernetes vs Docker Swarm
+
+=== Mqtt & Kafka
+* Event Driven
+* Test Driven
