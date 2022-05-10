@@ -200,3 +200,31 @@ Beim Kunden testen
 Alte Tests nochmal durchtesten
 
 === Quarkus Mockito
+
+
+=== Vorgehensmodelle
+* V Model
+* XP 
+
+=== Agile Vorgehensmodelle
+* Scrum
+** Produktbacklog, und Sprintbacklog
+
+=== Continoues Integration
+* Erstellen Vorgehensweise für CI
+
+=== Unterschied Erweiterung CD
+
+https://livebook.manning.com/book/pipeline-as-code/chapter-1/31
+
+=== Lifecycle von Software
+
+=== Was ist ein Anwendungsszeario
+
+=== Github Actions
+* Wieso 
+* Was kann man machen
+* Paralell Laufen:
+** Job in Steps unterteilen
+* Ergebnis von CI Test: Package
+
