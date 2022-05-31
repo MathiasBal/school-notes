@@ -3,16 +3,8 @@ ifndef::imagesdir[:imagesdir: images]
 
 == School Notes
 * https://mathiasbal.github.io/school-notes/notes/grape.html[Live Mitschrift]
-* https://mathiasbal.github.io/school-notes/notes/syp.html[SYP (WIP)]
-* https://mathiasbal.github.io/school-notes/notes/nvs.html[NVS (WIP)]
-
-== Termine
-* https://mathiasbal.github.io/school-notes/dates/project-award.html[Project Award]
+* https://mathiasbal.github.io/school-notes/notes/syp-matura.html[SYP Matura]
+* https://mathiasbal.github.io/school-notes/notes/sap-matura.html[SAP Matura]
 
 == Daves Index
 https://ignjatovic.at[David ist sehr cool]
-
-== Lern-Hase
-für die Motivation
-
-image::belmin.png[]

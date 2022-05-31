@@ -1,0 +1,240 @@
+= Matura Notes
+:toc:
+
+== Körbe
+Bild
++ PlantUML
+
+== Buzzword Bingo
+* Definition
+* Abkürzungen
+* Beispiel
+
+IMPORTANT: SYP Buch ist wichtig
+
+== 30 Fragen
+
+=== Charakterisieren Sie Merkmale und Eigenschaften eines Projekts:
+* Grundbegriffe (Ab Seite 3)
+
+* 2. Projektmerkmale aus dem Buch, einfach zeichnen
+** Inhaltliche Zielsetzung (Gegenstand des Projekts)
+** Zeitliche Zielsetzung
+...
+
+* Unterschied Projektergebnis und Zielsetzung
+** Ziel: Leistungswirkung: Mehr Geld
+** Ergebnis: Leistung: Spotify hat gute Oberfläche
+
+* Kompetenz:
+** Was kann wer
+** Welche Aufgaben hat wer
+
+* Projektphasen
+** Initierung
+*** Ganz Grob was hab ich
+** Planung
+*** Strukturplan
+*** Meilensteine definieren
+*** Analyse
+** Durchführung
+
+
+=== Ab wann spricht man von einem Projekt, ermitteln Sie an Projektarten
+Seite 13 oder 14
+
+
+=== Projektmanagement
+Seite 29, Zertifizierungen kennen
+
+=== Kreativitätstechnik, Gliederung, usw.
+Bis Seite 48
+
+=== Zielplanung
+* Zielbestimmung
+* Ziel müssen einfach sein
+
+* Unterschied Auftrag & Antrag
+* Projektgliederung
+
+* Meilensteinliste (nicht besonders wichtig, weil Scrum wichtiger ist)
+
+
+=== Projektstart
+* Kick-Off Meeting
+** Commitment, Bekennnung
+
+=== Organisationsformen
+* Task-Force, Beispiel Mondlandung
+** Aus Hierarchie rausgelöst
+** Einfluss Projektorganisations
+*** Bleiben in der Hierarchie
+*** Einsatzbereiche, Stabsstelle (is nur ein Berater zB Controlling, der schafft nix an, er geht zum Chef)
+** Matrix-Organisation (kritisch)
+*** Einsatzbereiche, normale 
+
+=== Effizients der Projektstrukturen erklären
+* Richtige Organisationsform auswählen und sagen wieso des richtig ist
+
+=== Projekltbregriff, Kriterien
+
+=== Bennen Sie Kreativitätstechniken
+* Morphologischer Kreativitätstechnik
+* Brainstorming
+* 635
+* Mindmap 
+* Delphimethode
+
+=== Wichtigste Teile eines Projektauftrags nennen
+* Risiken benennen
+
+=== Projektstrukturplan
+* Pordukt, Objekt und Projektstrukturplan
+Seite 114
+
+
+=== Benne die Diagramme für Zeitpläne
+* Gant
+* CPM
+* MPM
+* Scrum
+=== Usability
+==== Gestallten Programm und begründen wieso so Gestaltet, ISO 92410 Norm
+* GUI Grundprinzipien, Gestaltgesetz
+ux-ui-design.de
+* Man muss sich wohlfühlen
+
+=== Anforderungsanalyse erläutern
+* Interview
+* Fragebogen
+* Beobagchtung
+* Selbstauswertung
+
+=== Pflichtenheft
+* wichtigste Kapitel
+** BSP zuordnen zu Kapitel
+* Pflichtenheft vs Lastenheft
+* Was darf nicht ins Pflichtenheft
+* Nichtfunktionale Anforderungen laut ISO 9126
+* Effektivität vs Effizients
+** hohe Effektivität: Ziel wird getroffen
+** hohe Effizients: etwas (hoffentlich Ziel) wird so kurz/schnell wie möglich erreicht, möglich wenig Input
+** Richtigkeit
+** Sicherheit
+** Erwartungswert
+** Robustheit, Programm sagt nicht byebye wenn was falsch ist (WICHTIG)
+** Benutzbarkeit, Gebrauchbarkeit (WICHITG)
+** Bedienbarkeit, Attraktivität (WICHITG)
+
+
+=== UML & Aktivitätsdiagramm
+* Swimlanes
+* Prozesse
+* usw.
+
+=== Use Case Diagramme
+* Analysieren
+* Werten
+* Wie kann man die Aussagekraft verbessern (mit Tabellle, Voraussetzungen, Normaler Ablauf, Probleme)
+
+=== Deploymentdiagramm, Vertailungsdiagramm, Zustandsdiagramm
+
+=== Konstruktive Maßnahmen der Qualitätssicherung
+Buch Seite 309
+* Richtige Vorgehensmodel
+** Tätigkeiten und Ergebnisse der Tätigkeiten
+* Gute Dokumentation
+* Case Tool: Computer Aided Softwareengineering
+* IDEs
+* Testwerkzeuge
+
+=== Welcher Kompromiss bei Vorgehensmodelle
+
+=== Basline Variante und Revision
+Buch 319
+* Qualität is das was der Kunde will
+
+=== Testdriven Development
+
+* TDD Zyklus graphisch darstellen
+** UnitTest schreiben
+** Implementieren (nur so viel, dass der Test geht)
+** Sauberer Code, bissi umändern (Refractor)
+** Nächster Test
+
+=== AAA Pattern mit Beispiel
+* Arrange
+* Act
+* Assert
+* Oder Given, When, Then
+
+=== Testdoubles (nach Matrin Fowler) Beispiele Nennen
+* Dummy kann nix, nur für Parameter
+* Fake kann bissi arbeiten, vereinfachtes Objekt
+* Stubs & Mocks, Stub kann nur einen Wert, Mock kann 3x selben Wert und beim vierten Mal ein Anderes 
+* Spies: Ausspionieren
+
+=== Analytische Maßnahmen
+Buch Seite 322
+* Beispiele
+* Alles ist im Buch 
+
+=== V Model
+* Frameworks
+* GUI Testen (Selenium)
+
+=== Arten von Tests 
+
+=== Lasttest
+
+=== Stresstest
+Last bis maximum erhöhen
+
+=== Smoketest
+Wenn ein Test nicht geht, dann aua
+
+=== Feldtest
+Beim Kunden testen
+
+=== Regressionstest
+Alte Tests nochmal durchtesten
+
+=== Quarkus Mockito
+
+
+=== Vorgehensmodelle
+* V Model
+* XP 
+
+=== Agile Vorgehensmodelle
+* Scrum
+** Produktbacklog, und Sprintbacklog
+
+=== Continoues Integration
+* Erstellen Vorgehensweise für CI
+
+=== Unterschied Erweiterung CD
+
+https://livebook.manning.com/book/pipeline-as-code/chapter-1/31
+
+=== Lifecycle von Software
+
+=== Was ist ein Anwendungsszeario
+
+=== Github Actions
+* Wieso 
+* Was kann man machen
+* Paralell Laufen:
+** Job in Steps unterteilen
+* Ergebnis von CI Test: Package
+
+=== Was ist ein DevOp
+
+=== Ansible & Terraform
+
+=== Docker & Kubernetes
+* Kubernetes vs Docker Swarm
+
+=== Mqtt & Kafka
+* Event Driven
+* Test Driven

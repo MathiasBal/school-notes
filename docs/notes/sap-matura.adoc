@@ -1,0 +1,67 @@
+= SAP Stoff
+
+== KÜBEL 5 BETRIEB VON IKT SYSTEM:
+
+=== Betriebswirtschaftliche Software
+** R3, S4, Fiori, BrownFeet & GreenFeet Ansatz
+** Kernbereich
+** Add-Ons
+** CRM, SRM, ...
+** ERP
+** Standard- vs Individualsoftware
+** Oracle
+
+=== Workflows
+** Schritttypen
+** Startergeinis
+** WF Initioator
+** (Start)Aufgabe
+** Objekte Methoden
+** Lokalese Objekt
+** Business Workplace
+*** Vorteil
+
+== KÜBEL 6 Beschaffungs- & Systemkonfig:
+
+=== Materalstamm
+** Sichten
+** Klassifizierung
+*** Merkmal
+
+=== Beschaffung
+** BANF
+** Angebot
+** Anfrage
+** Bestellung
+** Preisspiegel
+** SUP
+** Submissionsnummer
+** Missionsnummer
+** MIGO
+** Wareneingang & Warenausgang
+** Umbuchung
+** Revservierung
+** verfügbarer Bestand
+** reservierter Bestand
+** Prozess
+
+=== Personal
+** Stelle, Planstelle, Vakanz, Bewerber, Mitarbeiter
+** Qualitätsvergleich (Ausprägung)
+** Accessmentcenter
+** Infotypenkonzept
+
+=== BAPI, JCO; ABAP 
+
+** Webservice vs BAPI
+** Skalarstrukturtabelle
+** Mit der Schnittstelle spielen
+** Import- & Exportparameter
+** Returnparameter
+
+** Inboundcalls
+** Outboundcalls
+** RFC-Library
+** Beispielcode in Java
+
+** Word Dokument 1-4
