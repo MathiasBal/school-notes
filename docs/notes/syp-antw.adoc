@@ -1,0 +1,73 @@
+= Fragenkatalog Antworten
+ifndef::imagesdir[:imagesdir: ../images]
+
+== 1 Projektmanagement
+1. Merkmale:
+** inhaltliche Zielsetzung +
+Wenn das Projektziel erreicht wird, dann wird das Projekt beendet
+** zeitliche Zielsetzung +
+Das Projekt ist zeitlich befristet
+** relative Neuartigkeit +
+Neuartig und einmalig, routinemäßige Abwicklung nicht möglich
+** beschränkte Ressourcen +
+Verfügbare Mittel begrenzt, Kosten & Budget geplant & festgelegt
+** Komplexität +
+Anzahl, Verschiedenartigkeit und Abhängigkeit von Teilaufgaben, Anzahl der Personen
+** Risiko +
+Wahrscheinlichkeit, dass Rahmenbedingungen, Ziele und Auswirkungen nicht erreicht werden
+
+** Die Merkmale mit den Rahmenbedingungen werden gemeinsam betrachtet
+
+2. Organisationsformen
+** Task Force
+** Matrixorganisation
+** Einflussprojektorganisation
+** Projektorientierte Teilorganisation
+** Projektorientiertes Unternehmen
+ Seite 90
+
+3. Gut für Projektaufgaben, schlecht für Routineaufgaben
+4. Task Force, weil die Aufgabe nicht einfach ist und speziell eine Gruppe
+außerhalb der normalen Organisationsform gebraucht wird
+
+== 9 Usability
+* Gestaltgesetze
+
+== 10 Anforderungsanalyse
+* Interview
+* Fragebogen
+* Beobachtung
+* Selbstaufschreibung
+* Dokumentenauswertung
+* CRC (nicht im Unterricht durchgemacht)
+
+== 11 Pflichtenheft
+1. Ausgangssituation
+2. Ist-Zustand
+3. Problemstellung
+4. Aufgabenstellung
+5. Ziele
+6. Mengengerüst
+7. Rahmenbedingung
+
+Lastenheft ist from Auftraggeber, +
+Wie was gemacht wird ist nicht im Pflichtenheft (ist im Entwurf), +
+Organisatorische Rahmenbedingungen sind im Projekthandbuch
+
+== 12 TDD
+image::tdd.png[]
+
+Nach Inhalt?
+
+== 25 Version Control
+* Probleme
+** Schlechte Übersicht
+** nicht effizientes arbeiten
+** Vorgehensweisen können nicht gut ausgemacht werden
+** Bei Fehlern wird es schwer das Projekt zurückzusetzen
+** CI CD nur unter sehr viel Aufwand
+* Branches
+image:git-branches.png[]
+* CI
+image:ci-pipeline.png[]
+image:ci-cd.png[]
