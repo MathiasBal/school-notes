@@ -59,6 +59,11 @@ image::tdd.png[]
 
 Nach Inhalt?
 
+== 13 UML-Aktivitätsdiagramm
+1. Knoten & Kanten
+**
+
+
 == 25 Version Control
 * Probleme
 ** Schlechte Übersicht
