@@ -231,6 +231,9 @@ https://livebook.manning.com/book/pipeline-as-code/chapter-1/31
 === Was ist ein DevOp
 
 === Ansible & Terraform
+* Ansible
+- konfigurieren von einer Rechnerarmee
+- bei anderen Sachen muss man einen Client installieren
 
 === Docker & Kubernetes
 * Kubernetes vs Docker Swarm
@@ -238,3 +241,31 @@ https://livebook.manning.com/book/pipeline-as-code/chapter-1/31
 === Mqtt & Kafka
 * Event Driven
 * Test Driven
+
+=== Dev-Ops
+Erläutern
+
+* Developer: programmieren
+* Operator: kümmern sich um das Deploy und Instandhalten
+
+* Inner Loop:
+- aufm Lokalen Entwicklerrechner, IDE
+** Buildah
+*** schneller als Gralde, löst Gradle ab
+** Kubernetes Operators
+*** Scripts
+** Minikube
+
+* Outer Loop:
+- Automatisierungsserver
+** Gh-Actions, Jenkins,
+
+* Registry
+- GH-Container Registry
+- Docker Hub
+
+* Staging Server
+- Vorstufe von Produktion
+- Rennt unter Produktionsbedingungen
+- Aufstellen
+- Gruppieren

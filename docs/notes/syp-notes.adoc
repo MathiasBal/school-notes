@@ -293,6 +293,32 @@ kann ich nicht bre
 ==== b)
 Bisschen schon in a) enthalten.
 
+===== Artifakt
+* Codestück
+* Doku
+* igendwas
+
+===== RC
+Release Canidate
+
+===== Semantische Versionierung
+* Versionierung halt
+
+===== Definition of Done
+* Fertiggestellt und im VCS
+* Reviewed oder Pair Programming
+* Coding Guidelines und Standards eingehalten (Konventionen)
+- Editor Config
+* UnitTests stehen auf grün
+* Akzeptanzkriterien erfüllt
+- Bestimmen, wann die Programmierung fertig ist
+* Dokumentation ist aktuell
+* Release Dokumentation ist aktuell
+- Bei Github auf Releases (Release ist Freilassung)
+
+===== Regressionstest
+* Alte Tests durchlaufen
+
 === c)
 
 Das Lastenheft wird vor dem Pflichtenheft vom Auftraggeber erstellt bzw. einem seiner Spezialisten.
@@ -542,7 +568,10 @@ Quarkus hat dev services welche dies vereinfachen
 
 ==== a)
 
-ja bro, wird schwer
+V Modell veschreibt Artifakte (Teilergebnisse),
+Was muss ich tun, Vorgang, Ergebniss
+Anforderungserhebung, Pflichtenheft
+
 
 === Teilaufgabe 25
 
@@ -553,7 +582,7 @@ Kein Wissen des aktuellen Standes
 
 ==== b)
 
-Issues -> Person ordnet sich Issue zu -> Implementierung -> Commit und Push auf eigenen Branch -> Pull request -> Review -> merge auf master branch
+Das Chaching des Library Downloads soll enthalten sein (npm modules, ..)
 
 ==== c)
 
@@ -567,7 +596,38 @@ ich versteh die Frage glaub ich nicht ganz
 - Deployment
 - Maintenance
 
-VCS ist
+* VCS ist
 - Dev
 - Testing
 - Deployment
+
+=== Teilaufgabe 26
+
+
+=== Teilaufgabe 27
+==== Mögliche Fragen
+* Welche Möglichkeiten bietet ein VCS wie git?
+- Möglichkeit auf älter Versionen zuzugreifen; branchen, kooperatives Arbeiten, oft auch zusätzliche Funktionen,
+auf den jeweiligen Platformen (Issue-Tracking, gh-pages, wiki, ...)
+
+==== a)
+* Auf GoogleDrive und so Coden ist gemeinsam ungut
+- Versionierung
+
+=== Teilaufgabe 28
+==== a)
+* Jenkins
+* Travis
+* GitHub Actions
+
+==== b)
+Job -> Step -> Action
+
+* Jobs können parallel sein, Steps nur nacheinander
+
+* Acceptance Test: Mache ich die richtigen Dinge
+- Selenium
+- Cyprus
+
+* Smoke Test
+- nicht systematisch testen, deployment überprüfen
