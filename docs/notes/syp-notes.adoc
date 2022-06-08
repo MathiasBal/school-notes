@@ -1,633 +1,87 @@
-= Religion wär besser gewesen
+= SYP Fragen
 
-== Fragen für Stütz
+== Topf 1
+=== Frage 1 PKS Projektmerkmale und Eigenschaften
+1. Charakterisieren Sie zunächst Merkmale und Eigenschaften eines Projektes. Ab wann ist es ein Projekt?
+Ermitteln die daraus mögliche Unterscheidungsmerkmale bei verschiedenen Projekten.
 
-- Frage 1
-- Frage 2
-- Frage 4c
-- Frage 7c
-- Frage 23a
-- Frage 24
-- Frage 25c
-- Frage 11d
-- Frage 12c
-
-== Projektmanagement
-
-=== Teilaufgabe 1
-
-==== 1.
-
-* Merkmale:
-- inhaltliche Zielsetzung
-- zeitliche -""-
+A. Merkmale
+- Inhaltliche Zielsetzung
+- Zeitliche Zielsetzung
+- beschränkte Ressourcen
 - relative Neuartigkeit
-- beschränkte Resourcen
 - Komplexität
-- Risiko
+- höheres Risiko
+** zu komplex
+** Zeit falsch eingeschätzt
+** Budget überschritten
+** Nicht das Ziel erreicht, sondern etwas anderes
+** Keiner kauft ab
+- erfordert Projektphasen und Management
+
+B. Merkmale + Rahmenbedingungen = Projekt
+
+C. Unterscheidbar nach
+- Merkmale
+- Ziel
+** Sachziel (Erstellung, Veränderung)
+** prozessorientiert (Schaffung, Koordination)
+- Häufigkeit (repetitive / nicht repetitive)
+
+2. Vergleiche verschiedene Organisationsformen. Nenne Vor- und Nachteile.
+
+A. Organisationsformen
+* Taskforce, Gruppe ist außerhalb vom Linienorganisation
+** Vorteile
+*** Entscheidungen Intern -> schnelle Problemlösung
+*** Freistellung von Linienorganisation
+*** Erhöht Identifikation mit Projekt
+** Nachteile
+*** Nicht die besten Mitarbeiter, sonst Abteilung schwach
+*** Hilfe von Stammabteilung kann eine Störung sein
+*** Schlecht wieder in die Linienorganisation wieder rein
+
+* Einfluss / Staborganisation
+** Vorteile
+*** Geringer Organisationsaufwand
+*** Mitarbeiter bleiben in Abteilungen
+*** Mehrere Projekte gleichzeitig Möglich
+** Nachteile
+*** Stärker an Abteilung gebunden
+*** nur Stabstelle kann beeinflussen
+*** Konfliktlösung belastet Unternehmen
+
+* Matrixorganisation
+** Vorteile
+*** Projektmanager kann direkt Projektziel verfolgen
+*** Gut für Multiprojektmanagement
+*** Mitarbeiter belieben in der Abteilung
+*** Schnelle Konfliktlösung
+** Nachteile
+*** Mehrfachunterteilung
+*** Kompetenzprobleme wegen 2 Leiter
+*** 2 Chefs gegeneinander aufspielen
+
+* Projektorientierte Teilorganisation
+** Vorteile
+*** Geringer Aufwand
+*** Einduetige Kompetenzverhältnisse
+*** Spezialisierung steigert Produktivität und Qualität
+** Nachteile
+*** Probleme der Struktur werden übernommen
+*** Interne Projekte bevorzugt
+*** Abteilungsdenken -> bereichsübergreifende Lösungen ungenutzt
+
+3. Effizienz projektorientierter Organisationsstrukturen
+* Keine Änderung der Linienorganisation
+* Projekte mit erforderlichem Spezialwissen in bestimmter Abteilung
+
+4. n unserem oben genannten Unternehmen stehen nun in nächster Zeit wieder einige neue IT-Projekte an. Ein von der Unternehmensleitung und von einigen Vorstandsdirektoren stark forciertes Projekt für den Produktionsbereich betrifft die Einführung eines neuen Produktionsplanungs- und Steuerungssystems samt der technischen Neuausrichtung des Anlagen- und Maschinenparks für die Stahlblechteilefertigung für die Kunden im Automobilbereich. +
+Alles in allem keine einfache und triviale Aufgabe. Bedenke man auch die notwendigen Anbindungen zu anderen bestehenden IT-Systemen im Unternehmen. Wählen Sie eine dafür geeignete Organisationsform aus und interpretieren Sie Ihre Entscheidung.
+
+* Task Force
+** hohe Bedeutung für Unternehmen
+** zeitkritisch wegen neuer Planung für Kunden
+** keine einfache und triviale Aufgabe -> komplex
+** Anbindungen zu bestehenden System -> noch wichtiger für Unternehmen, weil andere abhängig sind
 
-Ab wann ist projekt weiß ich nicht
-
-Unterscheidungsmerkmale:
-- weiß auch nicht
-
-==== 2.
-
-* Task-Force
-- Projektleitung
-- verantwortet Projekt gegenüber Vorgesetzten
-- plant und steuert Mitarbeiter
-- verantworlich für die Erreichung der Ziele
-- Umfang
-- zeitkritische
-- hoher strategischer Bedeutung
-- langfristige umfangreiche Projekte
-- Organisationsaufwand hoch
-- Kontrolle keine Ahnung
-- Vorteile:
-- Entscheidungen werden innerhalb der Projektorg. getroffen => rasche Problemlösung
-- eindeutige Regelung von Kompetenzen und Aufgaben des Projektleiters
-- Nachteile:
-- Wenn zu gute oder zu viele Mitarbeiter aus der Linienorganisation gezogen werden läuft diese nicht mehr gut
-- Wiedereingliderung nach langen Projekten kann Probleme machen
-- Resourcenauslastung meist nicht optimal, wegen unterschiedlichen Tätigkeiten
-
-* Einflussprojektorganisation
-- Projektleitung
-- wird in kompetenzmäßig abgeschwächter Form als Stabstelle in der Linienorganisation erfüllt
-- hat Koordinations- und Informationsfunktionen (Projektablauf planen, Termine einhalten, ...)
-- Projektkoordinator hat keine formalen Entscheidungs- und Weisungskompetenzen
-- Umfang:
-- projekte mit geringem Umfang
-- Organisationsaufwand gering
-- Kontrolle keine Ahnung
-- Vorteile:
-- geringer Organisationsaufwand
-- gleichzeitige Abwicklung mehrerer Projekte ist möglich
-- Nachteile:
-- Projektkoordinator trägt Verantwortung, kann aber nix bestimmen
-- Probleme zwischen Projektkoordinator und Mitarbeitern müssen über die vorgesetzte Stelle geregelt werden
-
-* Matrix-Projektorganisation
-- Projektleitung
-- funktionalem Vorgesetzter und Projektleiter
-- bestimmen das Ziel, Was (Leistung), Wie viel (zur verfügung stehenden Mittel), Wann (Termine)
-- funkt. Vorgesetzter legt fest Wer (welcher Mitarbeiter Projektaufgabe macht), Wie (mit welchen Mitteln und Methoden), Wie gut (welche Qualität Ergebnis haben soll)
-- große Projekte
-- Organisationsaufwand weiß ich nicht
-- Kontrolle: funktionalem Vorgesetzter und Projektleiter wenden sich an Bereichsleitung oder Unternehmensleitung
-- Vorteile:
-- Projektmanager hat Kompetenz die Projektziele direkt zu verfolgen
-- Mitarbeiter werden nicht aus Abteilung herausgerissen
-- frühe Erkennung von Konfliktpunkten möglich
-- Nachteile:
-- Durch die Mehrfachunterstellung der Mitarbeiter kommt es wahrscheinlich zu Problemen
-- Mitarbeiter können funktionalem Vorgesetzter und Projektleiter gegeneinander ausspielen
-
-Aufgaben und Kompetenzen Projektleitung, proj umfang, org Aufwand, Kontrolle, Vor nachteile
-
-* projektorientierte Teilorganisation
-- Projektleitung
-- wird von Mitlgiedern der Abteilungsleitungs übernommen
-- Projektumfang nicht so groß wie bei den anderen (imo)
-- Org.aufwand gering
-- Kontrolle macht Vorgesetzter
-- Vorteile:
-- Orgaufwand gering
-- Möglichkeit zur Spezialisierung kann Qualität und Produktivität verbessern
-- Nachteile:
-- zu starkes Abteilungsdenken => Chancen für besseren bereichsübergreifende Lösungen bleiben ungenutzt
-
-Organigram (nur als allg. Beispiel)
-![](https://p7x7q5i4.rocketcdn.me/en/wp-content/uploads/sites/2/2020/12/organigram-smartpedia-t2informatik.png)
-
-==== 3.
-
-Effizienz schätzungsweise gut
-Ich versteh die Frage nicht
-
-==== 4.
-
-Task-force weil wichtiges Projekt
-
-=== Teilaufgabe 2
-
-==== a)
-
-Frage nix verstehen
-
-==== b)
-
-Ja einiges von Teilaufgabe 1 sagen und wissen
-
-==== c)
-
-ohne angabe schwer zu sagen
-
-=== Teilaufgabe 3 genau gleich wie 2?
-
-=== Teilaufgabe 4
-
-==== a)
-
-* Kategorien:
-- Leistung
-- Termine
-- Kosten
-
-* Merkmale:
-- Ziele erreichbar
-- Ziele müssen messbar sein (quantifizierbar)
-
-* Zielbeziehungen => versteht man die formalen und logischen Zusammenhänge und Interdependenzen zwischen verschiedenen wirtschaftspolitischen Zielen
-- Konkurrenz => Erreichen eines Zieles behindert die Erreichung eines anderen Zieles
-- Kompementarität => Verfolgung eines Ziels erforder die erreichung eines anderen Zieles
-- Neutralität => unabhängigkeit von anderen Projekten
-
-==== b)
-
-So bisschen ägyptische Pyramide
-![](https://www.123effizientdabei.de/wp-content/uploads/Zielhierarchie.png)
-
-==== c)
-
-weiß nicht bre
-
-=== Teilaufgabe 5
-
-==== a)
-
-Nico
-
-==== b)
-
-Auch Nico
-
-==== c)
-
-![](https://www.braintool.com/wp-content/uploads/braintool-morphologischer-kasten.jpg)
-
-=== Teilaufgabe 6
-
-==== a)
-
-- Projektbezeichnung
-- Auftraggeber
-- Projektbeginn und -ende
-- Kurzbeschreibung, Unternehmensbedarf und Ziele
-- Projektergebnisse
-- Projektbudget
-- Projektleiter, evtl. Projektteam
-- Annahmen und Beschränkungen
-- Ressourcenzuweisung
-- Terminvorgaben
-
-==== b)
-
-| Projektauftrag |  | +
-| -------- | -------- |
-| Projektbezeichnung     | AMOGUS     | +
-| Start     | 01.01.1999     | +
-| Ende     | 01.01.4200     | +
-| Projektleiter     | Herr Sugon     | +
-|      |      | +
-| Ausgangssituation     | SUS     | +
-| Projektziel     | sussy     | +
-
-==== c)
-
-ja bre ohne projekt wird schwer
-
-=== Teilaufgabe 7
-
-==== a)
-
-Projektstrukturplan
-Strukturen (hierarchisch)
-- Projekt => beschreibt Objektstruktur und Aufgaben
-- Objekt => beschreibt Produktstruktur und Werkzeuge, Hilfsmittel, ...
-- Produkt => beschreibt Komponenten
-
-==== b)
-
-Projektstrukturplan (siehe a)
-Objektstrukturplan
-Produktstrukturplan
-
-bilder @nico
-
-==== c)
-
-stuetz fragen
-
-=== Teilaufgabe 8
-
-==== a)
-
-- Balkendiagramm => selbsterklärend
-- Netzplan (MPM) =>  ![](https://inlooxcdn.azureedge.net/var/corporate_site/storage/images/media/images/glossar/beispiel-netzplan/832394-1-ger-DE/beispiel-netzplan.png)
-- Aktionsplan => header mit pos. was? wer? bis wann?
-
-==== b)
-
-jaja
-
-==== c)
-
-stuetz fragen
-
-=== Teilaufgabe 9
-
-==== a)
-
-![](https://web.liferay.com/zh/marketplace?p_p_id=7_WAR_osbportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=serveMedia&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_pos=2&p_p_col_count=3&_7_WAR_osbportlet_assetAttachmentId=81012587)
-
-==== b)
-
-Gegooglet, nichts im buch gefunden
-
-- Farben
-- Simplicity
-- Branding
-- Forget password help
-
-=== Teilaufgabe 10
-
-==== a)
-
-* Techniken:
-- standardisiertes, halb oder nicht standardisiertes Interview
-- weiches, neutrales Interview
-- offene oder geschlossene Fragen (multiple choice)
-- direkte oder indirekte Fragen (heikle themen)
-
-==== b)
-
-Zeitaufwand kann ich nicht sagen
-Interview soll hauptsächlich mit Schlüsselpersonen gemacht werden
-
-==== c)
-
-kann ich nicht bre
-
-=== Teilaufgabe 11
-
-==== a)
-* Ausgangsituation (Firma, Größe, etc.)
-* Ist-Zustand (Derzeitige Lösung, Austattung, etc.) Nicht über Lösung schreiben!
-* Zielsetzung (Vorgehen, Systemziele, Kosteneinsparungen, Verbesserung der Effizienz, ...)
-* Anforderungen (Soll)
-* An die Applikationssoftware (Nichtfunktionale Anforderungen, Was soll die App können?)
-* An die Systemplattform (Architektur, Server, Clients, Systemsoftware)
-* Anbieterbezogene Anforderungen (Termine, Gewährleistung, Projektorganisation, Merkmale des Anbieters)
-* Mengengerüst (Wie viele Benutzer?, Menge an Speicher, Daten, Datenbewegungen, Requests, etc.)
-* Aufbau und Inhalte der Offerte (Nur bei Ausschreibung??)
-* Administratives
-* Vertraulichkeit, Copyright
-* Budgetrahmen
-* Termine
-* Abgabe der Offerte
-* Rückfragen zum Pflichtenheft
-* ...
-
-==== b)
-Bisschen schon in a) enthalten.
-
-===== Artifakt
-* Codestück
-* Doku
-* igendwas
-
-===== RC
-Release Canidate
-
-===== Semantische Versionierung
-* Versionierung halt
-
-===== Definition of Done
-* Fertiggestellt und im VCS
-* Reviewed oder Pair Programming
-* Coding Guidelines und Standards eingehalten (Konventionen)
-- Editor Config
-* UnitTests stehen auf grün
-* Akzeptanzkriterien erfüllt
-- Bestimmen, wann die Programmierung fertig ist
-* Dokumentation ist aktuell
-* Release Dokumentation ist aktuell
-- Bei Github auf Releases (Release ist Freilassung)
-
-===== Regressionstest
-* Alte Tests durchlaufen
-
-=== c)
-
-Das Lastenheft wird vor dem Pflichtenheft vom Auftraggeber erstellt bzw. einem seiner Spezialisten.
-Das Pflichtenheft wird vom Projektteam erstellt.
-Das Lastenheft beschreibt was ist zu erbringen und wofür?
-Das Pflichtenheft geht detailliert ein auf die Rahmenbedingungen und die Umsetzung.
-
-=== d)
-
-Sehr gute Frage ??
-(Wie es gemacht wird, organisatorische Rahmenbedingungen)
-
-=== Teilaufgabe 12
-
-==== a)
-![](https://www.thinktocode.com/wp-content/uploads/2018/02/red-green-refactor.png)
-
-https://www.ionos.at/digitalguide/websites/web-entwicklung/was-ist-test-driven-development/
-
-*	Man versetzt sich in die Rolle eines Nutzers. Man schreibt einen Test. Welche Elemente sind für das Funktionieren des Codes nötig? Die Komponenten für diesen Test sind noch gar nicht implementiert.
-*	Der Test schlägt fehl.
-*	Man versetzt sich in die Rolle eines Programmierers. Man schreibt nur so viel Code wie nötig, damit der Test grün ist. Simple Lösung!
-*	Code wird in den Produktivcode implementiert.
-*	Refactoring
-* Der Produktivcode wird „aufgeräumt“
-* Ergänzen und umstrukturieren, dass er für jeden Entwickler elegant und verständlich ist
-* Z.b Codeduplizierungen entfernen
-
-==== b)
-* Bottum Up
--	Vom kleinsten Testabschnitt bis zum größten
--	Anfangend mit Unit-Tests
--	Danach kommen Module oder Builds (höherwertige Kombinationen von Units)
-
-* Top-down
--	Zuerst Module der höchsten Ebene
--	Danach nächst niedriger
-In Softwareentwicklungsumgebungen wird meist zuerst ein Bottom-Up-Test durchgeführt gefolgt von einem Top-Down-Test
-
-==== c)
-Mocking
-
-https://martinfowler.com/bliki/TestDouble.html
-
-=== Teilaufgabe 13
-==== a)
-===== Kanten
-* Kontrollflusskanten: reine Kontrollabhängigkeit zwischen Vor- und Nachgängerknoten aus
-* Objektflusskanten: drücken Datenabhängigkeit aus
-
-===== Knoten
-* Anfangsknoten: Startpunkt einer Aktivität
-* Aktivität-Endknoten: Ende aller Kntrollflüsse innerhalb Aktivität
-* Fluss-Endknoten: Ende eines einzelnen Kontrollfluss
-* Entscheidungsknoten: Die Aktivität spaltet sich in meherere Entscheidungen
-* Vereinigungsknoten: Die verschiedenen Knoten kommen zusammen
-
-==== b)
-Schwer zu sagen ohne Diagramm
-
-==== c)
-Ja.
-
-=== Teilaufgabe 14
-
-==== a)
-
-*	Anwendungsfälle (Ovale)
-*	Akteure (Strichmännchen)
-*	Assoziationen (Linie zw. Akteur und Anwendungsfall)
-*	Systemgrenzen (Boxen zum abgrenzen)
-*	Dependencies (Include und extend zwischen Anwendungsfällen)
-*	Pakete (Zur Gruppierung wird als Ordner dargestellt)
-
-==== b) und c)
-
-Ohne Situation nicht lösbar hihi
-
-=== Teilaufgabe 15
-==== a)
-* Knoten
-* Installation, Konfiguration und Bereitstellung von Artefakten
-* Linien
-* Kommunikationspfad
-* Strichlierter Pfad
-* Programm soll auf bestimmten Server laufen
-
-==== b)
-How about no
-
-==== c)
-* Beschreibt wo im fertigen Endsystem alles läuft
-* Wie alles installiert ist
-* Wie alles kommuniziert
-
-=== Teilaufgabe 16
-==== a)
-*	Zustand (Rechteck mit runden Eckern)
-*	Startpunkt
-*	Endpunkt
-*	Übergang (Pfeil mit Trigger bzw. Auslöser als Inhalt), Restriktionen bzw. Voraussetzungen für den Übergang
-
-==== b) und c)
-
-Ohne Situation nicht lösbar hihi
-
-=== Teilaufgabe 17
-==== a)
-Schaffung eines qualitätsfördernden Umfelds
-
-==== b)
-* Vorgehensmodell
-- Vollständigkeit
-- Modularität
-- Systematik
-- Anpassbarkeit
-- Allgemeingültigkeit
-- maschinelle Unterstützung
-* Dokumentation
-- Änderbarkeit
-- Aktualität
-- Eindeutigkeit
-- Identifizierbarkeit
-- Normkonformität
-- Verständlichkeit
-- Vollständigkeit
-- Widerspruchsfreiheit
-* Programmiersprache
-- Modulkonzept
-- Datenakpselung, abstrakte Datentypen
-- strukturierter Kontrollfluss
-- Datentypenkonzept und Laufzeitprüfungen
-- beschreibende Namen
-- objektorientiere Programmierung
-- Unterstützung von Prototyping
-* CASE-Tools
-- Werkzeuge zur strategischen Planung und Analyse für das Informationssystem
-- Entwurfswerkzeuge, Programmierumgebung und Generatoren
-- Testerwerkzeuge, automatisierte Testumgebung
-- Konzepte zur Fehlervermeidung
-- Werkzeuge zur Fehlererkennung und -auswertung
-* Wartungswerkzeuge
-- Unterstützung für das Konfigurationsmanagement
-- Unterstützung des Projektmanagements
-- Konfigurationsmanagement
-- transparente Versionsverwaltung
-- Optimierung von Änderungsarbeiten
-- kontrollierte Veröfffentlichung von Software-Releases
-- Vermeidung unkontrollierter Seiten-Effekte durch Änderungen
-- ständige Verfügbarkeit bestimmter Konfigurationen
-
-==== c)
-
-Hab grad Pause
-
-=== Teilaufgabe 18
-==== a)
-**Statische Prüfungen**
-
-* Audit:
--	Es wird geprüft ob Vorgehensweisen, Anweisungen und Standards sinnvoll und wirksam sind
--	Konkrete Probleme werden identifiziert und Lösungs- und Verbesserungsvorschläge angeregt
--	Audit-Team analysiert Arbeitsbereich, verdichtet Beobachtungsdaten und macht einen Bericht
-* Review:
--	Mehr oder weniger formal geplanter und strukturierter Analyse und Bewertungsprozess
--	Die Projektergebnisse werden einem Team von Gutachtern präsentiert
--	Diese kommentieren und oder genehmigen das Ergebnis
-Walktrough und Code Inspection:
--	Die Funktionalität wird anhand von Beispielen und Testfällen durchgespielt
--	Inspektion prüft das Dokument selbst
--	Walkthrougs bzw. Code Inspections bietene eine frühzeitige, umfassende Mängelentdeckung
--	Mengelverhütung möglich
--	Wirksame Kontrolle und Steuerung des Entwicklungsprozesses
--	Steigerung der Produktivität durch reduzierten Testaufwand
--	Den Zwang zu einer einheitlichen und sauberen Dokumentation
-
-**Dynamische Prüfungen (Testen)**
-
-=== Teilaufgabe 19
-
-=== Teilaufgabe 20
-
-=== Teilaufgabe 21
-
-==== a)
-
-Agile Vorgehensmodelle:
-- Scrum => Productbacklog (Sammlung der Anforderungen), zeitlich klar definierte Zyklen, nur 3 Rollen
-- Kanban => Aufgaben nimmt man sich, möglichst wenig Zeit zwischen Anfang und Ende einer Aufgabe haben,
-- Feature Driven Development (FDD) => Feature Liste, klare hierarchische Struktur, Phasenkonzept
-
-Boomer Vorgehensmodelle:
-- Wasserfallmodell => Nach einem fertiger Aufgabe wird die nächste begonnen
-- Software Development Life Cycle (SLFC) => Idee -> Spezifikation > Systementwurf -> Unittests usw. -> Parallelbetrieb mit altem Programm -> Außerbetriebnahme des Alten -> Betrieb und Wartung
-- Spiralmodell => ![](https://i.imgur.com/dQsq5Rf.png)
-
-
-==== b)
-
-Ja kann man nicht sagen
-
-=== Teilaufgabe 22
-
-==== a)
-
-![](https://i.imgur.com/sc2iJMT.png)
-
-==== b)
-
-* Product Backlog:
-- Monitoring site activity
-- allow file upload
-- option to reset password
-
-* Sprint Backlog:
-- Aufgaben von Product Backlog, aber eben weniger, da sie ja in einem Sprint erledigt werden müssen
-
-==== c)
-
-Userstory:
-
-| Title | Priority | Estimate |
-| -------- | -------- | -------- |
-| Password reset | high | 4h |
-| Userstory | As a user i want to be able to reset my password, so that if forgotten I do not have to contact the system administrator | |
-| 1. | The password reset link is sent to my email inbox | |
-| 2. | Reset link is invalid after I used it to reset my password | |
-
-=== Teilaufgabe 23
-
-==== a) (?)
-
-Version Control System
-Automation server
-
-==== b)
-
-Code -> Build -> Test
-
-==== c)
-
-Manche Tests brauchen Datenbankanbindung, welche man extra beispielsweise in einem Docker-Container starten müsste
-
-Quarkus hat dev services welche dies vereinfachen
-
-=== Teilaufgabe 24
-
-==== a)
-
-V Modell veschreibt Artifakte (Teilergebnisse),
-Was muss ich tun, Vorgang, Ergebniss
-Anforderungserhebung, Pflichtenheft
-
-
-=== Teilaufgabe 25
-
-==== a)
-
-Unklare Aufgabenverteilung
-Kein Wissen des aktuellen Standes
-
-==== b)
-
-Das Chaching des Library Downloads soll enthalten sein (npm modules, ..)
-
-==== c)
-
-ich versteh die Frage glaub ich nicht ganz
-
-* Software Life Cycle:
-- Strategy
-- Design
-- Development
-- Testing
-- Deployment
-- Maintenance
-
-* VCS ist
-- Dev
-- Testing
-- Deployment
-
-=== Teilaufgabe 26
-
-
-=== Teilaufgabe 27
-==== Mögliche Fragen
-* Welche Möglichkeiten bietet ein VCS wie git?
-- Möglichkeit auf älter Versionen zuzugreifen; branchen, kooperatives Arbeiten, oft auch zusätzliche Funktionen,
-auf den jeweiligen Platformen (Issue-Tracking, gh-pages, wiki, ...)
-
-==== a)
-* Auf GoogleDrive und so Coden ist gemeinsam ungut
-- Versionierung
-
-=== Teilaufgabe 28
-==== a)
-* Jenkins
-* Travis
-* GitHub Actions
-
-==== b)
-Job -> Step -> Action
-
-* Jobs können parallel sein, Steps nur nacheinander
-
-* Acceptance Test: Mache ich die richtigen Dinge
-- Selenium
-- Cyprus
-
-* Smoke Test
-- nicht systematisch testen, deployment überprüfen
