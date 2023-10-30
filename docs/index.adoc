@@ -5,6 +5,7 @@ ifndef::imagesdir[:imagesdir: images]
 * https://mathiasbal.github.io/school-notes/notes/grape.html[Live Mitschrift]
 * https://mathiasbal.github.io/school-notes/notes/syp-matura.html[SYP Matura]
 * https://mathiasbal.github.io/school-notes/notes/sap-matura.html[SAP Matura]
+* https://mathiasbal.github.io/school-notes/notes/uni-notes.html[Uni Notes]
 
 == Daves Index
 https://ignjatovic.at[David ist sehr cool]
