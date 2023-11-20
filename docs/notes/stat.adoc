@@ -9,7 +9,4 @@
 * Elementarereignis: 1 Element oder alle Ereignisse, die eine disjunkte Ergeben.
 * Bayesianische W.keit: subjektiv, "Wettw.keit"
 * LaPlace: Alle Elementarereignisse haben die selbe Wahrscheinlichkeit
-* Aussage: Sagt etwas aus, was entwerder wwahr oder falsch sein kann
-* =: "Dinge sind gleich""
-* <=>: "Genau dann wenn" Setzt zwei Aussagen in eine bestimmte Beziehung (A => B & gelichzeitig B => A)
 

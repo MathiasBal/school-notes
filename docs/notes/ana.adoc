@@ -1,0 +1,9 @@
+= Analysis Notes
+
+:toc:
+
+== Definitionen
+
+* Aussage: Sagt etwas aus, was entwerder wwahr oder falsch sein kann
+* =: "Dinge sind gleich""
+* < = >: "Genau dann wenn" Setzt zwei Aussagen in eine bestimmte Beziehung (A => B & gelichzeitig B => A)

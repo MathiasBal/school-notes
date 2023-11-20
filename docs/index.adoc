@@ -1,11 +1,18 @@
-= (nicht Daves) Index
+= Leoniks Notes
 ifndef::imagesdir[:imagesdir: images]
 
 == School Notes
 * https://mathiasbal.github.io/school-notes/notes/grape.html[Live Mitschrift]
 * https://mathiasbal.github.io/school-notes/notes/syp-matura.html[SYP Matura]
 * https://mathiasbal.github.io/school-notes/notes/sap-matura.html[SAP Matura]
-* https://mathiasbal.github.io/school-notes/notes/uni-notes.html[Uni Notes]
 
-== Daves Index
+=== Daves Index
 https://ignjatovic.at[David ist sehr cool]
+
+== Uni Notes
+* https://mathiasbal.github.io/school-notes/notes/stat.html[Statistik]
+* https://mathiasbal.github.io/school-notes/notes/ana.html[Analysis]
+* https://mathiasbal.github.io/school-notes/notes/statsoft.html[Statistische Software]
+
+=== Eugens Zusammenfassungen & Cheatsheets
+https://github.com/GoGenius96?tab=repositories[Go Genius]
