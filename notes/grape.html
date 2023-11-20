@@ -1,0 +1,3606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.18">
+<link rel="icon" type="image/png" href="themes/favicon.png">
+<title>🍇 Notes</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment the following line when using as a custom stylesheet */
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
+html{font-family:sans-serif;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+b,strong{font-weight:bold}
+abbr{font-size:.9em}
+abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
+dfn{font-style:italic}
+hr{height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type=checkbox],input[type=radio]{padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,::before,::after{box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre).nobreak{word-wrap:normal}
+:not(pre).nowrap{white-space:nowrap}
+:not(pre).pre-wrap{white-space:pre-wrap}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details{margin-left:1.25rem}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
+details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
+details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans-serif;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;font-size:.85rem;text-align:left;margin-right:0}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>*>tr>*{border-width:1px}
+table.grid-cols>*>tr>*{border-width:0 1px}
+table.grid-rows>*>tr>*{border-width:1px 0}
+table.frame-all{border-width:1px}
+table.frame-ends{border-width:1px 0}
+table.frame-sides{border-width:0 1px}
+table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
+table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
+table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
+table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
+ul.checklist>li>p:first-child{margin-left:-1em}
+ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
+ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+td.hdlist2{word-wrap:anywhere}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:4px solid #fff;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]{border-bottom:1px dotted}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#header,#content,#footnotes,#footer{max-width:none}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media amzn-kf8,print{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.rouge table td { padding: 5px; }
+pre.rouge table pre { margin: 0; }
+pre.rouge, pre.rouge .w {
+  color: #24292f;
+  background-color: #f6f8fa;
+}
+pre.rouge .k, pre.rouge .kd, pre.rouge .kn, pre.rouge .kp, pre.rouge .kr, pre.rouge .kt, pre.rouge .kv {
+  color: #cf222e;
+}
+pre.rouge .gr {
+  color: #f6f8fa;
+}
+pre.rouge .gd {
+  color: #82071e;
+  background-color: #ffebe9;
+}
+pre.rouge .nb {
+  color: #953800;
+}
+pre.rouge .nc {
+  color: #953800;
+}
+pre.rouge .no {
+  color: #953800;
+}
+pre.rouge .nn {
+  color: #953800;
+}
+pre.rouge .sr {
+  color: #116329;
+}
+pre.rouge .na {
+  color: #116329;
+}
+pre.rouge .nt {
+  color: #116329;
+}
+pre.rouge .gi {
+  color: #116329;
+  background-color: #dafbe1;
+}
+pre.rouge .kc {
+  color: #0550ae;
+}
+pre.rouge .l, pre.rouge .ld, pre.rouge .m, pre.rouge .mb, pre.rouge .mf, pre.rouge .mh, pre.rouge .mi, pre.rouge .il, pre.rouge .mo, pre.rouge .mx {
+  color: #0550ae;
+}
+pre.rouge .sb {
+  color: #0550ae;
+}
+pre.rouge .bp {
+  color: #0550ae;
+}
+pre.rouge .ne {
+  color: #0550ae;
+}
+pre.rouge .nl {
+  color: #0550ae;
+}
+pre.rouge .py {
+  color: #0550ae;
+}
+pre.rouge .nv, pre.rouge .vc, pre.rouge .vg, pre.rouge .vi, pre.rouge .vm {
+  color: #0550ae;
+}
+pre.rouge .o, pre.rouge .ow {
+  color: #0550ae;
+}
+pre.rouge .gh {
+  color: #0550ae;
+  font-weight: bold;
+}
+pre.rouge .gu {
+  color: #0550ae;
+  font-weight: bold;
+}
+pre.rouge .s, pre.rouge .sa, pre.rouge .sc, pre.rouge .dl, pre.rouge .sd, pre.rouge .s2, pre.rouge .se, pre.rouge .sh, pre.rouge .sx, pre.rouge .s1, pre.rouge .ss {
+  color: #0a3069;
+}
+pre.rouge .nd {
+  color: #8250df;
+}
+pre.rouge .nf, pre.rouge .fm {
+  color: #8250df;
+}
+pre.rouge .err {
+  color: #f6f8fa;
+  background-color: #82071e;
+}
+pre.rouge .c, pre.rouge .ch, pre.rouge .cd, pre.rouge .cm, pre.rouge .cp, pre.rouge .cpf, pre.rouge .c1, pre.rouge .cs {
+  color: #6e7781;
+}
+pre.rouge .gl {
+  color: #6e7781;
+}
+pre.rouge .gt {
+  color: #6e7781;
+}
+pre.rouge .ni {
+  color: #24292f;
+}
+pre.rouge .si {
+  color: #24292f;
+}
+pre.rouge .ge {
+  color: #24292f;
+  font-style: italic;
+}
+pre.rouge .gs {
+  color: #24292f;
+  font-weight: bold;
+}
+</style>
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>🍇 Notes</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_syp_16_09_2021">1. SYP 16.09.2021</a>
+<ul class="sectlevel2">
+<li><a href="#_jakartaee_vs_microprofile">1.1. JakartaEE vs Microprofile</a></li>
+<li><a href="#_exkurs_kubernetes">1.2. Exkurs Kubernetes</a></li>
+<li><a href="#_graalvm_natives_kompilieren">1.3. GraalVm &amp; Natives kompilieren</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_17_09_2021">2. NVS 17.09.2021</a>
+<ul class="sectlevel2">
+<li><a href="#_versionierung">2.1. Versionierung</a></li>
+<li><a href="#_andere_meldungen">2.2. Andere Meldungen</a></li>
+<li><a href="#_dynamisch_vs_statisch">2.3. Dynamisch vs Statisch</a></li>
+</ul>
+</li>
+<li><a href="#_syp_23_09_2021">3. SYP 23.09.2021</a>
+<ul class="sectlevel2">
+<li><a href="#_presentation_basics">3.1. Presentation Basics</a></li>
+<li><a href="#_wsl2_intellij">3.2. WSL2 &amp; IntelliJ</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_24_09_2021">4. NVS 24.09.2021</a>
+<ul class="sectlevel2">
+<li><a href="#_monolith_vs_microservices">4.1. Monolith vs Microservices</a></li>
+<li><a href="#_was_sind_micorservices">4.2. Was sind Micorservices</a></li>
+<li><a href="#_fault_tolerance">4.3. Fault Tolerance</a></li>
+<li><a href="#_microprofile">4.4. Microprofile</a></li>
+<li><a href="#_html_rest">4.5. HTML &amp; REST</a></li>
+<li><a href="#_exkurs">4.6. Exkurs</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_27_09_2021">5. NVS 27.09.2021</a>
+<ul class="sectlevel2">
+<li><a href="#_was_ist_symlink">5.1. Was ist symlink</a></li>
+</ul>
+</li>
+<li><a href="#_syp_30_09_2021">6. SYP 30.09.2021</a>
+<ul class="sectlevel2">
+<li><a href="#_youtrack">6.1. YouTrack</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_01_10_2021">7. NVS 01.10.2021</a>
+<ul class="sectlevel2">
+<li><a href="#_wiederholung_microservice">7.1. Wiederholung Microservice</a></li>
+<li><a href="#_styles">7.2. Styles</a></li>
+<li><a href="#_jsonb_quarkus">7.3. JSONB &amp; Quarkus</a></li>
+</ul>
+</li>
+<li><a href="#_syp_07_10_2021">8. SYP 07.10.2021</a>
+<ul class="sectlevel2">
+<li><a href="#_verschiedene_systemtests">8.1. Verschiedene Systemtests</a></li>
+<li><a href="#_deployment">8.2. Deployment</a></li>
+<li><a href="#_build_tools">8.3. Build Tools</a></li>
+<li><a href="#_ssh">8.4. SSH</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_08_10_2021">9. NVS 08.10.2021</a>
+<ul class="sectlevel2">
+<li><a href="#_instant_localdatetime">9.1. Instant &amp; LocalDateTime</a></li>
+<li><a href="#_stoffwiederholung">9.2. Stoffwiederholung</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_11_10_2021">10. NVS 11.10.2021</a>
+<ul class="sectlevel2">
+<li><a href="#_stoff">10.1. Stoff</a></li>
+</ul>
+</li>
+<li><a href="#_syp_12_10_2021">11. SYP 12.10.2021</a>
+<ul class="sectlevel2">
+<li><a href="#_was_ist_ein_model">11.1. Was ist ein Model</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_15_10_2021">12. NVS 15.10.2021</a>
+<ul class="sectlevel2">
+<li><a href="#_deploy_compile">12.1. Deploy &amp; Compile</a></li>
+<li><a href="#_wie_entsteht_ein_jar_war_file">12.2. Wie entsteht ein .jar/.war file</a></li>
+<li><a href="#_maven_lifecycle">12.3. Maven Lifecycle</a></li>
+<li><a href="#_restclient">12.4. RESTClient</a></li>
+<li><a href="#_extensions_hinzufügen">12.5. Extensions hinzufügen</a></li>
+<li><a href="#_wie_geht_des_mit_requests_http">12.6. "Wie geht des mit requests.http?"</a></li>
+<li><a href="#_testen">12.7. Testen</a></li>
+<li><a href="#_interface">12.8. Interface</a></li>
+<li><a href="#_wos_is_a_stellvertreter_i_man_wos_is_a_proxy">12.9. "Wos is a Stellvertreter&#8230;&#8203; I man wos is a Proxy"</a></li>
+<li><a href="#_herr_professor_wos_sogn_sie_zu_reactive">12.10. "Herr Professor wos sogn Sie zu Reactive"</a></li>
+<li><a href="#_englisch_unterricht">12.11. Englisch Unterricht</a></li>
+<li><a href="#_plan_für_nächste_stunde">12.12. Plan für nächste Stunde</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_18_10_2021">13. NVS 18.10.2021</a>
+<ul class="sectlevel2">
+<li><a href="#_2_arten_von_rest">13.1. 2 Arten von REST</a></li>
+<li><a href="#_exkurs_2">13.2. Exkurs</a></li>
+<li><a href="#_nosql">13.3. noSQL</a></li>
+<li><a href="#_circuit_breaker">13.4. Circuit Breaker</a></li>
+<li><a href="#_bulkhead">13.5. Bulkhead</a></li>
+<li><a href="#_fall_back">13.6. Fall Back</a></li>
+<li><a href="#_retry">13.7. Retry</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_22_10_2021">14. NVS 22.10.2021</a></li>
+<li><a href="#_nvs_04_11_2021">15. NVS 04.11.2021</a></li>
+<li><a href="#_nvs_08_11_2021">16. NVS 08.11.2021</a>
+<ul class="sectlevel2">
+<li><a href="#_wie_aktiviert_man_keycloak">16.1. Wie aktiviert man keycloak</a></li>
+</ul>
+</li>
+<li><a href="#_syp_11_11_21">17. SYP 11.11.21</a>
+<ul class="sectlevel2">
+<li><a href="#_github_branches_usw">17.1. GitHub branches &amp; usw</a></li>
+<li><a href="#_was_ist_hugo">17.2. Was ist Hugo?</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_12_11_2021">18. NVS 12.11.2021</a>
+<ul class="sectlevel2">
+<li><a href="#_devservice">18.1. DevService</a></li>
+<li><a href="#_authentication_vs_authorization">18.2. Authentication vs Authorization</a></li>
+<li><a href="#_keycloak">18.3. Keycloak</a></li>
+<li><a href="#_was_sind_devops">18.4. Was sind DevOps?</a></li>
+<li><a href="#_maven_2">18.5. Maven</a></li>
+<li><a href="#_rbac_cors">18.6. RBAC &amp; CORS</a></li>
+</ul>
+</li>
+<li><a href="#_syp_16_11_2021">19. SYP 16.11.2021</a></li>
+<li><a href="#_syp_18_11_21">20. SYP 18.11.21</a>
+<ul class="sectlevel2">
+<li><a href="#_security">20.1. Security</a></li>
+<li><a href="#_realm">20.2. Realm</a></li>
+<li><a href="#_sql_sachen_in_quarkus">20.3. SQL Sachen in Quarkus</a></li>
+<li><a href="#_was_ist_curl_und_http">20.4. Was ist curl und HTTP??</a></li>
+<li><a href="#_jax_webservices">20.5. JAX &amp; Webservices</a></li>
+<li><a href="#_exkurs_video">20.6. Exkurs Video</a></li>
+<li><a href="#_sax_vs_dom">20.7. SAX vs DOM:</a></li>
+<li><a href="#_jax_und_json_sind_verschiedene_implementierungen">20.8. Jax und Json sind verschiedene Implementierungen</a></li>
+<li><a href="#_rest">20.9. REST</a></li>
+<li><a href="#_umi">20.10. UMI</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_22_11_2021">21. NVS 22.11.2021</a>
+<ul class="sectlevel2">
+<li><a href="#_websockets">21.1. WebSockets</a></li>
+<li><a href="#_sse">21.2. SSE</a></li>
+<li><a href="#_kafka">21.3. Kafka</a></li>
+</ul>
+</li>
+<li><a href="#_syp_30_11_2021">22. SYP 30.11.2021</a>
+<ul class="sectlevel2">
+<li><a href="#_scrum">22.1. SCRUM</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_10_12_21">23. NVS 10.12.21</a>
+<ul class="sectlevel2">
+<li><a href="#_aaa">23.1. AAA:</a></li>
+<li><a href="#_assertjcore_vs_assertjdb">23.2. AssertJCore vs AssertJDB</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_20_12_21">24. NVS 20.12.21</a>
+<ul class="sectlevel2">
+<li><a href="#_datenbanken">24.1. Datenbanken</a></li>
+<li><a href="#_business_logic_101">24.2. Business Logic 101</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_14_01_2022">25. NVS 14.01.2022</a>
+<ul class="sectlevel2">
+<li><a href="#_websocket">25.1. Websocket:</a></li>
+<li><a href="#_problem_des_websockets_löst">25.2. Problem des Websockets löst:</a></li>
+<li><a href="#_wie_lösen_websockets_dieses_problem">25.3. Wie lösen Websockets dieses Problem?</a></li>
+<li><a href="#_alternativen_zu_websocket">25.4. Alternativen zu Websocket:</a></li>
+<li><a href="#_synchron_und_asynchron">25.5. Synchron und Asynchron</a></li>
+<li><a href="#_3_prinzipien_der_htl_leonding">25.6. 3 Prinzipien der HTL Leonding</a></li>
+<li><a href="#_handshake">25.7. Handshake</a></li>
+<li><a href="#_javase_vs_jakartaee">25.8. JavaSE vs JakartaEE</a></li>
+<li><a href="#_canon">25.9. Canon</a></li>
+<li><a href="#_3_tier_architecture">25.10. 3- tier Architecture:</a></li>
+<li><a href="#_kafka_2">25.11. Kafka:</a></li>
+<li><a href="#_alternativen_zu_kafka">25.12. Alternativen zu Kafka:</a></li>
+</ul>
+</li>
+<li><a href="#_syp_18_01_2022">26. SYP 18.01.2022</a>
+<ul class="sectlevel2">
+<li><a href="#_v_modell_wiederholung_sehr_sehr_grob">26.1. V-Modell Wiederholung (sehr sehr grob)</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_21_01_2022">27. NVS 21.01.2022</a>
+<ul class="sectlevel2">
+<li><a href="#_shebang_hashbang">27.1. Shebang / HashBang</a></li>
+<li><a href="#_exkurs_3">27.2. Exkurs</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_23_01_2022">28. NVS 23.01.2022</a>
+<ul class="sectlevel2">
+<li><a href="#_fachwörter_für_unwissende_unterrichtstouristen_buzzword_bingo_spieler">28.1. Fachwörter für Unwissende, Unterrichtstouristen &amp; Buzzword Bingo Spieler</a></li>
+<li><a href="#_parameter">28.2. Parameter</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_28_01_2022">29. NVS 28.01.2022</a>
+<ul class="sectlevel2">
+<li><a href="#_was_ist_rest">29.1. Was ist REST?</a></li>
+<li><a href="#_grpc">29.2. gRPC</a></li>
+<li><a href="#_http2">29.3. HTTP/2</a></li>
+<li><a href="#_was_bringt_sich_ein_code_generator">29.4. Was bringt sich ein Code Generator</a></li>
+<li><a href="#_rest_standard">29.5. REST Standard</a></li>
+<li><a href="#_formaler_parameter_vs_tatsächlicher_parameter">29.6. Formaler Parameter vs Tatsächlicher Parameter</a></li>
+<li><a href="#_qute_quarkus_template_engine">29.7. QuTe (Quarkus Template Engine)</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_31_01_2022">30. NVS 31.01.2022</a>
+<ul class="sectlevel2">
+<li><a href="#_wie_sollte_man_eine_testverbeserung_machen">30.1. "Wie sollte man eine Testverbeserung machen?"</a></li>
+<li><a href="#_kann_man_bei_einer_templateinstacne_auf_die_parameter_zur_laufzeit_zugreifen">30.2. Kann man bei einer Templateinstacne auf die Parameter zur Laufzeit zugreifen?</a></li>
+</ul>
+</li>
+<li><a href="#_syp_01_02_2022">31. SYP 01.02.2022</a>
+<ul class="sectlevel2">
+<li><a href="#_besprechung_vini_felix">31.1. Besprechung Vini &amp; Felix</a></li>
+<li><a href="#_wichtig_bei_git">31.2. Wichtig bei Git</a></li>
+</ul>
+</li>
+<li><a href="#_syp_03_02_2022">32. SYP 03.02.2022</a>
+<ul class="sectlevel2">
+<li><a href="#_qute_again">32.1. QuTe again</a></li>
+</ul>
+</li>
+<li><a href="#_syp_03_03_2022">33. SYP 03.03.2022</a>
+<ul class="sectlevel2">
+<li><a href="#_wieso_gh_slides_und_nicht_powerpoint">33.1. "Wieso GH Slides und nicht PowerPoint?"</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_04_03_2022">34. NVS 04.03.2022</a>
+<ul class="sectlevel2">
+<li><a href="#_altes_quarkus_backend_ändern">34.1. altes Quarkus Backend ändern</a></li>
+<li><a href="#_mvn">34.2. .mvn</a></li>
+<li><a href="#_lecture_notes">34.3. Lecture Notes</a></li>
+<li><a href="#_target_ordner">34.4. Target Ordner</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_18_03_2022">35. NVS 18.03.2022</a>
+<ul class="sectlevel2">
+<li><a href="#_uber_jar">35.1. Uber jar</a></li>
+<li><a href="#_env_variablen">35.2. ENV variablen</a></li>
+<li><a href="#_mandrel">35.3. Mandrel</a></li>
+</ul>
+</li>
+<li><a href="#_nvs_21_03_2022">36. NVS 21.03.2022</a>
+<ul class="sectlevel2">
+<li><a href="#_strategien_für_id">36.1. Strategien für Id</a></li>
+<li><a href="#_natürlicher_schlüssel">36.2. Natürlicher Schlüssel</a></li>
+<li><a href="#_surogate_schlüssel">36.3. Surogate Schlüssel</a></li>
+<li><a href="#_zusammengesetzter_schlüssel">36.4. Zusammengesetzter Schlüssel</a></li>
+</ul>
+</li>
+<li><a href="#_syp_24_03_2022">37. SYP 24.03.2022</a>
+<ul class="sectlevel2">
+<li><a href="#_design">37.1. Design</a></li>
+</ul>
+</li>
+<li><a href="#_syp_31_03_2022">38. SYP 31.03.2022</a>
+<ul class="sectlevel2">
+<li><a href="#_cargo_cult">38.1. Cargo Cult</a></li>
+<li><a href="#_slf4j">38.2. SLF4J</a></li>
+<li><a href="#_runtime_exceptions_sind_gut_weil">38.3. Runtime Exceptions sind gut weil&#8230;&#8203;</a></li>
+</ul>
+</li>
+<li><a href="#_syp_21_04_2022">39. SYP 21.04.2022</a>
+<ul class="sectlevel2">
+<li><a href="#_klassische_vorgehensmethoden">39.1. KLassische Vorgehensmethoden</a></li>
+<li><a href="#_agile_mathode">39.2. Agile Mathode</a></li>
+<li><a href="#_gen">39.3. Gen</a></li>
+<li><a href="#_allgemeine_softwareentwicklung">39.4. Allgemeine Softwareentwicklung</a></li>
+<li><a href="#_instrumentierung">39.5. Instrumentierung</a></li>
+<li><a href="#_dashboard">39.6. Dashboard</a></li>
+<li><a href="#_wie_sollen_tests_gemacht_sein">39.7. Wie sollen Tests gemacht sein</a></li>
+<li><a href="#_berichtswesen">39.8. Berichtswesen</a></li>
+<li><a href="#_scaleable">39.9. Scaleable</a></li>
+<li><a href="#_merkmale_von_objekte">39.10. Merkmale von Objekte</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_syp_16_09_2021"><a class="anchor" href="#_syp_16_09_2021"></a>1. SYP 16.09.2021</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_jakartaee_vs_microprofile"><a class="anchor" href="#_jakartaee_vs_microprofile"></a>1.1. JakartaEE vs Microprofile</h3>
+<div class="paragraph">
+<p>Microprofile Produkte: Quarkus, Micronaut, Helidon</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/jakartaeevsmicroprofile.png" alt="jakartaeevsmicroprofile">
+</div>
+</div>
+<div class="sect3">
+<h4 id="_was_bedeutet_jar_war"><a class="anchor" href="#_was_bedeutet_jar_war"></a>1.1.1. Was bedeutet .jar &amp; .war</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>jar: java archive</p>
+</li>
+<li>
+<p>war: web archive</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_application_server"><a class="anchor" href="#_application_server"></a>1.1.2. Application Server</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Application Server</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Apps</p>
+</li>
+<li>
+<p>Java Libraries</p>
+</li>
+<li>
+<p>DS (Datasource) verweist auf die Datenbank</p>
+</li>
+<li>
+<p>&#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+Man hat die Infrastruktur und gibt das einfach weiter wos langsom is
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_exkurs_kubernetes"><a class="anchor" href="#_exkurs_kubernetes"></a>1.2. Exkurs Kubernetes</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Man kann einen großen Behälter mit zB. REST Server als Pod nehmen</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_graalvm_natives_kompilieren"><a class="anchor" href="#_graalvm_natives_kompilieren"></a>1.3. GraalVm &amp; Natives kompilieren</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>GraalVM erstellt natives File</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_nativ_kompiliert"><a class="anchor" href="#_nativ_kompiliert"></a>1.3.1. Nativ kompiliert</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Das jar file wird so kompiliert, damit das File direkt auf dem Betriebssystem ausgeführt werden kann</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_17_09_2021"><a class="anchor" href="#_nvs_17_09_2021"></a>2. NVS 17.09.2021</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_versionierung"><a class="anchor" href="#_versionierung"></a>2.1. Versionierung</h3>
+<div class="paragraph">
+<p>2.3.4</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Major Level: Neue Funktionen aber nicht mehr kompatibel 2</p>
+</li>
+<li>
+<p>Minor Level: Neue Funktionen aber immer noch kompatibel mit alten Versionen 4</p>
+</li>
+<li>
+<p>Patch Leve: Keine neuen Funktionen aber Bugfixes 5</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_andere_meldungen"><a class="anchor" href="#_andere_meldungen"></a>2.2. Andere Meldungen</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Maven ist bei JEDER IDE gleich</p>
+</li>
+<li>
+<p>Ktor Backend für Kotlin Produkte</p>
+</li>
+<li>
+<p>Groovy Ruby auf JVM</p>
+</li>
+<li>
+<p>Grails</p>
+</li>
+<li>
+<p>Reactive ist asynchrones Programmieren</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2 columns">
+<h3 id="_dynamisch_vs_statisch"><a class="anchor" href="#_dynamisch_vs_statisch"></a>2.3. Dynamisch vs Statisch</h3>
+<div class="ulist column">
+<ul>
+<li>
+<p>Dynamisch (Zur Laufzeit)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Der Server kennt seine Clients noch nicht, die Clients melden sich zur Laufzeit an</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="ulist column">
+<ul>
+<li>
+<p>Statisch (bevor der Laufzeit / Entwurfszeit)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>"Vorher reincoden was die Addresses von Clients sind"</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syp_23_09_2021"><a class="anchor" href="#_syp_23_09_2021"></a>3. SYP 23.09.2021</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_presentation_basics"><a class="anchor" href="#_presentation_basics"></a>3.1. Presentation Basics</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Am Anfang sollte man visuelle Sachen (Bilder, Grafiken, usw.) herzeigen um das Publikum zu fesseln</p>
+</li>
+<li>
+<p>Eine Präsentation muss speziell angepasst werden für das Publikum</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_wsl2_intellij"><a class="anchor" href="#_wsl2_intellij"></a>3.2. WSL2 &amp; IntelliJ</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Der Grund wieso WSL2 nicht gut mit IntelliJ funktioniert, sind die Filesystemprobleme zwischen Linux (ntfs) und Windows (ext4)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_24_09_2021"><a class="anchor" href="#_nvs_24_09_2021"></a>4. NVS 24.09.2021</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_monolith_vs_microservices"><a class="anchor" href="#_monolith_vs_microservices"></a>4.1. Monolith vs Microservices</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Monolith:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Wenn alles in einem großen Projekt ist</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Microservice:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Unterteilt Customer, Products und Invoices, damit kann man auch Customer und Products in anderen Sprachen machen</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../images/monolithvsmicroservices.png" alt="monolithvsmicroservices">
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+Microservices are small autonomous services that work together
+</blockquote>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_was_sind_micorservices"><a class="anchor" href="#_was_sind_micorservices"></a>4.2. Was sind Micorservices</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>eine Reihe von Verfahren</p>
+</li>
+<li>
+<p>Erhöhung der Geschwindigkeit</p>
+</li>
+<li>
+<p>Skalierung</p>
+</li>
+<li>
+<p>Technologie-agnostisch (Technologie ist egal)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fault_tolerance"><a class="anchor" href="#_fault_tolerance"></a>4.3. Fault Tolerance</h3>
+<div class="paragraph">
+<p>Auch enn eine Komponente abschmiert, läuft das ganze Projekt trotzdem weiter</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_microprofile"><a class="anchor" href="#_microprofile"></a>4.4. Microprofile</h3>
+<div class="paragraph">
+<p>Enterprised Java für eine Microservice-Architektur implementiert Microservices-Designmuster</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_html_rest"><a class="anchor" href="#_html_rest"></a>4.5. HTML &amp; REST</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>HTML ist Internet für Menschen</p>
+</li>
+<li>
+<p>REST ist Internet für Maschinen</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_exkurs"><a class="anchor" href="#_exkurs"></a>4.6. Exkurs</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>JWT: JSON Web Token</p>
+</li>
+<li>
+<p>JAX-RS: REST Services</p>
+</li>
+<li>
+<p>Java ins Internet mit Servlet</p>
+</li>
+<li>
+<p>Tomcat ist ein Servlet Container</p>
+</li>
+<li>
+<p>Bootstrapping: mit kleiner Software eine große Software zum Laufen bringen</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Kommt von Cowboyschuhe</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_27_09_2021"><a class="anchor" href="#_nvs_27_09_2021"></a>5. NVS 27.09.2021</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_was_ist_symlink"><a class="anchor" href="#_was_ist_symlink"></a>5.1. Was ist symlink</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>symlink wird benutzt damit ich meinen Path nicht immer ändern muss, wenn ich eine neue Version von irgendwas habe</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syp_30_09_2021"><a class="anchor" href="#_syp_30_09_2021"></a>6. SYP 30.09.2021</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_youtrack"><a class="anchor" href="#_youtrack"></a>6.1. YouTrack</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>YouTrack ist ein IssueTracker</p>
+</li>
+<li>
+<p>Ein UseCase kann mehrere UserStories haben</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Eine UserStory ist feiner (detailiert fürs Programm)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Sprintnummern ist sehr wichtig</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Ein Sprint ist eine zeitliche Komponente von UserStory und Task</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Bug: Fehlerbehebung</p>
+</li>
+<li>
+<p>Epic: mehrere UserStories zB Lagerverwaltung</p>
+</li>
+<li>
+<p>Theme: Projektthema zB Warenwirtschaftssystem</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_unterschied_zwischen_sprintbacklog_und_productbacklog"><a class="anchor" href="#_unterschied_zwischen_sprintbacklog_und_productbacklog"></a>6.1.1. Unterschied zwischen SprintBacklog und ProductBacklog</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>SprintBacklog: Open, In Progress, To Verify, Done</p>
+</li>
+<li>
+<p>ProductBacklog: "Alles was keinen Sprint hat, ist hier"</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_youtrack_github"><a class="anchor" href="#_youtrack_github"></a>6.1.2. YouTrack &amp; Github</h4>
+<div class="paragraph">
+<p>Auf Card: VCS Change</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>git commit -m "commit message #issue_id command (zB Done)"</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_01_10_2021"><a class="anchor" href="#_nvs_01_10_2021"></a>7. NVS 01.10.2021</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_wiederholung_microservice"><a class="anchor" href="#_wiederholung_microservice"></a>7.1. Wiederholung Microservice</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Microservice: Kleines autonomes Progamm, Gegenstück zum Monolith</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Unabhängige Komponenten in einem Projekt</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_styles"><a class="anchor" href="#_styles"></a>7.2. Styles</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>kebab-case</p>
+</li>
+<li>
+<p>camelCase</p>
+</li>
+<li>
+<p>snake_case</p>
+</li>
+<li>
+<p>PascalCase</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_jsonb_quarkus"><a class="anchor" href="#_jsonb_quarkus"></a>7.3. JSONB &amp; Quarkus</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Zentrale Configdatei bei Quarkus: application.properties</p>
+</li>
+<li>
+<p>JSONB: Java Objekt wird mit JSON Objekt automatisch gebunden</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syp_07_10_2021"><a class="anchor" href="#_syp_07_10_2021"></a>8. SYP 07.10.2021</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_verschiedene_systemtests"><a class="anchor" href="#_verschiedene_systemtests"></a>8.1. Verschiedene Systemtests</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../images/systemtests.png" alt="systemtests">
+</div>
+</div>
+<div class="paragraph">
+<p>Datenbanken, Backend und Frontend alleine testen</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_deployment"><a class="anchor" href="#_deployment"></a>8.2. Deployment</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>(Software) bereitstellen</p>
+</li>
+<li>
+<p>Besteht aus mehreren Stufen</p>
+<div class="ulist">
+<ul>
+<li>
+<p>(clean, validate, compile, test, &#8230;&#8203;, site, deploy)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>GitHub Actions: Automatisierung von Prozessen</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_build_tools"><a class="anchor" href="#_build_tools"></a>8.3. Build Tools</h3>
+<div class="sect3">
+<h4 id="_maven"><a class="anchor" href="#_maven"></a>8.3.1. Maven</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Lifecycle</p>
+</li>
+<li>
+<p>streng verglichen zu Gradle</p>
+</li>
+<li>
+<p>in XML</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_gradle"><a class="anchor" href="#_gradle"></a>8.3.2. Gradle</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>mit Groovy (Ruby) programmiert</p>
+</li>
+<li>
+<p>moderner</p>
+</li>
+<li>
+<p>flexibler</p>
+</li>
+<li>
+<p>selber Downloadmechanismus wie Maven</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ant"><a class="anchor" href="#_ant"></a>8.3.3. Ant</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>keine Reglung</p>
+</li>
+<li>
+<p>alt</p>
+</li>
+<li>
+<p>kein Standard</p>
+</li>
+<li>
+<p>kein automatischer Download von Dependencies</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ssh"><a class="anchor" href="#_ssh"></a>8.4. SSH</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Private to Public key</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_08_10_2021"><a class="anchor" href="#_nvs_08_10_2021"></a>9. NVS 08.10.2021</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_instant_localdatetime"><a class="anchor" href="#_instant_localdatetime"></a>9.1. Instant &amp; LocalDateTime</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Instant ist ein ganz genauer Moment</p>
+</li>
+<li>
+<p>LocalDateTime hat keine Zeitzone</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_stoffwiederholung"><a class="anchor" href="#_stoffwiederholung"></a>9.2. Stoffwiederholung</h3>
+<div class="sect3">
+<h4 id="_json"><a class="anchor" href="#_json"></a>9.2.1. JSON</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Request und Response haben beide einen Header und einen JSON body</p>
+</li>
+<li>
+<p>JSON B(inding): Aus Java Objekte JSON Objekte machen</p>
+</li>
+<li>
+<p>Transient: flüchtig, wenn ein Java Objekt in ein JSON Objekt umgewandelt wird, werden die Attribute mit @Transient</p>
+</li>
+<li>
+<p>Persistent: Gegenteil von Transient</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_coding_practices"><a class="anchor" href="#_coding_practices"></a>9.2.2. Coding Practices</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Quarkus konfigurieren: in applications.properties</p>
+</li>
+<li>
+<p>Convention over Configuration (es gibt default configurations)</p>
+</li>
+<li>
+<p>Entity-Klasse: eine fachbereiche Klasse, welche in die Datenbank gespeichert wird</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_11_10_2021"><a class="anchor" href="#_nvs_11_10_2021"></a>10. NVS 11.10.2021</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_stoff"><a class="anchor" href="#_stoff"></a>10.1. Stoff</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>public ist ein no-go bei Variablen (außer wenn man PanacheEntity Klassen verwendet)</p>
+</li>
+<li>
+<p>URLENCODED: FormParam ist ein HTML Formular</p>
+</li>
+<li>
+<p>httpie forms:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>http --form POST :8080/api/books title='Quarkus' author='Susi' year='2021' genre='IT'</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>im Internet verwendet man snake_case</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syp_12_10_2021"><a class="anchor" href="#_syp_12_10_2021"></a>11. SYP 12.10.2021</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_was_ist_ein_model"><a class="anchor" href="#_was_ist_ein_model"></a>11.1. Was ist ein Model</h3>
+<div class="paragraph">
+<p>Ein Model ist ein Abbild der Reality mit Rücksicht auf eine besondere Sichtweise</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_15_10_2021"><a class="anchor" href="#_nvs_15_10_2021"></a>12. NVS 15.10.2021</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_deploy_compile"><a class="anchor" href="#_deploy_compile"></a>12.1. Deploy &amp; Compile</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>deploy: etwas bereitstellen</p>
+</li>
+<li>
+<p>kompilieren: Javacode wird in Java Bytecode umgewandelt</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Compile bedeutet übersetzten</p>
+</li>
+<li>
+<p>Der gesamte Code wird vor der Ausführung übersetzt und dann wird der Javacode abgearbeitet in der JVM</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Interpreter: Quellcode wird schrittweise für jedes Statement abgearbeitet</p>
+</li>
+<li>
+<p>Pro Klasse wird ein .class file erstellt</p>
+<div class="ulist">
+<ul>
+<li>
+<p>.class ist bytecode</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_wie_entsteht_ein_jar_war_file"><a class="anchor" href="#_wie_entsteht_ein_jar_war_file"></a>12.2. Wie entsteht ein .jar/.war file</h3>
+<div class="paragraph">
+<div class="title">java &#8594; compile &#8594; .class &#8594; package &#8594; .jar/.war file</div>
+<p>Quasi das mit der Pipeline von der 4ten.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_maven_lifecycle"><a class="anchor" href="#_maven_lifecycle"></a>12.3. Maven Lifecycle</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>validate: Project Setup überprüfen (z.B. maven folder structure)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Javacode muss in src/main/java sein</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>compile: source code in bytecode</p>
+</li>
+<li>
+<p>test: beim Entwickeln schon geschriebene UnitTests, welche auf Klassen gehen werden ausgetestet</p>
+</li>
+<li>
+<p>packaging: in jar files packagen</p>
+</li>
+<li>
+<p>verify: Integrationtest d.h Zusammenhang der Klassen testen</p>
+</li>
+<li>
+<p>install: install</p>
+</li>
+<li>
+<p>deploy: auf zB mavencentral ereitstellen</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_restclient"><a class="anchor" href="#_restclient"></a>12.4. RESTClient</h3>
+<div class="paragraph">
+<p>Wenn bei Netflix etwas abschmiert, muss trotzdem der Service noch Funktionieren</p>
+</div>
+<div class="sect3">
+<h4 id="_microprofile_rest_client"><a class="anchor" href="#_microprofile_rest_client"></a>12.4.1. Microprofile REST Client</h4>
+<div class="imageblock">
+<div class="content">
+<img src="../images/restclientmicroprofile.png" alt="restclientmicroprofile">
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_extensions_hinzufügen"><a class="anchor" href="#_extensions_hinzufügen"></a>12.5. Extensions hinzufügen</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Bei application.properties den Port angeben</p>
+</li>
+<li>
+<p>von quarkus.io die Extention holen</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_wie_geht_des_mit_requests_http"><a class="anchor" href="#_wie_geht_des_mit_requests_http"></a>12.6. "Wie geht des mit requests.http?"</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>requests.http</p>
+<div class="ulist">
+<ul>
+<li>
+<p>examples &#8594; post request &#8594; kopieren &#8594; boom</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_testen"><a class="anchor" href="#_testen"></a>12.7. Testen</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>"Bei mvn test verwendet man bei zB git actions host" ??</p>
+</li>
+<li>
+<p>Normal: Wenn man das Programm local offen host</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_interface"><a class="anchor" href="#_interface"></a>12.8. Interface</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Beim Interface darf nur der Methodenkopf aufgeschrieben werden</p>
+<div class="ulist">
+<ul>
+<li>
+<p>(aka es muss eine Methode deklariert werden)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_wos_is_a_stellvertreter_i_man_wos_is_a_proxy"><a class="anchor" href="#_wos_is_a_stellvertreter_i_man_wos_is_a_proxy"></a>12.9. "Wos is a Stellvertreter&#8230;&#8203; I man wos is a Proxy"</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Proxy: Stellvertreter für den Endpoint</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_herr_professor_wos_sogn_sie_zu_reactive"><a class="anchor" href="#_herr_professor_wos_sogn_sie_zu_reactive"></a>12.10. "Herr Professor wos sogn Sie zu Reactive"</h3>
+<div class="quoteblock">
+<blockquote>
+Nicht alles muss reactive sein, Datenbankzugriffe und wenn es viele requests gibt. Ja mit Kubernetes geht es auch anders.
+</blockquote>
+</div>
+<div class="sect3">
+<h4 id="_übersetzung_von_jan_kaufmann"><a class="anchor" href="#_übersetzung_von_jan_kaufmann"></a>12.10.1. Übersetzung von Jan Kaufmann</h4>
+<div class="paragraph">
+<p>Nicht alles muss reactive sein, Datenbankzugriffe und so schon aber mit Kubernetes gehts auch</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_englisch_unterricht"><a class="anchor" href="#_englisch_unterricht"></a>12.11. Englisch Unterricht</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>mock: täuschen, simuliert das Verhalten von echten Objekten</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_plan_für_nächste_stunde"><a class="anchor" href="#_plan_für_nächste_stunde"></a>12.12. Plan für nächste Stunde</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Circut Breaker</p>
+</li>
+<li>
+<p>Bulkhead</p>
+</li>
+<li>
+<p>Fall Back</p>
+</li>
+<li>
+<p>Retry</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_18_10_2021"><a class="anchor" href="#_nvs_18_10_2021"></a>13. NVS 18.10.2021</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../images/microservicerest.png" alt="microservicerest">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_arten_von_rest"><a class="anchor" href="#_2_arten_von_rest"></a>13.1. 2 Arten von REST</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>RestServer: JaxRS</p>
+</li>
+<li>
+<p>RestClient: im pom-File eine Extension hinzufügen</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Ein RestClient ist eine Highlevel API</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_exkurs_2"><a class="anchor" href="#_exkurs_2"></a>13.2. Exkurs</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Annotation ist ein Endpoint(?), wir haben den Endpoint in den Properties gespeichert, weil man im Code nichts ändern sollte</p>
+</li>
+<li>
+<p>Properties können mit ConfigProperties als Variable im Code gespeichert werden</p>
+</li>
+<li>
+<p>2 Werte mit Nutzwertanalyse vergleichen</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_nosql"><a class="anchor" href="#_nosql"></a>13.3. noSQL</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>noSQL hat eine bessere Performance (Bsp voest mit vielen Daten bei der Temperaturmessung)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_circuit_breaker"><a class="anchor" href="#_circuit_breaker"></a>13.4. Circuit Breaker</h3>
+<div class="paragraph">
+<p>Stromkreisunterbrecher preventive wieder vorkommende Fehler.<br>
+Wenn ein Service öfters nicht funktioniert verhindert der Circuit Breaker das Aufrufen von services</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Closed: alles geht, Ausgangslage (Stromkreis is zu :rose: )</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Es wird mitgeschrieben, ob die Calls success oder fail zurückgeben, wenn das failureRatio (fail zu success) groß is wird der circut breaker geöffnet</p>
+</li>
+<li>
+<p>Open: es wird sofort eine CircuitBreakerOpenException geworfen, nach einer bestimmten verzögerung wird der CircuitBreaker auf half open gesetzt</p>
+</li>
+<li>
+<p>Half Open: Eine bestimmte Anzahl von versuchen auf den Service erlaubt, sobald einer von den versuchen fehlschlagt, wird der CircuitBreaker wieder auf offen gestellt</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_bulkhead"><a class="anchor" href="#_bulkhead"></a>13.5. Bulkhead</h3>
+<div class="paragraph">
+<p>Trennwand, wenn was kaputt ist, bleibt das Problem nur in dem Teil vom Projekt</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fall_back"><a class="anchor" href="#_fall_back"></a>13.6. Fall Back</h3>
+<div class="paragraph">
+<p>Wenn eine Methode nicht funktioniert, kann man auf eine FallBack Methode zurückfallen</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_retry"><a class="anchor" href="#_retry"></a>13.7. Retry</h3>
+<div class="paragraph">
+<p>Versucht x mal die Methode und wartet</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_22_10_2021"><a class="anchor" href="#_nvs_22_10_2021"></a>14. NVS 22.10.2021</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Bulkhead &amp; CircuitBreaker wiederholt</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_04_11_2021"><a class="anchor" href="#_nvs_04_11_2021"></a>15. NVS 04.11.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>graalVM: polyglotte VM, du kannst da "alles" laufen lassen</p>
+<div class="ulist">
+<ul>
+<li>
+<p>um etwas zu setzten muss man source /opt/graalvm-home.sh schreiben</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>symlink: refer back to NVS 27.09.2021</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_08_11_2021"><a class="anchor" href="#_nvs_08_11_2021"></a>16. NVS 08.11.2021</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Im Web alles mit snake_case und nicht camelCase oder PascalCase</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>explizit: ausdrücklich</p>
+</li>
+<li>
+<p>qio: RedHat Docker Registry</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_wie_aktiviert_man_keycloak"><a class="anchor" href="#_wie_aktiviert_man_keycloak"></a>16.1. Wie aktiviert man keycloak</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>extension hinzufügen (quarkus- oidc)</p>
+</li>
+<li>
+<p>Docker Daemon</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>oidc &#8594; open id connect</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syp_11_11_21"><a class="anchor" href="#_syp_11_11_21"></a>17. SYP 11.11.21</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_github_branches_usw"><a class="anchor" href="#_github_branches_usw"></a>17.1. GitHub branches &amp; usw</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Staging Server: Bereitstellungsserver, wenn da alles funktioniert kommt das auf den Produktionserver</p>
+</li>
+<li>
+<p>Git Branches bei GitHub Actions (ich hab leider kein KeyNote):</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code>main ----------------------------------&gt;  production
+                 \                 /
+stage ---------------------------------&gt;
+                   \             /
+                    \           /
+feature              -----------</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>feature: Eigenschaft oder neue Fähigkeit</p>
+</li>
+<li>
+<p>cherry picking: man committed nicht den Feature, sondern nur eine kleine Änderung um etwas zu fixen</p>
+</li>
+<li>
+<p>für jedes Problem ein Issue machen</p>
+</li>
+<li>
+<p>Angular mocken: "es gibt kleine JSON Server oder man macht angular mocking"</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_was_ist_hugo"><a class="anchor" href="#_was_ist_hugo"></a>17.2. Was ist Hugo?</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Hugo: static webpage generator, alternative zu Jekyll</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_12_11_2021"><a class="anchor" href="#_nvs_12_11_2021"></a>18. NVS 12.11.2021</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_devservice"><a class="anchor" href="#_devservice"></a>18.1. DevService</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Dienste in Testcontainer von Quarkus gestartet werden (keycloak, kafka, usw.)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_authentication_vs_authorization"><a class="anchor" href="#_authentication_vs_authorization"></a>18.2. Authentication vs Authorization</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Authentication: wer bin ich</p>
+</li>
+<li>
+<p>Authorization: wer darf was (Rollen)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_keycloak"><a class="anchor" href="#_keycloak"></a>18.3. Keycloak</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Keycloak wird in application.properties konfiguriert</p>
+</li>
+<li>
+<p>Docker daemon muss laufen damit Dev Services gehen, wenn die nicht in application.properties sind.</p>
+</li>
+<li>
+<p>Im Keycloak kann man einen Realm machen was sowas wie ein eigener Bereich ist, im Realm beinhaltet mehrere Rollen</p>
+</li>
+<li>
+<p>Alternative zu Quarkus Services</p>
+<div class="ulist">
+<ul>
+<li>
+<p>zb keycloak in Docker</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>dev &#8594; test &#8594; staging &#8594; prod</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_was_sind_devops"><a class="anchor" href="#_was_sind_devops"></a>18.4. Was sind DevOps?</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>ALT</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Programmierer: machen das Programm</p>
+</li>
+<li>
+<p>Operator: kümmern sich um das Deploy und Instandhalten</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>NEU</p>
+<div class="ulist">
+<ul>
+<li>
+<p>DevOps: kümmern sich um das Produkt bis zum Ende</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+MATURA FRAGE
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Wie kann ich Java/Quarkus Projekt erstellen?</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Antwort: IDE, Commandline, Assistent auf der Webseite</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_maven_2"><a class="anchor" href="#_maven_2"></a>18.5. Maven</h3>
+<div class="paragraph">
+<p>Bei neuen Versionen wird das ins mvn Verzeichnis geladen, manchmal sollte man den m2 folder löschen, dammit die alten Versionen und so gelöscht werden</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_rbac_cors"><a class="anchor" href="#_rbac_cors"></a>18.6. RBAC &amp; CORS</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>RBAC: Role Based Access Control</p>
+</li>
+<li>
+<p>CORS: Cross Origin Resource Sharing</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Zwei verschiedene IPs wollen aufeinander zugreifen</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syp_16_11_2021"><a class="anchor" href="#_syp_16_11_2021"></a>19. SYP 16.11.2021</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>User Story: Anwendungsfall für 1 Benutzer</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syp_18_11_21"><a class="anchor" href="#_syp_18_11_21"></a>20. SYP 18.11.21</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_security"><a class="anchor" href="#_security"></a>20.1. Security</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Entweder für keycloak oder Quarkus intern elytron security jdbc(bei kleinen Anwendungen)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_realm"><a class="anchor" href="#_realm"></a>20.2. Realm</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Realm ein eigener Bereich</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sql_sachen_in_quarkus"><a class="anchor" href="#_sql_sachen_in_quarkus"></a>20.3. SQL Sachen in Quarkus</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>in den application.properties, Namen ändern und Profil dazutun</p>
+</li>
+<li>
+<p>Wenn im Resource Ordner import.sql ist, wird das automatisch aufgerufen</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Quarkus.io &#8594; All Configurations Options &#8594; Import
+Hibernate ORM</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_was_ist_curl_und_http"><a class="anchor" href="#_was_ist_curl_und_http"></a>20.4. Was ist curl und HTTP??</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>curl: Request</p>
+</li>
+<li>
+<p>HTTP: Response</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_jax_webservices"><a class="anchor" href="#_jax_webservices"></a>20.5. JAX &amp; Webservices</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>admin% is der Body vom Response</p>
+</li>
+<li>
+<p>JAX-RS: Restful Services</p>
+</li>
+<li>
+<p>JAX-WS: Web Sockets</p>
+</li>
+<li>
+<p>JAX-RS/WS basiert auf Servlets</p>
+</li>
+<li>
+<p>Servlet in der einfachsten Form: HTTP Requests und Responses auf Java Seiten im Internet</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_exkurs_video"><a class="anchor" href="#_exkurs_video"></a>20.6. Exkurs Video</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>JsonB(Json Bidning): automatische marshalling von Java Objekten in Json Objekte</p>
+</li>
+<li>
+<p>MessagBodyWriter: Is responsible for converting Java types to a stream</p>
+</li>
+<li>
+<p>XML: Extensible Markup Language (es ist in Baumform)</p>
+</li>
+<li>
+<p>Parsen: Syntaxanalysator</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sax_vs_dom"><a class="anchor" href="#_sax_vs_dom"></a>20.7. SAX vs DOM:</h3>
+<div class="ulist">
+<div class="title">Wir haben ein XML Dokument und wollen das in den Computer speichern</div>
+<ul>
+<li>
+<p>DOM, Document Object Model: Speichert alles in den Hauptspeicher in Baumform</p>
+</li>
+<li>
+<p>SAX, Simple API for XML: Parsed durch den XML Code und es wird mit einer Callbackmethode gefiltert</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_jax_und_json_sind_verschiedene_implementierungen"><a class="anchor" href="#_jax_und_json_sind_verschiedene_implementierungen"></a>20.8. Jax und Json sind verschiedene Implementierungen</h3>
+<div class="paragraph">
+<p>Json: Standard
+Jax: Weiter verbreitet</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_rest"><a class="anchor" href="#_rest"></a>20.9. REST</h3>
+<div class="sect3">
+<h4 id="_nachteil_von_rest_services"><a class="anchor" href="#_nachteil_von_rest_services"></a>20.9.1. Nachteil von REST-Services:</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>REST-Services sind veraltet</p>
+</li>
+<li>
+<p>GitHub Dokumente sind sehr lang (mit GraphQL ist es kürzer)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_unterschied_graphql_und_rest_client"><a class="anchor" href="#_unterschied_graphql_und_rest_client"></a>20.9.2. Unterschied GraphQL und REST Client:</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>REST hat vordefinierte Antworten</p>
+</li>
+<li>
+<p>Bei GraphQL kann sich der Client heraussuchen was genau gebraucht wird (ungefähr wie eine SQL Query)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_grpc_wie_rest_aber_ein_modernes_rest"><a class="anchor" href="#_grpc_wie_rest_aber_ein_modernes_rest"></a>20.9.3. gRPC "Wie REST aber ein modernes REST":</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Binärformat wie REST, nur schneller</p>
+</li>
+<li>
+<p>Quasi der Nachfolger von REST</p>
+</li>
+<li>
+<p>basiert auf HTTP2 und Buffers</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_umi"><a class="anchor" href="#_umi"></a>20.10. UMI</h3>
+<div class="paragraph">
+<p>UMI wird benutzt, wenn man etwas Async machen will (in C# wäre das ein Task)</p>
+</div>
+<div class="sect3">
+<h4 id="_extra"><a class="anchor" href="#_extra"></a>20.10.1. Extra</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Non-Blocking I/O (Event Loop) kennen wir von NodeJS</p>
+</li>
+<li>
+<p>GraphQL: wir sind der Server</p>
+</li>
+<li>
+<p>GraphQL Client: wir greifen auf einen Server zu</p>
+</li>
+<li>
+<p>Flyway: Versionieren von Datenbanken</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_22_11_2021"><a class="anchor" href="#_nvs_22_11_2021"></a>21. NVS 22.11.2021</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_websockets"><a class="anchor" href="#_websockets"></a>21.1. WebSockets</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Bidirektionale Verbindung zwischen Client und Server, schickt Binärdaten</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sse"><a class="anchor" href="#_sse"></a>21.2. SSE</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>schickt kurze Nachrichten</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_kafka"><a class="anchor" href="#_kafka"></a>21.3. Kafka</h3>
+<div class="paragraph">
+<p>MessageBroker: zentral auf Server schicken und an gewisse Topics anmelden &#8594; kriagt ma Nachrichten</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syp_30_11_2021"><a class="anchor" href="#_syp_30_11_2021"></a>22. SYP 30.11.2021</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_scrum"><a class="anchor" href="#_scrum"></a>22.1. SCRUM</h3>
+<div class="paragraph">
+<p>Scrum sollte von Sicht der User gemacht werden</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_10_12_21"><a class="anchor" href="#_nvs_10_12_21"></a>23. NVS 10.12.21</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_aaa"><a class="anchor" href="#_aaa"></a>23.1. AAA:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Arrange</p>
+</li>
+<li>
+<p>Act</p>
+</li>
+<li>
+<p>Assert</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_assertjcore_vs_assertjdb"><a class="anchor" href="#_assertjcore_vs_assertjdb"></a>23.2. AssertJCore vs AssertJDB</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>AssertJCore: Testen der Objekte im Hauptspeicher</p>
+</li>
+<li>
+<p>AssertJDB: Testen der Objekte in der Datenbank</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_20_12_21"><a class="anchor" href="#_nvs_20_12_21"></a>24. NVS 20.12.21</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_datenbanken"><a class="anchor" href="#_datenbanken"></a>24.1. Datenbanken</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Constraint: Einschränkung</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Primary Key Constraint: not null, nicht doppelt</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Cascade: Weitergabe</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_business_logic_101"><a class="anchor" href="#_business_logic_101"></a>24.2. Business Logic 101</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Was das Geschäft ausmacht (Verkauf, Rabatt, usw.)</p>
+</li>
+<li>
+<p>Im Service ist die Business Logic drinnen</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_14_01_2022"><a class="anchor" href="#_nvs_14_01_2022"></a>25. NVS 14.01.2022</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_websocket"><a class="anchor" href="#_websocket"></a>25.1. Websocket:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Netzwerkprotokoll</p>
+</li>
+<li>
+<p>auf TCP basierend</p>
+</li>
+<li>
+<p>eignen sich für Echtzeit-Webapplikation</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_problem_des_websockets_löst"><a class="anchor" href="#_problem_des_websockets_löst"></a>25.2. Problem des Websockets löst:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Server kennt keine Clients</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_wie_lösen_websockets_dieses_problem"><a class="anchor" href="#_wie_lösen_websockets_dieses_problem"></a>25.3. Wie lösen Websockets dieses Problem?</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Server hat eine List von Clients</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_alternativen_zu_websocket"><a class="anchor" href="#_alternativen_zu_websocket"></a>25.4. Alternativen zu Websocket:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>SSE</p>
+<div class="ulist">
+<ul>
+<li>
+<p>monodirektional</p>
+</li>
+<li>
+<p>nur UTF-8 Datan (Websockets können auch Binary Daten)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_synchron_und_asynchron"><a class="anchor" href="#_synchron_und_asynchron"></a>25.5. Synchron und Asynchron</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>synchron: blockierend</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Ein Befehl wartet auf den Anderen um fertig zu werden</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>asynchron: nicht blockierend</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Ich fange einen Befehl an und bevor der Befehl fertig ist, fängt der nächste Befehl an</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_prinzipien_der_htl_leonding"><a class="anchor" href="#_3_prinzipien_der_htl_leonding"></a>25.6. 3 Prinzipien der HTL Leonding</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Sequence</p>
+</li>
+<li>
+<p>Verzweigung</p>
+</li>
+<li>
+<p>Schleife (setzt sich aus Sequence und Verzweiflung zusammen)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_handshake"><a class="anchor" href="#_handshake"></a>25.7. Handshake</h3>
+<div class="paragraph">
+<p>Ein Client fragt an welche Protokolle (gegenseitiges Vorstellen)</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_javase_vs_jakartaee"><a class="anchor" href="#_javase_vs_jakartaee"></a>25.8. JavaSE vs JakartaEE</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Java SE: für Desktop</p>
+</li>
+<li>
+<p>JakartaEE: für verteilte Systeme</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Enterprise Edition: Firma Version</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Quarkus: schneller weil es keinen Application Server gibt sondern nur ein application.properties file</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_canon"><a class="anchor" href="#_canon"></a>25.9. Canon</h3>
+<div class="paragraph">
+<p>alles ist zusammen</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_tier_architecture"><a class="anchor" href="#_3_tier_architecture"></a>25.10. 3- tier Architecture:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Presentation</p>
+</li>
+<li>
+<p>Business Logic</p>
+</li>
+<li>
+<p>Persistence Layer</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_wichtig"><a class="anchor" href="#_wichtig"></a>25.10.1. Wichtig</h4>
+<div class="paragraph">
+<p>Logging und Security ziehen sich durch die ganze Architektur (Aspekte)</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_kafka_2"><a class="anchor" href="#_kafka_2"></a>25.11. Kafka:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Firma wollte große Anzahl an Daten in Echtzeit</p>
+</li>
+<li>
+<p>Even Streaming</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Dauerhaftes Speichern</p>
+</li>
+<li>
+<p>Mehrere Consumer auf eine Partition</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Gegenstück: Message Queueing</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Gelöscht sobald gelesen</p>
+</li>
+<li>
+<p>Einzelner Consumer auf Queue</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_englisch_unterricht_part_2"><a class="anchor" href="#_englisch_unterricht_part_2"></a>25.11.1. Englisch Unterricht Part 2</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Broker: Vermittler</p>
+</li>
+<li>
+<p>ZooKeeper: Zoowerter pflegt Tiere (pflegt Geräte in der Firma)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_alternativen_zu_kafka"><a class="anchor" href="#_alternativen_zu_kafka"></a>25.12. Alternativen zu Kafka:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>RabbitMQ</p>
+</li>
+<li>
+<p>Google Pub/Sub (RabbitMQ in Cloud)</p>
+</li>
+<li>
+<p>AnazonSQS (verwendet RabbitMQ)</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_kafka_vs_rabbitmq"><a class="anchor" href="#_kafka_vs_rabbitmq"></a>25.12.1. Kafka vs. RabbitMQ</h4>
+<div class="sect4">
+<h5 id="_kafka_3"><a class="anchor" href="#_kafka_3"></a>Kafka</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Event Streaming Platform</p>
+</li>
+<li>
+<p>Payload eher klein (max. 1MB)</p>
+</li>
+<li>
+<p>1. Milionen Nachrichten pro Sekunden</p>
+</li>
+<li>
+<p>Dumb Broker / Smart Consumer</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Server bekommt Nachrichten aber macht nicht un der Consumer macht die Arbeit</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_rabbitmq"><a class="anchor" href="#_rabbitmq"></a>RabbitMQ:</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Message Queueing Platform</p>
+</li>
+<li>
+<p>Payload groß</p>
+</li>
+<li>
+<p>4k-10k Nachrichten pro Sekunde</p>
+</li>
+<li>
+<p>Smart Broker / Smart Consumer</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syp_18_01_2022"><a class="anchor" href="#_syp_18_01_2022"></a>26. SYP 18.01.2022</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_v_modell_wiederholung_sehr_sehr_grob"><a class="anchor" href="#_v_modell_wiederholung_sehr_sehr_grob"></a>26.1. V-Modell Wiederholung (sehr sehr grob)</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Was?</p>
+<div class="ulist">
+<ul>
+<li>
+<p>SysSpec</p>
+</li>
+<li>
+<p>Grobentwurf (Schnittstellen, damit man die testen kann)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Wie?</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Feinentwurf</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Implementierung</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_21_01_2022"><a class="anchor" href="#_nvs_21_01_2022"></a>27. NVS 21.01.2022</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>./mvnw: braucht man wenn auf einer anderen Maschine Maven nicht installieren will
+(sonst wird der PATH immer länger)</p>
+</li>
+<li>
+<p>./m2: die Libraries werden zentrall im m2 Ordner gespeichert, damit man sie nicht immer wieder neu runterladen werden</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_shebang_hashbang"><a class="anchor" href="#_shebang_hashbang"></a>27.1. Shebang / HashBang</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="bash"><span class="c">#!/usr/bin/env -S java --class-path lib/jlayer-1.0.1.jar --source 11</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_exkurs_3"><a class="anchor" href="#_exkurs_3"></a>27.2. Exkurs</h3>
+<div class="paragraph">
+<p>Rendern: Für Ausgabe vorbereiten</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_23_01_2022"><a class="anchor" href="#_nvs_23_01_2022"></a>28. NVS 23.01.2022</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_fachwörter_für_unwissende_unterrichtstouristen_buzzword_bingo_spieler"><a class="anchor" href="#_fachwörter_für_unwissende_unterrichtstouristen_buzzword_bingo_spieler"></a>28.1. Fachwörter für Unwissende, Unterrichtstouristen &amp; Buzzword Bingo Spieler</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Inject = Instanz erstellen</p>
+</li>
+<li>
+<p>Hot Reload: man muss damit nicht immer das Projekt neu kompilieren bei einer kleinen Codeänderung</p>
+</li>
+<li>
+<p>LookupTable: Dropdowntabelle</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_qute_ganz_ganz_kurz"><a class="anchor" href="#_qute_ganz_ganz_kurz"></a>28.1.1. Qute (ganz ganz kurz)</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Template Instance: Website (HTML)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Templates sind untyped</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="nd">@CheckedTemplate</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">Templates</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kd">native</span> <span class="nc">TemplateInstance</span> <span class="nf">item</span><span class="o">(</span><span class="nc">Item</span> <span class="n">item</span><span class="o">);</span>
+<span class="o">}</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_schleifen"><a class="anchor" href="#_schleifen"></a>28.1.2. Schleifen</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="qute">{#for item in items}
+  {item.name}
+{/for}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_parameter"><a class="anchor" href="#_parameter"></a>28.2. Parameter</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Formaler Parameter:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>public void method(Item item);</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Aktueller Parameter:</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>service.findItem(id);</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_28_01_2022"><a class="anchor" href="#_nvs_28_01_2022"></a>29. NVS 28.01.2022</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_was_ist_rest"><a class="anchor" href="#_was_ist_rest"></a>29.1. Was ist REST?</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Internet für Maschinen</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_grpc"><a class="anchor" href="#_grpc"></a>29.2. gRPC</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Schneller als REST, weil es binär ist</p>
+</li>
+<li>
+<p>High Performance</p>
+<div class="ulist">
+<ul>
+<li>
+<p>kleinere Messages, weil es binär ist</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_http2"><a class="anchor" href="#_http2"></a>29.3. HTTP/2</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Daten vorher schicken, wo geglaubt wird, wo der User hingeht</p>
+</li>
+<li>
+<p>Verschwenderisch, weil Sachen geladen werden welche vll nie benutzt werden</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_was_bringt_sich_ein_code_generator"><a class="anchor" href="#_was_bringt_sich_ein_code_generator"></a>29.4. Was bringt sich ein Code Generator</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Man muss sich nicht händisch alles machen</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_rest_standard"><a class="anchor" href="#_rest_standard"></a>29.5. REST Standard</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>JAXRS</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_formaler_parameter_vs_tatsächlicher_parameter"><a class="anchor" href="#_formaler_parameter_vs_tatsächlicher_parameter"></a>29.6. Formaler Parameter vs Tatsächlicher Parameter</h3>
+<div class="sect3">
+<h4 id="_formal"><a class="anchor" href="#_formal"></a>29.6.1. Formal</h4>
+<div class="paragraph">
+<p>method(Class var)</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_tatsächlicher"><a class="anchor" href="#_tatsächlicher"></a>29.6.2. Tatsächlicher</h4>
+<div class="paragraph">
+<p>method(var)</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_qute_quarkus_template_engine"><a class="anchor" href="#_qute_quarkus_template_engine"></a>29.7. QuTe (Quarkus Template Engine)</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>In der Resource Klasse sind die Templates</p>
+</li>
+<li>
+<p>@CheckedTemplate ist für die Deklaration von Files</p>
+</li>
+<li>
+<p>Initialisierung ist eine Erstzuweisung</p>
+<div class="ulist">
+<ul>
+<li>
+<p>TemplateInstance als Rückgabewert</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>resources Ordner &#8594; templates</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_typisierte_art"><a class="anchor" href="#_typisierte_art"></a>29.7.1. Typisierte Art</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>im Ordner BookingResource werden die HTML files nach den Methoden vom File BookingResource benannt</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_31_01_2022"><a class="anchor" href="#_nvs_31_01_2022"></a>30. NVS 31.01.2022</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_wie_sollte_man_eine_testverbeserung_machen"><a class="anchor" href="#_wie_sollte_man_eine_testverbeserung_machen"></a>30.1. "Wie sollte man eine Testverbeserung machen?"</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Fehlermeldung</p>
+</li>
+<li>
+<p>Fehlercode</p>
+</li>
+<li>
+<p>Erklärung vom Fehler</p>
+</li>
+<li>
+<p>Verbesserter Code</p>
+</li>
+<li>
+<p>Erklärung von dem richtigen Code</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Man sollte mit AsciiDoc umgehen können!!!
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_kann_man_bei_einer_templateinstacne_auf_die_parameter_zur_laufzeit_zugreifen"><a class="anchor" href="#_kann_man_bei_einer_templateinstacne_auf_die_parameter_zur_laufzeit_zugreifen"></a>30.2. Kann man bei einer Templateinstacne auf die Parameter zur Laufzeit zugreifen?</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Nein, weil das ja im Browser ohne Java Objekte ist</p>
+</li>
+<li>
+<p>Wenn ich eine Liste anzeigen will oder so muss ich alles vor der Laufzeit machen</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syp_01_02_2022"><a class="anchor" href="#_syp_01_02_2022"></a>31. SYP 01.02.2022</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_besprechung_vini_felix"><a class="anchor" href="#_besprechung_vini_felix"></a>31.1. Besprechung Vini &amp; Felix</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Gute Doku: wenn eine Commitmessage gut geschrieben ist reicht das schon aus</p>
+</li>
+<li>
+<p>Projekt planen auf YouTrack</p>
+</li>
+<li>
+<p>Gespräche gehören auch protokolliert</p>
+<div class="ulist">
+<ul>
+<li>
+<p>wenn man das macht, kann ich immer nachschauen was wer mal gesagt hat</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>SYP benotet, ob man erwachsen genug ist</p>
+</li>
+<li>
+<p>Quellen immer irgendwo aufschreiben, um bei Fehler nachzuschauen</p>
+</li>
+<li>
+<p>Immer SoftWrap bei Fehler</p>
+</li>
+<li>
+<p>Neuste Versionen von Libraries verwenden</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_wichtig_bei_git"><a class="anchor" href="#_wichtig_bei_git"></a>31.2. Wichtig bei Git</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Regressiontesting</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_git_flow"><a class="anchor" href="#_git_flow"></a>31.2.1. Git Flow</h4>
+<div class="imageblock">
+<div class="content">
+<img src="../images/git-branches.png" alt="git branches">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_github_flow"><a class="anchor" href="#_github_flow"></a>31.2.2. GitHub Flow</h4>
+<div class="imageblock">
+<div class="content">
+<img src="../images/githubflow.png" alt="githubflow">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syp_03_02_2022"><a class="anchor" href="#_syp_03_02_2022"></a>32. SYP 03.02.2022</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_qute_again"><a class="anchor" href="#_qute_again"></a>32.1. QuTe again</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>in Entity eine Methode angeben</p>
+</li>
+<li>
+<p>im HTML in {} zB {person.calcIrgendwas(person_index)}</p>
+</li>
+<li>
+<p>bei Fragen auf w3schools gehen</p>
+</li>
+<li>
+<p>DTO file nehmen für Schönheit</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syp_03_03_2022"><a class="anchor" href="#_syp_03_03_2022"></a>33. SYP 03.03.2022</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_wieso_gh_slides_und_nicht_powerpoint"><a class="anchor" href="#_wieso_gh_slides_und_nicht_powerpoint"></a>33.1. "Wieso GH Slides und nicht PowerPoint?"</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Versionierbar</p>
+</li>
+<li>
+<p>In der selben Sprache dokumentieren (Doc As Code)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_04_03_2022"><a class="anchor" href="#_nvs_04_03_2022"></a>34. NVS 04.03.2022</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_altes_quarkus_backend_ändern"><a class="anchor" href="#_altes_quarkus_backend_ändern"></a>34.1. altes Quarkus Backend ändern</h3>
+<div class="sect3">
+<h4 id="_nicht_zu_alt"><a class="anchor" href="#_nicht_zu_alt"></a>34.1.1. nicht zu alt</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>pom.xml Versionsnummer ändern</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_antik"><a class="anchor" href="#_antik"></a>34.1.2. antik</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>quarkus.io neues Projekt</p>
+</li>
+<li>
+<p>.mvn löschen</p>
+</li>
+<li>
+<p>neues .mvn reinkopieren</p>
+</li>
+<li>
+<p>mvnw &amp; mvnw.cmd ersetzen</p>
+</li>
+<li>
+<p>neue pom.xml reinkopieren</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+man kann den Sourceordner einfach ins neue Projekt
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mvn"><a class="anchor" href="#_mvn"></a>34.2. .mvn</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>da ist der MavenWrapper drinnen damit ich mit nicht maven auf der Maschine installieren muss</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_mavenwrapper"><a class="anchor" href="#_mavenwrapper"></a>34.2.1. MavenWrapper</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>hat eine Lokale Maveninstallation</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_lecture_notes"><a class="anchor" href="#_lecture_notes"></a>34.3. Lecture Notes</h3>
+<div class="paragraph">
+<p><a href="https://2122-5ahitm-sew.github.io/2122-5ahitm-sew-lecture-notes/#_html_http">Zusammenfassung für Matura</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_target_ordner"><a class="anchor" href="#_target_ordner"></a>34.4. Target Ordner</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Ergebnis vom Kompilieren</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_18_03_2022"><a class="anchor" href="#_nvs_18_03_2022"></a>35. NVS 18.03.2022</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_uber_jar"><a class="anchor" href="#_uber_jar"></a>35.1. Uber jar</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>application.properties</p>
+</li>
+<li>
+<p>pom.xml</p>
+</li>
+<li>
+<p>command line als maven parameter</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://htl-leonding-college.github.io/quarkus-docker-gh-actions-demo">Uberjar Tutorial</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_env_variablen"><a class="anchor" href="#_env_variablen"></a>35.2. ENV variablen</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>PATH is die bekannteste</p>
+</li>
+<li>
+<p>für Docker sehr wichtig</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mandrel"><a class="anchor" href="#_mandrel"></a>35.3. Mandrel</h3>
+<div class="paragraph">
+<p>Kleine Linux distro spezialisiert auf GraalVM und Quarkus</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Überblick über REST-Services kann man mit Swagger machen after production, dafür muss man das mit in die application.properties eintragen
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nvs_21_03_2022"><a class="anchor" href="#_nvs_21_03_2022"></a>36. NVS 21.03.2022</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_strategien_für_id"><a class="anchor" href="#_strategien_für_id"></a>36.1. Strategien für Id</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Table</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Datenbank-Objekt</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Sequence</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Datenbank-Objekt</p>
+</li>
+<li>
+<p>Flexibel</p>
+</li>
+<li>
+<p>Start Wert</p>
+</li>
+<li>
+<p>Holt ich einen Batch</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Auto</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Datentyp der einfach nach oben zählt</p>
+</li>
+<li>
+<p>Referenzen auf andere Tabellen</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_natürlicher_schlüssel"><a class="anchor" href="#_natürlicher_schlüssel"></a>36.2. Natürlicher Schlüssel</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Meherere Fleder zusammensetzen</p>
+</li>
+<li>
+<p>GEO Id</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_surogate_schlüssel"><a class="anchor" href="#_surogate_schlüssel"></a>36.3. Surogate Schlüssel</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Künstlicher Schlüssel</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_zusammengesetzter_schlüssel"><a class="anchor" href="#_zusammengesetzter_schlüssel"></a>36.4. Zusammengesetzter Schlüssel</h3>
+<div class="paragraph">
+<p>Natürlich + Surogate Schlüssel</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syp_24_03_2022"><a class="anchor" href="#_syp_24_03_2022"></a>37. SYP 24.03.2022</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_design"><a class="anchor" href="#_design"></a>37.1. Design</h3>
+<div class="quoteblock">
+<blockquote>
+Dinge die gleich sand, gehören zom
+</blockquote>
+<div class="attribution">
+&#8212; Gesetz der Nähe
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syp_31_03_2022"><a class="anchor" href="#_syp_31_03_2022"></a>38. SYP 31.03.2022</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_cargo_cult"><a class="anchor" href="#_cargo_cult"></a>38.1. Cargo Cult</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Leute machen irgendwas ohne zu wissen wieso die das so machen</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_slf4j"><a class="anchor" href="#_slf4j"></a>38.2. SLF4J</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Simple Logging for Java</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_runtime_exceptions_sind_gut_weil"><a class="anchor" href="#_runtime_exceptions_sind_gut_weil"></a>38.3. Runtime Exceptions sind gut weil&#8230;&#8203;</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>man kein throws braucht (unchecked)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syp_21_04_2022"><a class="anchor" href="#_syp_21_04_2022"></a>39. SYP 21.04.2022</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_klassische_vorgehensmethoden"><a class="anchor" href="#_klassische_vorgehensmethoden"></a>39.1. KLassische Vorgehensmethoden</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Wasserfall</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Anforderungsentwicklung</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Grobentwurf</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Fienentwurf</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Implementierung</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Betriebw</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_kennzeichen_von_klass_vm"><a class="anchor" href="#_kennzeichen_von_klass_vm"></a>39.1.1. Kennzeichen von Klass. VM</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>das gesamte Funktionsvorbet vorher festgelegt</p>
+</li>
+<li>
+<p>Änderungen an der Funktionalität in späteren Phasen zB. Implementierung füren zu hohen Kosten</p>
+</li>
+<li>
+<p>Testen nicht besonders gut integriert</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="_v_model"><a class="anchor" href="#_v_model"></a>V-Model</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Validieren: Mach ich die Dinge richtig?</p>
+</li>
+<li>
+<p>Verifizieren: Mach ich die richtigen Dinge?</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_agile_mathode"><a class="anchor" href="#_agile_mathode"></a>39.2. Agile Mathode</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>XP (eXtreme Programming)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Anforderungsdefinition</p>
+</li>
+<li>
+<p>Entwickulng</p>
+</li>
+<li>
+<p>Implimentierung</p>
+</li>
+<li>
+<p>Test</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In jedem kleinen Schritt</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Scrum</p>
+</li>
+<li>
+<p>Kanban</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gen"><a class="anchor" href="#_gen"></a>39.3. Gen</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Lauffähig</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_allgemeine_softwareentwicklung"><a class="anchor" href="#_allgemeine_softwareentwicklung"></a>39.4. Allgemeine Softwareentwicklung</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Testen QA,Quality Assurance / QS,Qualitätsicherung</p>
+</li>
+<li>
+<p>Measurement / Performance</p>
+</li>
+<li>
+<p>Health: nicht ausfallen</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Resilience: falls was ausfallt, etwas was benutzt werden kann</p>
+</li>
+<li>
+<p>Bakc-Preassure:</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Reactive Manifesto
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_instrumentierung"><a class="anchor" href="#_instrumentierung"></a>39.5. Instrumentierung</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Code dazugeben, der nicht gebaucht wird</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dashboard"><a class="anchor" href="#_dashboard"></a>39.6. Dashboard</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Rückmeldungen</p>
+</li>
+<li>
+<p>Anzeigen von Daten</p>
+</li>
+<li>
+<p>Aufbereitet</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_wie_sollen_tests_gemacht_sein"><a class="anchor" href="#_wie_sollen_tests_gemacht_sein"></a>39.7. Wie sollen Tests gemacht sein</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Unabhängig</p>
+</li>
+<li>
+<p>Logisch für Auftraggeber</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_berichtswesen"><a class="anchor" href="#_berichtswesen"></a>39.8. Berichtswesen</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Doc-As-Code</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_scaleable"><a class="anchor" href="#_scaleable"></a>39.9. Scaleable</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>ohne große Änderung, Änderung von Resourcen (wenn z.B mehr User auf Seite)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_merkmale_von_objekte"><a class="anchor" href="#_merkmale_von_objekte"></a>39.10. Merkmale von Objekte</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Identity</p>
+</li>
+<li>
+<p>Polymorphie</p>
+</li>
+<li>
+<p>Vererbung</p>
+</li>
+<li>
+<p>Geheimnissprinzip</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2023-11-20 16:35:08 UTC
+</div>
+</div>
+</body>
+</html>

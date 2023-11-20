@@ -1,0 +1,23 @@
+.font-smaller {
+    font-size: smaller;
+}
+
+.font-bigger {
+    font-size: xxx-large;
+}
+
+.reveal section img {
+    border: 0;
+    box-shadow: none;
+}
+.fontsizeDescription{
+    font-size: smaller;
+}
+
+.reveal h2, .reveal h3, .reveal h4, .reveal h4, .reveal h5, .reveal h6, .reveal h6, #toctitle  {
+    font-size: smaller;
+}
+
+.reveal p {
+    font-size: smaller;
+}
